@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "articles": "Artículos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Ewe José Omusi Sáez — Desarrollador Full Stack y Creador de Juegos",
+    "tagline": "Construyendo experiencias web fluidas y juegos multijugador competitivos.",
+    "ctaProjects": "Ver Proyectos",
+    "ctaContact": "Contacto"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "tagline": "Prueba visual de mis habilidades",
+    "project1": "Xenora Rush — caso de estudio pronto",
+    "project2": "Demo de Backend — próximamente",
+    "project3": "Este sitio web — en progreso"
+  },
+  "articles": {
+    "title": "Resolución de Problemas",
+    "tagline": "Artículos cortos que muestran mi proceso de pensamiento",
+    "cta": "Ver artículos"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "bio": "27 años, España / US, disponible para remoto. 5+ años en Xenora Rush, 6 meses como desarrollador a tiempo completo, y freelance.",
+    "drive": {
+      "item1": "Innovación",
+      "item2": "Resolución de Problemas",
+      "item3": "Trabajo en Equipo"
+    }
+  },
+  "contact": {
+    "cta": "Construyamos algo increíble juntos."
+  }
+}
+

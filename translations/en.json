@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "articles": "Articles",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Ewe José Omusi Sáez — Full Stack Developer & Game Creator",
+    "tagline": "Building seamless web experiences and competitive multiplayer games.",
+    "ctaProjects": "View Projects",
+    "ctaContact": "Contact"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "tagline": "Visual-first proof of abilities",
+    "project1": "Xenora Rush — case study soon",
+    "project2": "Backend demo — coming soon",
+    "project3": "This website — WIP"
+  },
+  "articles": {
+    "title": "Problem-Solving",
+    "tagline": "Short articles showing thought process",
+    "cta": "View articles"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "27, Spain / US, remote-friendly. 5+ years on Xenora Rush, 6 months full-time dev, plus freelance.",
+    "drive": {
+      "item1": "Innovation",
+      "item2": "Problem-Solving",
+      "item3": "Teamwork"
+    }
+  },
+  "contact": {
+    "cta": "Let’s build something great together."
+  }
+}
+

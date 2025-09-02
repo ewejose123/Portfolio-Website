@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "articles": "Artículos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "name": "Ewe José Omusi Sáez",
+    "title": "Desarrollador Full Stack y Creador de Juegos",
+    "age": "27 años",
+    "location": "España / US",
+    "tagline": "Construyendo experiencias web fluidas y juegos multijugador competitivos.",
+    "ctaProjects": "Ver Proyectos",
+    "ctaContact": "Contacto",
+    "skills": {
+      "title": "Habilidades Principales",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "tools": "Herramientas", 
+      "soft": "Habilidades Blandas"
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "tagline": "Prueba visual de mis habilidades",
+    "items": {
+      "xenora-rush": {
+        "title": "Xenora Rush",
+        "summary": "Juego multijugador competitivo con matchmaking en tiempo real y sincronización de física.",
+        "technologies": ["Unity", "C#", ".NET", "PostgreSQL", "Redis", "AWS", "Next.js", "PostHog"]
+      },
+      "backend-demo": {
+        "title": "Demo de Backend",
+        "summary": "API de alto rendimiento con caché, limitación de velocidad y monitoreo en tiempo real.",
+        "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Redis", "Docker", "Vercel"]
+      },
+      "portfolio-site": {
+        "title": "Sitio Web Portfolio",
+        "summary": "Portfolio moderno construido con Next.js, con i18n y diseño responsivo.",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "next-intl", "Vercel"]
+      }
+    }
+  },
+  "articles": {
+    "title": "Resolución de Problemas",
+    "tagline": "Artículos cortos que muestran mi proceso de pensamiento",
+    "cta": "Ver artículos",
+    "readMore": "Leer más",
+    "items": {
+      "api-performance": {
+        "title": "Optimizando rendimiento de API: de 2s a 200ms",
+        "summary": "Perfilado, caché y simplificación de I/O para reducir latencia en un 90%.",
+        "date": "2024-12-01",
+        "tags": ["backend", "rendimiento", "perfilado"]
+      },
+      "game-matchmaking": {
+        "title": "Cómo manejé el matchmaking en un juego multijugador usando AWS + OpenTelemetry",
+        "summary": "Construyendo matchmaking escalable con monitoreo en tiempo real y auto-escalado.",
+        "date": "2024-11-15",
+        "tags": ["gamedev", "aws", "escalabilidad"]
+      },
+      "debugging-physics": {
+        "title": "Depurando un problema complejo de física de juego bajo latencia",
+        "summary": "Solucionando problemas de sincronización de física cliente-servidor en multijugador en tiempo real.",
+        "date": "2024-10-20",
+        "tags": ["gamedev", "física", "redes"]
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "bio": "27 años, España, disponible para remoto. 5+ años en Xenora Rush, 6 meses como desarrollador a tiempo completo, y freelance.",
+    "whatDrivesMe": "Lo que me motiva:",
+    "drive": {
+      "item1": "Innovación",
+      "item2": "Resolución de Problemas",
+      "item3": "Trabajo en Equipo"
+    }
+  },
+  "contact": {
+    "cta": "Construyamos algo increíble juntos.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

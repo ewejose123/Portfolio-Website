@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "articles": "Articles",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Ewe José Omusi Sáez",
+    "title": "Full Stack Developer & Game Creator",
+    "age": "27 years old",
+    "location": "Spain / US",
+    "tagline": "Building seamless web experiences and competitive multiplayer games.",
+    "ctaProjects": "View Projects",
+    "ctaContact": "Contact",
+    "skills": {
+      "title": "Core Skills",
+      "backend": "Backend",
+      "frontend": "Frontend", 
+      "tools": "Tools",
+      "soft": "Soft Skills"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "tagline": "Visual-first proof of abilities",
+    "items": {
+      "xenora-rush": {
+        "title": "Xenora Rush",
+        "summary": "Competitive multiplayer game with real-time matchmaking and physics synchronization.",
+        "technologies": ["Unity", "C#", ".NET", "PostgreSQL", "Redis", "AWS", "Next.js", "PostHog"]
+      },
+      "backend-demo": {
+        "title": "Backend Demo",
+        "summary": "High-performance API with caching, rate limiting, and real-time monitoring.",
+        "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Redis", "Docker", "Vercel"]
+      },
+      "portfolio-site": {
+        "title": "Portfolio Website",
+        "summary": "Modern portfolio built with Next.js, featuring i18n and responsive design.",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "next-intl", "Vercel"]
+      }
+    }
+  },
+  "articles": {
+    "title": "Problem-Solving",
+    "tagline": "Short articles showing thought process",
+    "cta": "View articles",
+    "readMore": "Read more",
+    "items": {
+      "api-performance": {
+        "title": "Optimizing API performance: from 2s to 200ms",
+        "summary": "Profiling, caching, and simplifying I/O to cut latency by 90%.",
+        "date": "2024-12-01",
+        "tags": ["backend", "performance", "profiling"]
+      },
+      "game-matchmaking": {
+        "title": "How I handled matchmaking in a multiplayer game using AWS + OpenTelemetry",
+        "summary": "Building scalable matchmaking with real-time monitoring and auto-scaling.",
+        "date": "2024-11-15",
+        "tags": ["gamedev", "aws", "scalability"]
+      },
+      "debugging-physics": {
+        "title": "Debugging a complex game physics issue under latency",
+        "summary": "Troubleshooting client-server physics synchronization in real-time multiplayer.",
+        "date": "2024-10-20",
+        "tags": ["gamedev", "physics", "networking"]
+      }
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "27, Spain / US, remote-friendly. 5+ years on Xenora Rush, 6 months full-time dev, plus freelance.",
+    "whatDrivesMe": "What drives me:",
+    "drive": {
+      "item1": "Innovation",
+      "item2": "Problem-Solving",
+      "item3": "Teamwork"
+    }
+  },
+  "contact": {
+    "cta": "Let's build something great together.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}
