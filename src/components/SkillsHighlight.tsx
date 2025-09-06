@@ -4,85 +4,155 @@ import { useTranslations } from 'next-intl'
 
 interface Skill {
   name: string
-  level: number // 1-5
+  level: number // 1-4: 1=Learning, 2=Good Understanding (1+ years), 3=Professional (3+ years), 4=Expert (5+ years)
   category: 'backend' | 'frontend' | 'tools' | 'soft'
 }
 
 const skills: Skill[] = [
-  // Backend
-  { name: 'Node.js', level: 5, category: 'backend' },
-  { name: 'TypeScript', level: 5, category: 'backend' },
-  { name: 'PostgreSQL', level: 4, category: 'backend' },
-  { name: 'Redis', level: 4, category: 'backend' },
+  // Backend (ordered by proficiency: 4→3→2→1)
+  { name: 'C#', level: 4, category: 'backend' },
+  { name: 'Node.js', level: 3, category: 'backend' },
+  { name: 'TypeScript/JavaScript', level: 3, category: 'backend' },
+  { name: 'Python', level: 3, category: 'backend' },
+  { name: 'Java', level: 3, category: 'backend' },
+  { name: 'PostgreSQL', level: 3, category: 'backend' },
+  { name: 'SQL', level: 3, category: 'backend' },
+  { name: 'Express', level: 3, category: 'backend' },
   { name: 'AWS', level: 3, category: 'backend' },
-  
-  // Frontend
-  { name: 'React', level: 5, category: 'frontend' },
-  { name: 'Next.js', level: 5, category: 'frontend' },
-  { name: 'Tailwind CSS', level: 4, category: 'frontend' },
-  { name: 'Vue.js', level: 3, category: 'frontend' },
-  
-  // Tools
-  { name: 'Git', level: 5, category: 'tools' },
-  { name: 'Docker', level: 4, category: 'tools' },
-  { name: 'Vercel', level: 4, category: 'tools' },
-  { name: 'Figma', level: 3, category: 'tools' },
-  
-  // Soft Skills
-  { name: 'Problem Solving', level: 5, category: 'soft' },
-  { name: 'Team Leadership', level: 4, category: 'soft' },
-  { name: 'Communication', level: 4, category: 'soft' },
-  { name: 'Mentoring', level: 4, category: 'soft' },
+  { name: 'MongoDB', level: 2, category: 'backend' },
+
+  // Frontend (ordered by proficiency: 4→3→2→1)
+  { name: 'React', level: 3, category: 'frontend' },
+  { name: 'Next.js', level: 3, category: 'frontend' },
+  { name: 'HTML/CSS', level: 3, category: 'frontend' },
+  { name: 'Tailwind CSS', level: 3, category: 'frontend' },
+  { name: 'PostHog', level: 2, category: 'frontend' },
+  { name: 'Angular', level: 1, category: 'frontend' },
+  { name: 'Vite', level: 1, category: 'frontend' },
+
+  // Tools (ordered by proficiency: 4→3→2→1)
+  { name: 'Git', level: 4, category: 'tools' },
+  { name: 'Unity', level: 4, category: 'tools' },
+  { name: 'CI/CD', level: 3, category: 'tools' },
+  { name: 'Docker', level: 2, category: 'tools' },
+  { name: 'Figma', level: 2, category: 'tools' },
+  { name: 'Vercel', level: 2, category: 'tools' },
+  { name: 'Jenkins', level: 1, category: 'tools' },
+  { name: 'C++', level: 1, category: 'tools' },
+  { name: 'Prisma', level: 1, category: 'tools' },
+
+  // Soft Skills (ordered by proficiency: 4→3→2→1)
+  { name: 'Problem Solving', level: 4, category: 'soft' },
+  { name: 'Fast Learning', level: 4, category: 'soft' },
+  { name: 'Adaptability', level: 4, category: 'soft' },
+  { name: 'Team Collaboration', level: 4, category: 'soft' },
+  { name: 'Team Leadership', level: 3, category: 'soft' },
+  { name: 'Teaching/Mentoring', level: 3, category: 'soft' },
 ]
 
 export default function SkillsHighlight() {
   const t = useTranslations('hero.skills')
-  
+
   const categories = [
-    { key: 'backend', skills: skills.filter(s => s.category === 'backend') },
-    { key: 'frontend', skills: skills.filter(s => s.category === 'frontend') },
-    { key: 'tools', skills: skills.filter(s => s.category === 'tools') },
-    { key: 'soft', skills: skills.filter(s => s.category === 'soft') },
+    { key: 'backend', icon: '🛠️', skills: skills.filter(s => s.category === 'backend') },
+    { key: 'frontend', icon: '🎨', skills: skills.filter(s => s.category === 'frontend') },
+    { key: 'tools', icon: '💻', skills: skills.filter(s => s.category === 'tools') },
+    { key: 'soft', icon: '🏆', skills: skills.filter(s => s.category === 'soft') },
   ]
 
   const renderSkillDots = (level: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <div
-        key={i}
-        className={`w-2 h-2 rounded-full transition-all duration-300 ${
-          i < level 
-            ? 'bg-accent' 
-            : 'bg-muted'
-        }`}
-      />
-    ))
+    return Array.from({ length: 4 }, (_, i) => {
+      let dotColor = 'bg-muted-foreground/20' // Default for unfilled dots
+
+      if (i < level) {
+        // Dynamic color based on skill level
+        switch (level) {
+          case 4: // Expert - Brightest blue
+            dotColor = 'bg-gradient-to-r from-blue-500 to-blue-800'
+            break
+          case 3: // Professional - Medium-bright blue
+            dotColor = 'bg-gradient-to-r from-blue-400 to-blue-500'
+            break
+          case 2: // Intermediate - Medium blue
+            dotColor = 'bg-gradient-to-r from-blue-300 to-blue-400'
+            break
+          case 1: // Learning - Darker blue
+            dotColor = 'bg-gradient-to-r from-blue-200 to-blue-300'
+            break
+        }
+      }
+
+      return (
+        <div
+          key={i}
+          className={`w-3 h-3 rounded-full transition-all duration-300 ${dotColor}`}
+        />
+      )
+    })
   }
 
   return (
-    <div className="space-y-6 animate-fade-in-right">
-      <h3 className="text-xl font-semibold text-foreground">{t('title')}</h3>
-      
-      {categories.map((category, index) => (
-        <div key={category.key} className="space-y-3" style={{ animationDelay: `${index * 0.1}s` }}>
-          <h4 className="text-sm font-medium text-muted-foreground uppercase tracking-wide">
-            {t(category.key as any)}
-          </h4>
-          <div className="grid grid-cols-2 gap-3">
-            {category.skills.map((skill, skillIndex) => (
-              <div 
-                key={skill.name} 
-                className="flex items-center justify-between p-2 rounded-lg bg-card border border-border hover:border-accent/50 transition-all duration-200"
-                style={{ animationDelay: `${(index * 0.1) + (skillIndex * 0.05)}s` }}
-              >
-                <span className="text-sm font-medium text-foreground">{skill.name}</span>
-                <div className="flex gap-1">
-                  {renderSkillDots(skill.level)}
-                </div>
-              </div>
-            ))}
+    <div className="w-full animate-fade-in-right">
+      <div className="mb-6">
+        {/* Legend */}
+        <div className="flex flex-wrap items-center justify-center gap-4 p-3 rounded-lg bg-card border border-border text-sm mb-4">
+          <span className="font-medium text-muted-foreground">Proficiency:</span>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-200 to-blue-300"></div>
+            <span className="text-muted-foreground">Learning</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="flex gap-1">
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-300 to-blue-400"></div>
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-300 to-blue-400"></div>
+            </div>
+            <span className="text-muted-foreground">Good Understanding (1+ years)</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="flex gap-1">
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500"></div>
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500"></div>
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500"></div>
+            </div>
+            <span className="text-muted-foreground">Professional (3+ years)</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="flex gap-1">
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
+              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
+            </div>
+            <span className="text-muted-foreground">Expert (5+ years)</span>
           </div>
         </div>
-      ))}
+      </div>
+
+      {/* Skills Categories in Columns */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {categories.map((category, index) => (
+          <div key={category.key} className="space-y-4" style={{ animationDelay: `${index * 0.1}s` }}>
+            <h4 className="text-lg font-semibold text-foreground text-center capitalize border-b border-border pb-2 flex items-center justify-center gap-2">
+              <span className="text-2xl">{category.icon}</span>
+              {t(category.key as 'backend' | 'frontend' | 'tools' | 'soft')}
+            </h4>
+            <div className="space-y-3">
+              {category.skills.map((skill, skillIndex) => (
+                <div
+                  key={skill.name}
+                  className="flex items-center justify-between p-3 rounded-lg bg-card border border-border hover:border-accent/50 transition-all duration-200"
+                  style={{ animationDelay: `${(index * 0.1) + (skillIndex * 0.05)}s` }}
+                >
+                  <span className="text-sm font-medium text-foreground">{skill.name}</span>
+                  <div className="flex gap-1">
+                    {renderSkillDots(skill.level)}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

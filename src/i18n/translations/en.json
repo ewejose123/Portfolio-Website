@@ -11,15 +11,24 @@
     "title": "Full Stack Developer & Game Creator",
     "age": "27 years old",
     "location": "Spain / US",
-    "tagline": "Building seamless web experiences and competitive multiplayer games.",
+    "tagline": "Building seamless web apps and competitive multiplayer games.",
     "ctaProjects": "View Projects",
     "ctaContact": "Contact",
+    "languages": {
+      "spanish": "Spanish (Native)",
+      "english": "English (Professional)"
+    },
+    "skillsPreview": "Skills",
     "skills": {
-      "title": "Core Skills",
+      "title": "Core Skills Highlights",
       "backend": "Backend",
       "frontend": "Frontend", 
       "tools": "Tools",
       "soft": "Soft Skills"
+    },
+    "featuredProject": {
+      "title": "Featured Project",
+      "viewProject": "See more projects"
     }
   },
   "projects": {
@@ -27,21 +36,25 @@
     "tagline": "Visual-first proof of abilities",
     "items": {
       "xenora-rush": {
-        "title": "Xenora Rush",
-        "summary": "Competitive multiplayer game with real-time matchmaking and physics synchronization.",
+        "title": "Xenova Rush",
+        "summary": "Competitive multiplayer game with fast-paced mobility and combat featuring 120Hz authoritative physics completely synchronized with local prediction and other advanced networking techniques.",
         "technologies": ["Unity", "C#", ".NET", "PostgreSQL", "Redis", "AWS", "Next.js", "PostHog"]
       },
-      "backend-demo": {
-        "title": "Backend Demo",
-        "summary": "High-performance API with caching, rate limiting, and real-time monitoring.",
-        "technologies": ["Node.js", "TypeScript", "PostgreSQL", "Redis", "Docker", "Vercel"]
+      "taskmanager-pro": {
+        "title": "TaskManager Pro",
+        "summary": "Full-stack web application with team collaboration, project management, and real-time task tracking. Built with modern architecture and best practices.",
+        "technologies": ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Vite", "Tailwind CSS"]
       },
       "portfolio-site": {
         "title": "Portfolio Website",
-        "summary": "Modern portfolio built with Next.js, featuring i18n and responsive design.",
+        "summary": "Modern responsive portfolio showcasing professional work. Built with Next.js 15 App Router, featuring internationalization, dark/light themes, and smooth animations.",
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "next-intl", "Vercel"]
       }
     }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "tagline": "Technologies and tools I work with"
   },
   "articles": {
     "title": "Problem-Solving",
@@ -71,16 +84,18 @@
   },
   "about": {
     "title": "About Me",
-    "bio": "27, Spain / US, remote-friendly. 5+ years on Xenora Rush, 6 months full-time dev, plus freelance.",
-    "whatDrivesMe": "What drives me:",
-    "drive": {
-      "item1": "Innovation",
-      "item2": "Problem-Solving",
-      "item3": "Teamwork"
+    "bio": "I'm currently living in Spain and looking for remote work opportunities. I'm available and have a very flexible schedule, ready to adapt to different time zones and project needs.",
+    "resumeText": "Download Resume",
+    "personalLife": {
+      "title": "When I'm not coding",
+      "intro": "I believe in maintaining a healthy work-life balance:",
+      "item1": "📺 Watching series",
+      "item2": "⚽ Playing sports and staying active",
+      "item3": "🎮 Creating video games and exploring new game mechanics"
     }
   },
   "contact": {
-    "cta": "Let's build something great together.",
+    "cta": "Get in conctact!",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "email": "Email"
