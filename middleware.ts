@@ -7,7 +7,5 @@ export default createMiddleware({
 });
 
 export const config = {
-  matcher: ["/((?!_next|.*\..*).*)"], // match all pages except static assets
+  matcher: ["/((?!_next|.*\\..*).*)"], // match all pages except static assets
 };
-
-

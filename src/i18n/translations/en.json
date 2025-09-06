@@ -24,7 +24,14 @@
       "backend": "Backend",
       "frontend": "Frontend", 
       "tools": "Tools",
-      "soft": "Soft Skills"
+      "soft": "Soft Skills",
+      "proficiency": {
+        "label": "Proficiency:",
+        "learning": "Learning",
+        "intermediate": "Good Understanding (1+ years)",
+        "professional": "Professional (3+ years)",
+        "expert": "Expert (5+ years)"
+      }
     },
     "featuredProject": {
       "title": "Featured Project",
@@ -38,12 +45,17 @@
       "xenora-rush": {
         "title": "Xenova Rush",
         "summary": "Competitive multiplayer game with fast-paced mobility and combat featuring 120Hz authoritative physics completely synchronized with local prediction and other advanced networking techniques.",
-        "technologies": ["Unity", "C#", ".NET", "PostgreSQL", "Redis", "AWS", "Next.js", "PostHog"]
+        "technologies": ["Unity", "C#", ".NET", "PostgreSQL", "Redis", "AWS", "Next.js", "PostHog", "Blender", "Substance Painter", "Photoshop", "Visual Studio"]
       },
       "taskmanager-pro": {
         "title": "TaskManager Pro",
         "summary": "Full-stack web application with team collaboration, project management, and real-time task tracking. Built with modern architecture and best practices.",
         "technologies": ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Vite", "Tailwind CSS"]
+      },
+      "brutoria": {
+        "title": "Brutoria",
+        "summary": "Mobile autobattler game featuring strategic gameplay and automated combat mechanics. Served as co-creator and senior developer, providing technical guidance and code architecture mentorship to the development team.",
+        "technologies": ["Unity", "C#", "Mobile", "Game Design", "Mentoring"]
       },
       "portfolio-site": {
         "title": "Portfolio Website",
@@ -58,27 +70,26 @@
   },
   "articles": {
     "title": "Problem-Solving",
-    "tagline": "Short articles showing thought process",
+    "tagline": "Technical challenges and optimization solutions",
     "cta": "View articles",
     "readMore": "Read more",
+    "workInProgress": {
+      "title": "Work in Progress",
+      "message": "This article is currently being written. Feel free to ask me personally about this topic if you want to know more details!",
+      "close": "Close"
+    },
     "items": {
-      "api-performance": {
-        "title": "Optimizing API performance: from 2s to 200ms",
-        "summary": "Profiling, caching, and simplifying I/O to cut latency by 90%.",
-        "date": "2024-12-01",
-        "tags": ["backend", "performance", "profiling"]
+      "delta-compression": {
+        "title": "10x Performance Improvement with Custom Delta Compression",
+        "summary": "Optimized server-client data transmission by implementing custom Delta compression algorithms, achieving significant performance improvements for real-time synchronization in multiplayer applications.",
+        "date": "2024-12-10",
+        "tags": ["optimization", "networking", "algorithms"]
       },
-      "game-matchmaking": {
-        "title": "How I handled matchmaking in a multiplayer game using AWS + OpenTelemetry",
-        "summary": "Building scalable matchmaking with real-time monitoring and auto-scaling.",
-        "date": "2024-11-15",
-        "tags": ["gamedev", "aws", "scalability"]
-      },
-      "debugging-physics": {
-        "title": "Debugging a complex game physics issue under latency",
-        "summary": "Troubleshooting client-server physics synchronization in real-time multiplayer.",
-        "date": "2024-10-20",
-        "tags": ["gamedev", "physics", "networking"]
+      "local-prediction": {
+        "title": "Local Prediction & Server Reconciliation for Instant Feedback",
+        "summary": "Implemented client-side prediction with server reconciliation to provide instant user feedback while maintaining server authority and preventing cheating in multiplayer games.",
+        "date": "2024-12-05",
+        "tags": ["gamedev", "networking", "prediction"]
       }
     }
   },

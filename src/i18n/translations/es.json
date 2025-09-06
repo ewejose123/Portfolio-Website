@@ -24,7 +24,14 @@
       "backend": "Backend",
       "frontend": "Frontend",
       "tools": "Herramientas", 
-      "soft": "Habilidades Blandas"
+      "soft": "Habilidades Blandas",
+      "proficiency": {
+        "label": "Competencia:",
+        "learning": "Aprendiendo",
+        "intermediate": "Buen Entendimiento (1+ años)",
+        "professional": "Profesional (3+ años)",
+        "expert": "Experto (5+ años)"
+      }
     },
     "featuredProject": {
       "title": "Proyecto Destacado",
@@ -38,12 +45,17 @@
       "xenora-rush": {
         "title": "Xenova Rush",
         "summary": "Juego multijugador competitivo con movilidad y combate de ritmo rápido con físicas autoritativas de 120Hz completamente sincronizadas con predicción local y otras técnicas avanzadas de red.",
-        "technologies": ["Unity", "C#", ".NET", "PostgreSQL", "Redis", "AWS", "Next.js", "PostHog"]
+        "technologies": ["Unity", "C#", ".NET", "PostgreSQL", "Redis", "AWS", "Next.js", "PostHog", "Blender", "Substance Painter", "Photoshop", "Visual Studio"]
       },
       "taskmanager-pro": {
         "title": "TaskManager Pro",
         "summary": "Aplicación web full-stack con colaboración en equipo, gestión de proyectos y seguimiento de tareas en tiempo real. Construida con arquitectura moderna y mejores prácticas.",
         "technologies": ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma", "Vite", "Tailwind CSS"]
+      },
+      "brutoria": {
+        "title": "Brutoria",
+        "summary": "Juego móvil autobattler con mecánicas de juego estratégicas y combate automatizado. Trabajé como co-creador y desarrollador senior, brindando orientación técnica y mentoría en arquitectura de código al equipo de desarrollo.",
+        "technologies": ["Unity", "C#", "Mobile", "Diseño de Juegos", "Mentoría"]
       },
       "portfolio-site": {
         "title": "Sitio Web Portfolio",
@@ -58,27 +70,26 @@
   },
   "articles": {
     "title": "Resolución de Problemas",
-    "tagline": "Artículos cortos que muestran mi proceso de pensamiento",
+    "tagline": "Desafíos técnicos y soluciones de optimización",
     "cta": "Ver artículos",
     "readMore": "Leer más",
+    "workInProgress": {
+      "title": "Trabajo en Progreso",
+      "message": "Este artículo está siendo escrito actualmente. ¡Siéntete libre de preguntarme personalmente sobre este tema si quieres saber más detalles!",
+      "close": "Cerrar"
+    },
     "items": {
-      "api-performance": {
-        "title": "Optimizando rendimiento de API: de 2s a 200ms",
-        "summary": "Perfilado, caché y simplificación de I/O para reducir latencia en un 90%.",
-        "date": "2024-12-01",
-        "tags": ["backend", "rendimiento", "perfilado"]
+      "delta-compression": {
+        "title": "Mejora de Rendimiento 10x con Compresión Delta Personalizada",
+        "summary": "Optimicé la transmisión de datos servidor-cliente implementando algoritmos de compresión Delta personalizados, logrando mejoras significativas de rendimiento para la sincronización en tiempo real en aplicaciones multijugador.",
+        "date": "2024-12-10",
+        "tags": ["optimización", "redes", "algoritmos"]
       },
-      "game-matchmaking": {
-        "title": "Cómo manejé el matchmaking en un juego multijugador usando AWS + OpenTelemetry",
-        "summary": "Construyendo matchmaking escalable con monitoreo en tiempo real y auto-escalado.",
-        "date": "2024-11-15",
-        "tags": ["gamedev", "aws", "escalabilidad"]
-      },
-      "debugging-physics": {
-        "title": "Depurando un problema complejo de física de juego bajo latencia",
-        "summary": "Solucionando problemas de sincronización de física cliente-servidor en multijugador en tiempo real.",
-        "date": "2024-10-20",
-        "tags": ["gamedev", "física", "redes"]
+      "local-prediction": {
+        "title": "Predicción Local y Reconciliación del Servidor para Retroalimentación Instantánea",
+        "summary": "Implementé predicción del lado del cliente con reconciliación del servidor para proporcionar retroalimentación instantánea al usuario mientras se mantiene la autoridad del servidor y se previene el hacer trampa en juegos multijugador.",
+        "date": "2024-12-05",
+        "tags": ["gamedev", "redes", "predicción"]
       }
     }
   },

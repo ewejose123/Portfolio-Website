@@ -50,7 +50,7 @@ const skills: Skill[] = [
   { name: 'Teaching/Mentoring', level: 3, category: 'soft' },
 ]
 
-export default function SkillsHighlight() {
+export default function SkillsHighlight({ locale }: { locale: string }) {
   const t = useTranslations('hero.skills')
 
   const categories = [
@@ -96,17 +96,17 @@ export default function SkillsHighlight() {
       <div className="mb-6">
         {/* Legend */}
         <div className="flex flex-wrap items-center justify-center gap-4 p-3 rounded-lg bg-card border border-border text-sm mb-4">
-          <span className="font-medium text-muted-foreground">Proficiency:</span>
+          <span className="font-medium text-muted-foreground">{t('proficiency.label')}</span>
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-200 to-blue-300"></div>
-            <span className="text-muted-foreground">Learning</span>
+            <span className="text-muted-foreground">{t('proficiency.learning')}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex gap-1">
               <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-300 to-blue-400"></div>
               <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-300 to-blue-400"></div>
             </div>
-            <span className="text-muted-foreground">Good Understanding (1+ years)</span>
+            <span className="text-muted-foreground">{t('proficiency.intermediate')}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex gap-1">
@@ -114,7 +114,7 @@ export default function SkillsHighlight() {
               <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500"></div>
               <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500"></div>
             </div>
-            <span className="text-muted-foreground">Professional (3+ years)</span>
+            <span className="text-muted-foreground">{t('proficiency.professional')}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex gap-1">
@@ -123,7 +123,7 @@ export default function SkillsHighlight() {
               <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
               <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
             </div>
-            <span className="text-muted-foreground">Expert (5+ years)</span>
+            <span className="text-muted-foreground">{t('proficiency.expert')}</span>
           </div>
         </div>
       </div>

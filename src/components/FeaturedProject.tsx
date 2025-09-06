@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import TechnologyIcon from './TechnologyIcon'
 
-export default function FeaturedProject() {
+export default function FeaturedProject({ locale }: { locale: string }) {
     const t = useTranslations()
 
     return (

@@ -10,6 +10,10 @@ const technologyIcons: Record<string, { icon: string; color: string }> = {
   'Unity': { icon: '🎮', color: 'bg-orange-500/10 text-orange-500 border-orange-500/20' },
   'C#': { icon: '💎', color: 'bg-purple-500/10 text-purple-500 border-purple-500/20' },
   '.NET': { icon: '🔷', color: 'bg-blue-500/10 text-blue-500 border-blue-500/20' },
+  'Blender': { icon: '🎭', color: 'bg-orange-600/10 text-orange-600 border-orange-600/20' },
+  'Substance Painter': { icon: '🎨', color: 'bg-yellow-600/10 text-yellow-600 border-yellow-600/20' },
+  'Photoshop': { icon: '🖼️', color: 'bg-blue-600/10 text-blue-600 border-blue-600/20' },
+  'Visual Studio': { icon: '💻', color: 'bg-purple-600/10 text-purple-600 border-purple-600/20' },
 
   // Backend
   'Node.js': { icon: '🟢', color: 'bg-green-500/10 text-green-500 border-green-500/20' },
