@@ -247,8 +247,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <h2 className="text-4xl font-bold text-foreground mb-6">{t("about.title")}</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">{t("about.bio")}</p>
 
-            {/* Resume Download Button TODO: Add resume download button when ready*/}
-            {/* <div className="mb-8">
+            {/* Resume Download Button */}
+            <div className="mb-8">
               <a
                 href="/resume.pdf"
                 download
@@ -257,20 +257,20 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 <span>📎</span>
                 {t("about.resumeText")}
               </a>
-            </div> */}
+            </div>
 
             {/* Personal Interests */}
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-foreground">{t("about.personalLife.title")}</h3>
               <p className="text-muted-foreground text-lg mb-4">{t("about.personalLife.intro")}</p>
               <div className="space-y-3">
-                <div className="flex items-start gap-3 p-3 rounded-lg bg-card border border-border hover:border-accent/50 transition-all duration-200">
+                <div className="flex items-start gap-3 p-3 rounded-lg bg-card border border-border">
                   <span className="text-lg">{t("about.personalLife.item1")}</span>
                 </div>
-                <div className="flex items-start gap-3 p-3 rounded-lg bg-card border border-border hover:border-accent/50 transition-all duration-200">
+                <div className="flex items-start gap-3 p-3 rounded-lg bg-card border border-border">
                   <span className="text-lg">{t("about.personalLife.item2")}</span>
                 </div>
-                <div className="flex items-start gap-3 p-3 rounded-lg bg-card border border-border hover:border-accent/50 transition-all duration-200">
+                <div className="flex items-start gap-3 p-3 rounded-lg bg-card border border-border">
                   <span className="text-lg">{t("about.personalLife.item3")}</span>
                 </div>
               </div>
