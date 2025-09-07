@@ -247,8 +247,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <h2 className="text-4xl font-bold text-foreground mb-6">{t("about.title")}</h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">{t("about.bio")}</p>
 
-            {/* Resume Download Button */}
-            <div className="mb-8">
+            {/* Resume Download Button TODO: Add resume download button when ready*/}
+            {/* <div className="mb-8">
               <a
                 href="/resume.pdf"
                 download
@@ -257,7 +257,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 <span>📎</span>
                 {t("about.resumeText")}
               </a>
-            </div>
+            </div> */}
 
             {/* Personal Interests */}
             <div className="space-y-4">

@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl"
 import { notFound } from "next/navigation"
 import { ReactNode } from "react"
 import Navbar from "@/components/Navbar"
+import PostHogPageView from "../../components/PostHogPageView"
 import "../globals.css"
 
 export const metadata: Metadata = {}
@@ -18,6 +19,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
+      <PostHogPageView />
       <Navbar />
       {children}
     </NextIntlClientProvider>

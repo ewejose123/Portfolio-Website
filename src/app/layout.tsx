@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { headers } from "next/headers";
+import { CSPostHogProvider } from "@/components/PostHogProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,10 +36,12 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          {/* Navbar is rendered inside the locale layout to get i18n context */}
-          <div className="pt-16">{children}</div>
-        </ThemeProvider>
+        <CSPostHogProvider>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+            {/* Navbar is rendered inside the locale layout to get i18n context */}
+            <div className="pt-16">{children}</div>
+          </ThemeProvider>
+        </CSPostHogProvider>
       </body>
     </html>
   );
