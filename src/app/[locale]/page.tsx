@@ -128,84 +128,112 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </AnimatedSection>
           <div className="grid md:grid-cols-2 gap-8">
             <AnimatedSection animation="fadeInUp" delay={100}>
-              <div className="p-6 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full">
-                <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
-                  <Image
-                    src="/projects/xenora-rush.jpg"
-                    alt="Xenora Rush - Competitive Multiplayer Game"
-                    fill
-                    className="object-cover transition-transform duration-300 hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
+              <a
+                href="https://xenovarush.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="p-6 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full flex flex-col">
+                  <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
+                    <Image
+                      src="/projects/xenora-rush.jpg"
+                      alt="Xenora Rush - Competitive Multiplayer Game"
+                      fill
+                      className="object-cover transition-transform duration-300 hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.xenora-rush.title")}</h3>
+                  <p className="text-muted-foreground mb-4 flex-1">{t("projects.items.xenora-rush.summary")}</p>
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {(t.raw("projects.items.xenora-rush.technologies") as string[]).map((tech: string, index: number) => (
+                      <TechnologyIcon key={index} technology={tech} />
+                    ))}
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.xenora-rush.title")}</h3>
-                <p className="text-muted-foreground mb-4">{t("projects.items.xenora-rush.summary")}</p>
-                <div className="flex flex-wrap gap-2">
-                  {(t.raw("projects.items.xenora-rush.technologies") as string[]).map((tech: string, index: number) => (
-                    <TechnologyIcon key={index} technology={tech} />
-                  ))}
-                </div>
-              </div>
+              </a>
             </AnimatedSection>
             <AnimatedSection animation="fadeInUp" delay={200}>
-              <div className="p-6 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full">
-                <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
-                  <Image
-                    src="/projects/taskmanager-pro.jpg"
-                    alt="TaskManager Pro - Full-stack Task Management"
-                    fill
-                    className="object-cover transition-transform duration-300 hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
+              <a
+                href="https://taskmanagerpro-jade.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="p-6 pb-8 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full flex flex-col">
+                  <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
+                    <Image
+                      src="/projects/taskmanager-pro.jpg"
+                      alt="TaskManager Pro - Full-stack Task Management"
+                      fill
+                      className="object-cover transition-transform duration-300 hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.taskmanager-pro.title")}</h3>
+                  <p className="text-muted-foreground mb-4 flex-1">{t("projects.items.taskmanager-pro.summary")}</p>
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {(t.raw("projects.items.taskmanager-pro.technologies") as string[]).map((tech: string, index: number) => (
+                      <TechnologyIcon key={index} technology={tech} />
+                    ))}
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.taskmanager-pro.title")}</h3>
-                <p className="text-muted-foreground mb-4">{t("projects.items.taskmanager-pro.summary")}</p>
-                <div className="flex flex-wrap gap-2">
-                  {(t.raw("projects.items.taskmanager-pro.technologies") as string[]).map((tech: string, index: number) => (
-                    <TechnologyIcon key={index} technology={tech} />
-                  ))}
-                </div>
-              </div>
+              </a>
             </AnimatedSection>
             <AnimatedSection animation="fadeInUp" delay={300}>
-              <div className="p-6 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full">
-                <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
-                  <Image
-                    src="/projects/brutoria.jpg"
-                    alt="Brutoria - Mobile Autobattler Game"
-                    fill
-                    className="object-cover transition-transform duration-300 hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
+              <a
+                href="https://brutoria.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="p-6 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full flex flex-col">
+                  <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
+                    <Image
+                      src="/projects/brutoria.jpg"
+                      alt="Brutoria - Mobile Autobattler Game"
+                      fill
+                      className="object-cover transition-transform duration-300 hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.brutoria.title")}</h3>
+                  <p className="text-muted-foreground mb-4 flex-1">{t("projects.items.brutoria.summary")}</p>
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {(t.raw("projects.items.brutoria.technologies") as string[]).map((tech: string, index: number) => (
+                      <TechnologyIcon key={index} technology={tech} />
+                    ))}
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.brutoria.title")}</h3>
-                <p className="text-muted-foreground mb-4">{t("projects.items.brutoria.summary")}</p>
-                <div className="flex flex-wrap gap-2">
-                  {(t.raw("projects.items.brutoria.technologies") as string[]).map((tech: string, index: number) => (
-                    <TechnologyIcon key={index} technology={tech} />
-                  ))}
-                </div>
-              </div>
+              </a>
             </AnimatedSection>
             <AnimatedSection animation="fadeInUp" delay={400}>
-              <div className="p-6 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full">
-                <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
-                  <Image
-                    src="/projects/portfolio-website.jpg"
-                    alt="Portfolio Website - Modern Next.js Portfolio"
-                    fill
-                    className="object-cover transition-transform duration-300 hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
+              <a
+                href="https://github.com/ewejose123/Portfolio-Website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="p-6 pb-6 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full flex flex-col">
+                  <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
+                    <Image
+                      src="/projects/portfolio-website.jpg"
+                      alt="Portfolio Website - Modern Next.js Portfolio"
+                      fill
+                      className="object-cover transition-transform duration-300 hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.portfolio-site.title")}</h3>
+                  <p className="text-muted-foreground mb-4 flex-1">{t("projects.items.portfolio-site.summary")}</p>
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {(t.raw("projects.items.portfolio-site.technologies") as string[]).map((tech: string, index: number) => (
+                      <TechnologyIcon key={index} technology={tech} />
+                    ))}
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.portfolio-site.title")}</h3>
-                <p className="text-muted-foreground mb-4">{t("projects.items.portfolio-site.summary")}</p>
-                <div className="flex flex-wrap gap-2">
-                  {(t.raw("projects.items.portfolio-site.technologies") as string[]).map((tech: string, index: number) => (
-                    <TechnologyIcon key={index} technology={tech} />
-                  ))}
-                </div>
-              </div>
+              </a>
             </AnimatedSection>
           </div>
         </div>
@@ -274,21 +302,25 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <h2 className="text-4xl font-bold text-foreground mb-6">{t("contact.cta")}</h2>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a
-                href="#"
+                href="https://github.com/ewejose123"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={t("contact.github")}
                 className="px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold text-foreground transform hover:scale-105"
               >
                 {t("contact.github")}
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ewejose/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={t("contact.linkedin")}
                 className="px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold text-foreground transform hover:scale-105"
               >
                 {t("contact.linkedin")}
               </a>
               <a
-                href="mailto:email@example.com"
+                href="mailto:ewejose@gmail.com"
                 className="px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 {t("contact.email")}

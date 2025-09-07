@@ -23,7 +23,7 @@ I'm a passionate Full Stack Developer with expertise in creating modern web appl
 ## 🏗️ Featured Projects
 
 ### 🎯 Xenova Rush
-**Competitive Multiplayer Game**
+**Competitive Multiplayer Game** - [Visit Website](https://xenovarush.com)
 - Fast-paced mobility and combat with 120Hz authoritative physics
 - Local prediction and server reconciliation for instant feedback
 - Custom Delta compression for optimized real-time synchronization
@@ -36,7 +36,7 @@ I'm a passionate Full Stack Developer with expertise in creating modern web appl
 - **Tech Stack**: React, TypeScript, Node.js, Express, PostgreSQL, Prisma
 
 ### ⚔️ Brutoria
-**Mobile Autobattler Game**
+**Mobile Autobattler Game** - [Visit Website](https://brutoria.com)
 - Strategic gameplay with automated combat mechanics
 - Role: Co-creator and Senior Developer providing technical guidance
 - **Tech Stack**: Unity, C#, Mobile Development, Game Design
@@ -123,6 +123,11 @@ I'm a passionate Full Stack Developer with expertise in creating modern web appl
 - 💼 Available for remote work
 - 🌍 Flexible schedule across time zones
 - 🤝 Open to collaboration and consulting
+
+**Get in touch:**
+- 📧 [Email](mailto:ewejose@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/ewejose/)
+- 💻 [GitHub](https://github.com/ewejose123)
 
 ---
 
