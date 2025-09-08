@@ -49,10 +49,10 @@ export default function TechnologyIcon({ technology, className = '' }: Technolog
 
   return (
     <span
-      className={`inline-flex items-center gap-2 px-3 py-1.5 text-sm rounded-full border ${tech.color} ${className}`}
+      className={`inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm rounded-full border ${tech.color} ${className}`}
       title={technology}
     >
-      <span className="text-base">{tech.icon}</span>
+      <span className="text-sm sm:text-base">{tech.icon}</span>
       <span className="font-medium">{technology}</span>
     </span>
   )

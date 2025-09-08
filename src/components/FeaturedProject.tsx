@@ -22,7 +22,7 @@ export default function FeaturedProject({ locale }: { locale: string }) {
                         rel="noopener noreferrer"
                         className="block"
                     >
-                        <div className="w-full h-80 rounded-xl overflow-hidden relative cursor-pointer">
+                        <div className="w-full h-48 sm:h-64 lg:h-80 rounded-xl overflow-hidden relative cursor-pointer">
                             {/* Fallback Image */}
                             <Image
                                 src="/projects/xenora-rush.jpg"
@@ -50,8 +50,8 @@ export default function FeaturedProject({ locale }: { locale: string }) {
                     </a>
 
                     {/* Project Info Below */}
-                    <div className="flex gap-4 items-start">
-                        {/* Title and Description on Left - Clickable */}
+                    <div className="flex flex-col lg:flex-row gap-4 lg:items-start">
+                        {/* Title and Description - Clickable */}
                         <a
                             href="https://xenovarush.com"
                             target="_blank"
@@ -59,13 +59,13 @@ export default function FeaturedProject({ locale }: { locale: string }) {
                             className="flex-1 space-y-3 cursor-pointer group"
                         >
                             <h4 className="text-lg font-semibold text-foreground group-hover:text-accent transition-colors">{t("projects.items.xenora-rush.title")}</h4>
-                            <p className="text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">{t("projects.items.xenora-rush.summary")}</p>
+                            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">{t("projects.items.xenora-rush.summary")}</p>
                         </a>
 
-                        {/* Tags on the Right - Not clickable */}
-                        <div className="flex flex-wrap gap-1 flex-shrink-0 max-w-xs">
+                        {/* Tags - Not clickable */}
+                        <div className="flex flex-wrap gap-1 flex-shrink-0 lg:max-w-xs">
                             {(t.raw("projects.items.xenora-rush.technologies") as string[]).map((tech: string, index: number) => (
-                                <div key={index} className="scale-90">
+                                <div key={index} className="scale-75 sm:scale-90 lg:scale-90">
                                     <TechnologyIcon technology={tech} />
                                 </div>
                             ))}

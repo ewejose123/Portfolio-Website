@@ -12,14 +12,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const t = await getTranslations({ locale })
   return (
     <main>
-      <section id="hero" className="px-24 py-20">
-        <div className="w-full grid lg:grid-cols-2 gap-16 items-center">
+      <section id="hero" className="px-6 sm:px-12 lg:px-24 py-12 sm:py-16 lg:py-20">
+        <div className="w-full grid xl:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-start">
           {/* Left side - Profile */}
-          <AnimatedSection animation="fadeInLeft" className="flex justify-center lg:justify-start">
-            <div className="w-full max-w-3xl">
-              <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
+          <AnimatedSection animation="fadeInLeft" className="flex justify-center xl:justify-start">
+            <div className="w-full max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
+              <div className="flex flex-col xl:flex-row gap-4 lg:gap-6 xl:gap-8 items-center xl:items-start">
                 {/* Profile Image */}
-                <div className="relative w-100 h-140 rounded-2xl overflow-hidden border border-border shadow-2xl flex-shrink-0">
+                <div className="relative w-64 h-80 lg:w-72 lg:h-96 xl:w-80 xl:h-[26rem] 2xl:w-100 2xl:h-140 rounded-2xl overflow-hidden border border-border shadow-2xl flex-shrink-0">
                   <Image
                     src="/profile-main.jpg"
                     alt="José Sáez - Profile Photo"
@@ -30,11 +30,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 </div>
 
                 {/* Personal Info */}
-                <div className="text-center lg:text-left space-y-4 flex-1">
-                  <h1 className="text-4xl lg:text-5xl font-bold text-foreground">
+                <div className="text-center xl:text-left space-y-3 lg:space-y-4 flex-1 min-w-0">
+                  <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground">
                     {t("hero.name")}
                   </h1>
-                  <h2 className="text-xl lg:text-2xl text-primary font-semibold">
+                  <h2 className="text-lg lg:text-xl xl:text-2xl text-primary font-semibold">
                     {t("hero.title")}
                   </h2>
                   <div className="flex flex-col sm:flex-row gap-4 text-muted-foreground">
@@ -67,7 +67,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   </div>
 
                   {/* CTA Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
                     <a
                       href="#projects"
                       className="px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -87,8 +87,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </AnimatedSection>
 
           {/* Right side - Featured Project */}
-          <AnimatedSection animation="fadeInRight" className="flex justify-center lg:justify-end">
-            <FeaturedProject locale={locale} />
+          <AnimatedSection animation="fadeInRight" className="flex justify-center xl:justify-end">
+            <div className="w-full max-w-lg xl:max-w-xl">
+              <FeaturedProject locale={locale} />
+            </div>
           </AnimatedSection>
         </div>
       </section>
@@ -300,13 +302,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <div className="max-w-4xl mx-auto text-center">
           <AnimatedSection animation="fadeInUp">
             <h2 className="text-4xl font-bold text-foreground mb-6">{t("contact.cta")}</h2>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <div className="flex flex-row items-center justify-center gap-4 flex-wrap">
               <a
                 href="https://github.com/ewejose123"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t("contact.github")}
-                className="px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold text-foreground transform hover:scale-105"
+                className="px-4 sm:px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold text-foreground transform hover:scale-105 text-sm sm:text-base"
               >
                 {t("contact.github")}
               </a>
@@ -315,13 +317,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t("contact.linkedin")}
-                className="px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold text-foreground transform hover:scale-105"
+                className="px-4 sm:px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold text-foreground transform hover:scale-105 text-sm sm:text-base"
               >
                 {t("contact.linkedin")}
               </a>
               <a
                 href="mailto:ewejose@gmail.com"
-                className="px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="px-4 sm:px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base"
               >
                 {t("contact.email")}
               </a>
