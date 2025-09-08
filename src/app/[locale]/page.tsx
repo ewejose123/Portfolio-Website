@@ -12,101 +12,104 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const t = await getTranslations({ locale })
   return (
     <main>
-      <section id="hero" className="px-6 sm:px-12 lg:px-24 py-12 sm:py-16 lg:py-20">
-        <div className="w-full grid xl:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-start">
-          {/* Left side - Profile */}
-          <AnimatedSection animation="fadeInLeft" className="flex justify-center xl:justify-start">
-            <div className="w-full max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
-              <div className="flex flex-col xl:flex-row gap-4 lg:gap-6 xl:gap-8 items-center xl:items-start">
-                {/* Profile Image */}
-                <div className="relative w-64 h-80 lg:w-72 lg:h-96 xl:w-80 xl:h-[26rem] 2xl:w-100 2xl:h-140 rounded-2xl overflow-hidden border border-border shadow-2xl flex-shrink-0">
-                  <Image
-                    src="/profile-main.jpg"
-                    alt="José Sáez - Profile Photo"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
-
-                {/* Personal Info */}
-                <div className="text-center xl:text-left space-y-3 lg:space-y-4 flex-1 min-w-0">
-                  <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground">
-                    {t("hero.name")}
-                  </h1>
-                  <h2 className="text-lg lg:text-xl xl:text-2xl text-primary font-semibold">
-                    {t("hero.title")}
-                  </h2>
-                  <div className="flex flex-col sm:flex-row gap-4 text-muted-foreground">
-                    <span className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-secondary"></span>
-                      {t("hero.age")}
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-accent"></span>
-                      {t("hero.location")}
-                    </span>
+      <section id="hero" className="min-h-screen flex flex-col justify-between px-4 sm:px-8 lg:px-16 xl:px-20 2xl:px-24 pt-6 pb-16">
+        {/* Main Hero Content */}
+        <div className="flex-1 flex items-center py-2">
+          <div className="w-full max-w-8xl mx-auto grid xl:grid-cols-2 gap-24 lg:gap-20 xl:gap-28 2xl:gap-32 3xl:gap-40 items-start grid-gap">
+            {/* Left side - Profile */}
+            <AnimatedSection animation="fadeInLeft" className="flex justify-center xl:justify-end items-start" immediate={true}>
+              <div className="w-full max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl 3xl:max-w-3xl profile-container">
+                <div className="flex flex-col xl:flex-row gap-4 lg:gap-6 xl:gap-8 2xl:gap-10 3xl:gap-12 items-center xl:items-start">
+                  {/* Profile Image */}
+                  <div className="relative w-64 h-80 lg:w-72 lg:h-96 xl:w-80 xl:h-[26rem] 2xl:w-96 2xl:h-[32rem] 3xl:w-[28rem] 3xl:h-[36rem] rounded-2xl overflow-hidden border border-border shadow-2xl flex-shrink-0 profile-image">
+                    <Image
+                      src="/profile-main.jpg"
+                      alt="José Sáez - Profile Photo"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
                   </div>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    {t("hero.tagline")}
-                  </p>
 
-                  {/* Language Skills */}
-                  <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start">
-                    <div className="flex items-center gap-3">
-                      <div className="flex items-center gap-2">
-                        <span className="text-2xl">🇪🇸</span>
-                        <span className="text-sm font-medium text-muted-foreground">{t("hero.languages.spanish")}</span>
-                      </div>
-                      <div className="w-1 h-1 rounded-full bg-muted-foreground"></div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-2xl">🇺🇸</span>
-                        <span className="text-sm font-medium text-muted-foreground">{t("hero.languages.english")}</span>
+                  {/* Personal Info */}
+                  <div className="text-center xl:text-left space-y-2 lg:space-y-3 2xl:space-y-4 3xl:space-y-5 flex-1 min-w-0">
+                    <h1 className="text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl font-bold text-foreground hero-name">
+                      {t("hero.name")}
+                    </h1>
+                    <h2 className="text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-primary font-semibold hero-title">
+                      {t("hero.title")}
+                    </h2>
+                    <div className="flex flex-col sm:flex-row gap-4 text-muted-foreground">
+                      <span className="flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-secondary"></span>
+                        {t("hero.age")}
+                      </span>
+                      <span className="flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-accent"></span>
+                        {t("hero.location")}
+                      </span>
+                    </div>
+                    <p className="text-base xl:text-lg 2xl:text-xl 3xl:text-2xl text-muted-foreground leading-relaxed hero-tagline">
+                      {t("hero.tagline")}
+                    </p>
+
+                    {/* Language Skills */}
+                    <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start">
+                      <div className="flex items-center gap-3">
+                        <div className="flex items-center gap-2">
+                          <span className="text-2xl">🇪🇸</span>
+                          <span className="text-sm font-medium text-muted-foreground">{t("hero.languages.spanish")}</span>
+                        </div>
+                        <div className="w-1 h-1 rounded-full bg-muted-foreground"></div>
+                        <div className="flex items-center gap-2">
+                          <span className="text-2xl">🇺🇸</span>
+                          <span className="text-sm font-medium text-muted-foreground">{t("hero.languages.english")}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  {/* CTA Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
-                    <a
-                      href="#projects"
-                      className="px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                    >
-                      {t("hero.ctaProjects")}
-                    </a>
-                    <a
-                      href="#contact"
-                      className="px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold"
-                    >
-                      {t("hero.ctaContact")}
-                    </a>
+                    {/* CTA Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
+                      <a
+                        href="#projects"
+                        className="px-4 sm:px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl whitespace-nowrap text-sm sm:text-base"
+                      >
+                        {t("hero.ctaProjects")}
+                      </a>
+                      <a
+                        href="#contact"
+                        className="px-4 sm:px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold whitespace-nowrap text-sm sm:text-base"
+                      >
+                        {t("hero.ctaContact")}
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </AnimatedSection>
+            </AnimatedSection>
 
-          {/* Right side - Featured Project */}
-          <AnimatedSection animation="fadeInRight" className="flex justify-center xl:justify-end">
-            <div className="w-full max-w-lg xl:max-w-xl">
-              <FeaturedProject locale={locale} />
-            </div>
+            {/* Right side - Featured Project */}
+            <AnimatedSection animation="fadeInRight" className="flex justify-center xl:justify-start items-center" immediate={true}>
+              <div className="w-full max-w-lg xl:max-w-xl 2xl:max-w-2xl featured-project-container">
+                <FeaturedProject locale={locale} />
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+
+        {/* Skills Preview Indicator - Bottom of Hero */}
+        <div className="flex justify-center py-2">
+          <AnimatedSection animation="fadeInUp" delay={0} immediate={true}>
+            <a
+              href="#skills"
+              className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group px-6 py-3 rounded-full border border-border hover:border-accent hover:bg-card"
+            >
+              <span className="font-medium">{t("hero.skillsPreview")}</span>
+              <span className="transform group-hover:translate-y-1 transition-transform text-lg">↓</span>
+            </a>
           </AnimatedSection>
         </div>
       </section>
-
-      {/* Skills Preview Indicator - Middle of page */}
-      <div className="flex justify-center py-8 bg-muted/5">
-        <AnimatedSection animation="fadeInUp">
-          <a
-            href="#skills"
-            className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group px-6 py-3 rounded-full border border-border hover:border-accent hover:bg-card"
-          >
-            <span className="font-medium">{t("hero.skillsPreview")}</span>
-            <span className="transform group-hover:translate-y-1 transition-transform text-lg">↓</span>
-          </a>
-        </AnimatedSection>
-      </div>
 
       {/* Skills Section */}
       <section id="skills" className="px-6 py-20 bg-muted/10">
