@@ -37,7 +37,7 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <CSPostHogProvider>
-          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
             {/* Navbar is rendered inside the locale layout to get i18n context */}
             <div className="pt-16">{children}</div>
           </ThemeProvider>

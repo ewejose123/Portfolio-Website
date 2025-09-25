@@ -110,5 +110,287 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "email": "Email"
+  },
+  "referrer": {
+    "nav": "Referrer Program",
+    "hero": {
+      "title": "Earn €50-€200+ Per Website Referral",
+      "subtitle": "Get paid 10% commission for every person you refer to us for website creation",
+      "fomo": "Don't miss out on easy money",
+      "limited": "Only 3 custom projects this month",
+      "easy": "No work required - just connect people",
+      "tagline": "Help your business contacts and get paid",
+      "cta": "Refer & Earn"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Three simple steps to start earning",
+      "step1": {
+        "title": "Know Someone?",
+        "description": "Do you know business owners who need a website?"
+      },
+      "step2": {
+        "title": "Send Them Our Way",
+        "description": "Connect them with us for website creation - we handle everything"
+      },
+      "step3": {
+        "title": "Get Paid",
+        "description": "Receive your commission when they pay us for their website"
+      }
+    },
+    "commission": {
+      "title": "Commission Structure",
+      "subtitle": "Earn 10% of every project you refer",
+      "simple": {
+        "title": "Simple Website",
+        "description": "Perfect for small businesses and personal brands",
+        "price": "€50 commission (10% of €500)"
+      },
+      "shopify": {
+        "title": "Shopify Shop",
+        "description": "E-commerce stores with online selling",
+        "price": "€150 commission (10% of €1500)"
+      },
+      "custom": {
+        "title": "Custom Project",
+        "description": "Complex websites and web applications",
+        "price": "€200+ commission (10% of €2000+)"
+      }
+    },
+    "whyRefer": {
+      "title": "Why Refer to Us?",
+      "subtitle": "We make it easy for you to earn",
+      "fast": {
+        "title": "Fast Delivery",
+        "description": "3-7 days delivery means faster payouts"
+      },
+      "quality": {
+        "title": "Professional Quality",
+        "description": "High-quality work that clients love"
+      },
+      "support": {
+        "title": "Great Support",
+        "description": "We handle all customer service"
+      },
+      "conversion": {
+        "title": "High Conversion",
+        "description": "Most referrals become paying customers"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know",
+      "items": {
+        "payment": {
+          "question": "When do I get paid?",
+          "answer": "You receive your commission within 3 days after the client pays for their project. We're flexible with payment methods - bank transfer, PayPal, or Bizum."
+        },
+        "referral": {
+          "question": "What counts as a referral?",
+          "answer": "Any business owner you connect with us who ends up hiring us for a website project. We'll track it and let you know when it's confirmed."
+        },
+        "tracking": {
+          "question": "How do you track referrals?",
+          "answer": "We'll give you a unique referral code or ask clients to mention your name when they contact us. We keep detailed records of all referrals."
+        },
+        "friends": {
+          "question": "Can I refer friends or family?",
+          "answer": "Absolutely! Anyone who needs a website - friends, family, business contacts, or even people who know people who need websites."
+        }
+      }
+    },
+    "contact": {
+      "title": "Ready to Start Earning?",
+      "subtitle": "Contact us to get your referral code and start earning",
+      "phoneCta": "Call me right now - it's free!",
+      "phone": "+34 632 239 50",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "freeConsultation": "Free consultation to discuss the program",
+      "urgency": "Limited referral spots available",
+      "guarantee": "Guaranteed payment for successful referrals"
+    }
+  },
+  "webpages": {
+    "nav": "Webpages",
+    "starRating": {
+      "title": "5 average rating",
+      "subtitle": "Based on 10+ satisfied customers"
+    },
+    "hero": {
+      "title": "Stop Losing Customers to Competitors",
+      "subtitle": "Get a professional website that converts visitors into customers - delivered in days, not months",
+      "socialProof": "Trusted by 10+ small businesses",
+      "pricing": "Starting from €300",
+      "cta": "Get Your Website Quote",
+      "urgency": "Limited spots this month",
+      "tagline": "Telematic Engineer • 5+ years specialized experience"
+    },
+    "services": {
+      "simpleWebsites": {
+        "title": "Simple Websites",
+        "price": "€300 - €500",
+        "priceAnchor": "vs €1000+ agencies",
+        "target": "Perfect for restaurants, local services, and small businesses",
+        "painPoint": "Start winning customers this week, the sooner the better",
+        "features": [
+          "Dynamic design for mobile and PC",
+          "Contact forms",
+          "SEO optimization for Google",
+          "Lightning-fast loading speed",
+          "Analytics to track results"
+        ],
+        "timeline": "3-5 days delivery",
+        "guarantee": "30-day support guarantee",
+        "cta": "Get Simple Website Quote"
+      },
+      "simpleShopify": {
+        "title": "Shopify Shops",
+        "price": "€1000 - €1500",
+        "target": "Start selling online immediately",
+        "painPoint": "Your customers are buying online - are you?",
+        "features": [
+          "Professional theme customization",
+          "Payment gateway setup (Stripe, PayPal)",
+          "Product catalog management",
+          "Order tracking system",
+          "Professional SEO and marketing tools",
+          "Training on how to manage your shop",
+          "Guide on adding products and collections"
+        ],
+        "timeline": "5-7 days delivery",
+        "socialProof": "Average 40% increase in online sales",
+        "cta": "Get Shopify Shop Quote"
+      },
+      "customShopify": {
+        "title": "All Types of Customized Pages and Applications",
+        "price": "Customized price",
+        "exclusivity": "Only 3 custom projects per month",
+        "target": "Applications, Products, Services, etc.",
+        "painPoint": "Generic solutions won't differentiate you from competitors",
+        "features": [
+          "Fully custom design and functionality",
+          "Advanced integrations and APIs",
+          "Custom checkout process",
+          "Multi-language support",
+          "Advanced analytics and reporting",
+          "Unlimited revisions included",
+          "Custom web applications",
+          "Complete training and management guide"
+        ],
+        "timeline": "1-2 weeks delivery",
+        "roi": "Average 200% ROI within 6 months",
+        "cta": "Get Custom Quote"
+      }
+    },
+    "whyChooseMe": {
+      "title": "Why Small Businesses Choose Me",
+      "subtitle": "Professional expertise with personal attention",
+      "points": {
+        "experience": {
+          "title": "5+ Years Specialized Experience",
+          "description": "Telematic Engineer with proven track record in web development"
+        },
+        "education": {
+          "title": "Technical Excellence",
+          "description": "Engineering background ensures robust, scalable solutions"
+        },
+        "languages": {
+          "title": "Bilingual Support",
+          "description": "Native Spanish and professional English - perfect for international clients"
+        },
+        "speed": {
+          "title": "Fastest Delivery",
+          "description": "Most websites delivered in less than a week - industry-leading speed"
+        },
+        "support": {
+          "title": "Ongoing Partnership",
+          "description": "Continuous support and updates - we grow together"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "What Business Owners Say",
+      "subtitle": "Real results from real clients",
+      "items": {
+        "restaurant": {
+          "name": "Ana García",
+          "business": "Gloria Bendita",
+          "quote": "José built our website quickly and it looks professional. Now customers can see our menu online and call us directly.",
+          "result": "Professional online presence"
+        },
+        "consultant": {
+          "name": "Miguel López",
+          "business": "Chen Consulting",
+          "quote": "The website works well and loads fast. José explained everything clearly and was easy to work with.",
+          "result": "Fast, professional website"
+        },
+        "plumber": {
+          "name": "Carlos Rodríguez",
+          "business": "Aguirre Fontanería",
+          "quote": "Got my website in 3 days as promised. Now I have somewhere to send customers when they ask about my services.",
+          "result": "Delivered in 3 days"
+        },
+        "boutique": {
+          "name": "Laura Martín",
+          "business": "Sarah's Boutique",
+          "quote": "The Shopify shop works great. José showed me how to add products and manage orders. Very helpful.",
+          "result": "Easy to manage shop"
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our web development services",
+      "questions": {
+        "pricing": {
+          "question": "What's included in the pricing?",
+          "answer": "All prices include design, development, basic SEO setup, and 30 days of free support. Hosting and domain are separate costs (we'll help you set these up)."
+        },
+        "timeline": {
+          "question": "How long does it take to build a website?",
+          "answer": "Simple websites: 3-5 days. Shopify shops: 5-7 days. Custom projects: 1-2 weeks. We're the fastest in the industry - no months of delays."
+        },
+        "revisions": {
+          "question": "How many revisions are included?",
+          "answer": "Simple websites: 2 rounds. Shopify shops: 3 rounds. Custom projects: Unlimited revisions. We want you 100% satisfied."
+        },
+        "hosting": {
+          "question": "Do you provide hosting?",
+          "answer": "For simple websites with normal traffic, I provide free hosting for the first year. For Shopify shops, hosting is included in Shopify's monthly plan. For high-traffic sites, I can recommend reliable hosting providers."
+        },
+        "maintenance": {
+          "question": "What about ongoing maintenance?",
+          "answer": "We provide 30 days of free support after launch. Ongoing maintenance packages are available for long-term support and updates."
+        },
+        "payment": {
+          "question": "What are the payment terms?",
+          "answer": "50% upfront to start the project, 50% upon completion. For larger projects, we can discuss milestone-based payments."
+        },
+        "domain": {
+          "question": "Do you help with domain setup?",
+          "answer": "Yes, we can help you purchase and configure your domain name, or work with your existing domain."
+        },
+        "seo": {
+          "question": "Is SEO included?",
+          "answer": "Basic SEO setup is included in all packages. Advanced SEO strategies and ongoing optimization can be added as an additional service."
+        },
+        "competitors": {
+          "question": "Why not use a cheaper freelancer?",
+          "answer": "Cheap freelancers often deliver poor quality, miss deadlines, or disappear after launch. We provide professional service with ongoing support and guarantees."
+        }
+      }
+    },
+    "contact": {
+      "title": "Ready to Start Gaining Clients?",
+      "subtitle": "Let's discuss your project and get your website online this week",
+      "phoneCta": "Call me right now - it's free!",
+      "phone": "+34 632 239 50",
+      "whatsapp": "WhatsApp",
+      "email": "ewejose@gmail.com",
+      "freeConsultation": "Free 30-minute consultation to discuss your needs",
+      "urgency": "Only 3 custom projects available this month",
+      "guarantee": "30-day support guarantee on all projects"
+    }
   }
 }

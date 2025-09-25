@@ -1,7 +1,7 @@
 'use client'
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
-import { ReactNode } from 'react'
+import { ReactNode, useEffect, useState } from 'react'
 
 interface AnimatedSectionProps {
   children: ReactNode
@@ -19,6 +19,11 @@ export default function AnimatedSection({
   immediate = false
 }: AnimatedSectionProps) {
   const { ref, isVisible } = useScrollAnimation()
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   const animationClasses = {
     fadeInUp: 'animate-fade-in-up',
@@ -27,16 +32,19 @@ export default function AnimatedSection({
   }
 
   // If immediate is true, always show as visible
-  const shouldShow = immediate || isVisible
+  const shouldShow = immediate || (isVisible && isMounted)
 
   return (
     <div
       ref={ref}
-      className={`transition-all duration-700 ${shouldShow
-          ? `opacity-100 translate-y-0 ${animationClasses[animation]}`
-          : 'opacity-0 translate-y-8'
+      className={`${shouldShow
+        ? `opacity-100 translate-y-0 ${animationClasses[animation]}`
+        : 'opacity-0 translate-y-8'
         } ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
+      style={{
+        transitionDelay: `${delay}ms`,
+        transition: shouldShow ? 'opacity 0.6s ease-out, transform 0.6s ease-out' : 'none'
+      }}
     >
       {children}
     </div>

@@ -110,5 +110,287 @@
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "email": "Email"
+  },
+  "referrer": {
+    "nav": "Programa de Referidos",
+    "hero": {
+      "title": "Gana €50-€200+ Por Cada Referido",
+      "subtitle": "Cobra 10% de comisión por persona que nos refieras para crear páginas web",
+      "fomo": "No te pierdas dinero fácil",
+      "limited": "Solo 3 proyectos personalizados este mes",
+      "easy": "Sin trabajo requerido - solo conecta personas",
+      "tagline": "Ayuda a tus contactos de negocio y gana",
+      "cta": "Refiere y Gana"
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona",
+      "subtitle": "Tres pasos simples para empezar a ganar",
+      "step1": {
+        "title": "¿Conoces a Alguien?",
+        "description": "¿Conoces empresarios que necesiten una página web?"
+      },
+      "step2": {
+        "title": "Envíanoslos",
+        "description": "Conéctalos con nosotros para crear páginas web - nosotros nos encargamos de todo"
+      },
+      "step3": {
+        "title": "Cobra",
+        "description": "Recibe tu comisión cuando nos paguen la página web"
+      }
+    },
+    "commission": {
+      "title": "Estructura de Comisiones",
+      "subtitle": "Gana 10% de cada proyecto que refieras",
+      "simple": {
+        "title": "Página Web Simple",
+        "description": "Perfecto para pequeñas empresas y marcas personales",
+        "price": "€50 comisión (10% de €500)"
+      },
+      "shopify": {
+        "title": "Tienda Shopify",
+        "description": "Tiendas online con ventas por internet",
+        "price": "€150 comisión (10% de €1500)"
+      },
+      "custom": {
+        "title": "Proyecto Personalizado",
+        "description": "Páginas web complejas y aplicaciones web",
+        "price": "€200+ comisión (10% de €2000+)"
+      }
+    },
+    "whyRefer": {
+      "title": "¿Por Qué Referir a Nosotros?",
+      "subtitle": "Hacemos que sea fácil para ti ganar",
+      "fast": {
+        "title": "Entrega Rápida",
+        "description": "Entrega en 3-7 días significa pagos más rápidos"
+      },
+      "quality": {
+        "title": "Calidad Profesional",
+        "description": "Trabajo de alta calidad que los clientes aman"
+      },
+      "support": {
+        "title": "Gran Soporte",
+        "description": "Nos encargamos de todo el servicio al cliente"
+      },
+      "conversion": {
+        "title": "Alta Conversión",
+        "description": "La mayoría de referidos se convierten en clientes"
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber",
+      "items": {
+        "payment": {
+          "question": "¿Cuándo me pagan?",
+          "answer": "Recibes tu comisión dentro de 3 días después de que el cliente pague su proyecto. Somos flexibles con los métodos de pago - transferencia bancaria, PayPal, o Bizum."
+        },
+        "referral": {
+          "question": "¿Qué cuenta como referido?",
+          "answer": "Cualquier empresario que conectes con nosotros y que termine contratándonos para un proyecto de página web. Lo rastrearemos y te avisaremos cuando se confirme."
+        },
+        "tracking": {
+          "question": "¿Cómo rastrean los referidos?",
+          "answer": "Te daremos un código de referido único o pediremos a los clientes que mencionen tu nombre cuando nos contacten. Mantenemos registros detallados de todos los referidos."
+        },
+        "friends": {
+          "question": "¿Puedo referir amigos o familia?",
+          "answer": "¡Absolutamente! Cualquier persona que necesite una página web - amigos, familia, contactos de negocio, o incluso personas que conocen a personas que necesitan páginas web."
+        }
+      }
+    },
+    "contact": {
+      "title": "¿Listo para Empezar a Ganar?",
+      "subtitle": "Contáctanos para obtener tu código de referido y empezar a ganar",
+      "phoneCta": "¡Llámame ahora mismo - es gratis!",
+      "phone": "+34 632 239 50",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "freeConsultation": "Consulta gratuita para discutir el programa",
+      "urgency": "Espacios limitados de referidos disponibles",
+      "guarantee": "Pago garantizado por referidos exitosos"
+    }
+  },
+  "webpages": {
+    "nav": "Páginas Web",
+    "starRating": {
+      "title": "5 de calificación promedio",
+      "subtitle": "Basado en 10+ clientes satisfechos"
+    },
+    "hero": {
+      "title": "Deja de Perder Clientes por la Competencia",
+      "subtitle": "Consigue una página web profesional que convierta visitantes en clientes - entregada en días, no meses",
+      "socialProof": "Confianza de 10+ pequeñas empresas",
+      "pricing": "Desde €300",
+      "cta": "Obtén tu Presupuesto",
+      "urgency": "Plazas limitadas este mes",
+      "tagline": "Ingeniero Telemático • 5+ años de experiencia especializada"
+    },
+    "services": {
+      "simpleWebsites": {
+        "title": "Páginas Web Básicas",
+        "price": "€300 - €500",
+        "priceAnchor": "vs agencias de €1000+",
+        "target": "Perfecto para restaurantes, servicios locales y pequeñas empresas",
+        "painPoint": "Empieza a Ganar Clientes esta semana, cuanto antes mejor",
+        "features": [
+          "Diseño dinámico para móviles y PC",
+          "Formularios de contacto",
+          "Optimización SEO para Google",
+          "Velocidad de carga ultrarrápida",
+          "Analíticas para medir resultados"
+        ],
+        "timeline": "Entrega en 3-5 días",
+        "guarantee": "Garantía de soporte de 30 días",
+        "cta": "Obtén Presupuesto Web Simple"
+      },
+      "simpleShopify": {
+        "title": "Tiendas Shopify",
+        "price": "€1000 - €1500",
+        "target": "Empieza a vender online inmediatamente",
+        "painPoint": "Tus clientes compran online - ¿y tú?",
+        "features": [
+          "Personalización profesional de tema",
+          "Configuración de pasarelas de pago (Stripe, PayPal)",
+          "Gestión de catálogo de productos",
+          "Sistema de seguimiento de pedidos",
+          "SEO profesional y herramientas de marketing",
+          "Entrenamiento sobre cómo gestionar tu tienda",
+          "Guía para agregar productos y colecciones"
+        ],
+        "timeline": "Entrega en 5-7 días",
+        "socialProof": "Promedio de 40% más ventas online",
+        "cta": "Obtén Presupuesto Shopify"
+      },
+      "customShopify": {
+        "title": "Todo Tipo de Páginas y Aplicaciones a Medida",
+        "price": "Presupuesto personalizado",
+        "exclusivity": "Solo 3 proyectos personalizados por mes",
+        "target": "Aplicaciones, Productos, Servicios y muchos más.",
+        "painPoint": "Las soluciones genéricas no te diferenciarán de la competencia",
+        "features": [
+          "Diseño y funcionalidad completamente personalizados",
+          "Integraciones avanzadas y APIs",
+          "Proceso de checkout personalizado",
+          "Soporte multiidioma",
+          "Analíticas avanzadas y reportes",
+          "Revisiones ilimitadas incluidas",
+          "Aplicaciones web personalizadas",
+          "Entrenamiento completo y guía de gestión"
+        ],
+        "timeline": "Entrega en 1-2 semanas",
+        "roi": "Promedio de 200% ROI en 6 meses",
+        "cta": "Obtén Presupuesto Personalizado"
+      }
+    },
+    "whyChooseMe": {
+      "title": "Por Qué las Pequeñas Empresas Me Eligen",
+      "subtitle": "Experiencia profesional con atención personal",
+      "points": {
+        "experience": {
+          "title": "5+ Años de Experiencia Especializada",
+          "description": "Ingeniero Telemático con historial probado en desarrollo web"
+        },
+        "education": {
+          "title": "Excelencia Técnica",
+          "description": "Formación en ingeniería asegura soluciones robustas y escalables"
+        },
+        "languages": {
+          "title": "Soporte Bilingüe",
+          "description": "Español nativo e inglés profesional - perfecto para clientes internacionales"
+        },
+        "speed": {
+          "title": "Entrega Más Rápida",
+          "description": "La mayoría de páginas web entregadas en menos de una semana - velocidad líder en la industria"
+        },
+        "support": {
+          "title": "Asociación Continua",
+          "description": "Soporte continuo y actualizaciones - crecemos juntos"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Lo Que Dicen los Empresarios",
+      "subtitle": "Resultados reales de clientes reales",
+      "items": {
+        "restaurant": {
+          "name": "Ana García",
+          "business": "Gloria Bendita",
+          "quote": "José construyó nuestra página web rápidamente y se ve profesional. Ahora los clientes pueden ver nuestro menú online y llamarnos directamente.",
+          "result": "Presencia online profesional"
+        },
+        "consultant": {
+          "name": "Miguel López",
+          "business": "Chen Consulting",
+          "quote": "La página web funciona bien y carga rápido. José explicó todo claramente y fue fácil trabajar con él.",
+          "result": "Página web rápida y profesional"
+        },
+        "plumber": {
+          "name": "Carlos Rodríguez",
+          "business": "Aguirre Fontanería",
+          "quote": "Obtuve mi página web en 3 días como prometió. Ahora tengo un lugar para enviar clientes cuando preguntan sobre mis servicios.",
+          "result": "Entregado en 3 días"
+        },
+        "boutique": {
+          "name": "Laura Martín",
+          "business": "Boutique de Sarah",
+          "quote": "La tienda Shopify funciona genial. José me mostró cómo agregar productos y gestionar pedidos. Muy útil.",
+          "result": "Tienda fácil de gestionar"
+        }
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber sobre nuestros servicios de desarrollo web",
+      "questions": {
+        "pricing": {
+          "question": "¿Qué incluye el precio?",
+          "answer": "Todos los precios incluyen diseño, desarrollo, configuración SEO básica y 30 días de soporte gratuito. Hosting y dominio son costos separados (te ayudamos a configurarlos)."
+        },
+        "timeline": {
+          "question": "¿Cuánto tiempo toma construir una página web?",
+          "answer": "Páginas simples: 3-5 días. Tiendas Shopify: 5-7 días. Proyectos personalizados: 1-2 semanas. Somos los más rápidos de la industria - sin retrasos de meses."
+        },
+        "revisions": {
+          "question": "¿Cuántas revisiones están incluidas?",
+          "answer": "Páginas simples: 2 rondas. Tiendas Shopify: 3 rondas. Proyectos personalizados: Revisiones ilimitadas. Queremos que estés 100% satisfecho."
+        },
+        "hosting": {
+          "question": "¿Proporcionan hosting?",
+          "answer": "Para páginas web simples con tráfico normal, proporciono hosting gratuito el primer año. Para tiendas Shopify, el hosting está incluido en el plan mensual de Shopify. Para sitios de alto tráfico, puedo recomendar proveedores de hosting confiables."
+        },
+        "maintenance": {
+          "question": "¿Qué pasa con el mantenimiento continuo?",
+          "answer": "Proporcionamos 30 días de soporte gratuito después del lanzamiento. Paquetes de mantenimiento continuo están disponibles para soporte y actualizaciones a largo plazo."
+        },
+        "payment": {
+          "question": "¿Cuáles son los términos de pago?",
+          "answer": "50% por adelantado para comenzar el proyecto, 50% al completar. Para proyectos más grandes, podemos discutir pagos basados en hitos."
+        },
+        "domain": {
+          "question": "¿Ayudan con la configuración del dominio?",
+          "answer": "Sí, podemos ayudarte a comprar y configurar tu nombre de dominio, o trabajar con tu dominio existente."
+        },
+        "seo": {
+          "question": "¿Está incluido el SEO?",
+          "answer": "La configuración SEO básica está incluida en todos los paquetes. Estrategias SEO avanzadas y optimización continua se pueden agregar como servicio adicional."
+        },
+        "competitors": {
+          "question": "¿Por qué no usar un freelancer más barato?",
+          "answer": "Los freelancers baratos a menudo entregan mala calidad, pierden plazos o desaparecen después del lanzamiento. Proporcionamos servicio profesional con soporte continuo y garantías."
+        }
+      }
+    },
+    "contact": {
+      "title": "¿Listo para Empezar a Ganar Clientes?",
+      "subtitle": "Hablemos de tu proyecto y pongamos tu página web online esta semana",
+      "phoneCta": "¡Llámame ahora mismo - es gratis!",
+      "phone": "+34 632 239 50",
+      "whatsapp": "WhatsApp",
+      "email": "ewejose@gmail.com",
+      "freeConsultation": "Consulta gratuita de 30 minutos para discutir tus necesidades",
+      "urgency": "Solo 3 proyectos personalizados disponibles este mes",
+      "guarantee": "Garantía de soporte de 30 días en todos los proyectos"
+    }
   }
 }

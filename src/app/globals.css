@@ -11,25 +11,25 @@
   --muted-foreground: #6b7280;
   --accent: #3b82f6;
   --accent-foreground: #ffffff;
-  --primary: #8b5cf6;
+  --primary: #3b82f6;
   --primary-foreground: #ffffff;
   --secondary: #f59e0b;
   --secondary-foreground: #ffffff;
 }
 
 .dark {
-  /* Dark mode colors - more vibrant */
-  --background: #0a0a0a;
+  /* Dark mode colors - less dark, more vibrant */
+  --background: #1a1a1a;
   --foreground: #fafafa;
-  --card: #111111;
+  --card: #2a2a2a;
   --card-foreground: #fafafa;
-  --border: #2a2a2a;
-  --muted: #1a1a1a;
+  --border: #3a3a3a;
+  --muted: #2a2a2a;
   --muted-foreground: #a1a1aa;
-  --accent: #60a5fa;
-  --accent-foreground: #000000;
-  --primary: #a78bfa;
-  --primary-foreground: #000000;
+  --accent: #ef4444;
+  --accent-foreground: #ffffff;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
   --secondary: #fbbf24;
   --secondary-foreground: #000000;
 }
@@ -108,19 +108,27 @@ html {
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out;
+  animation: fadeInUp 0.6s ease-out forwards;
 }
 
 .animate-fade-in-left {
-  animation: fadeInLeft 0.6s ease-out;
+  animation: fadeInLeft 0.6s ease-out forwards;
 }
 
 .animate-fade-in-right {
-  animation: fadeInRight 0.6s ease-out;
+  animation: fadeInRight 0.6s ease-out forwards;
 }
 
 .animate-pulse-slow {
   animation: pulse 2s ease-in-out infinite;
+}
+
+/* Prevent animation conflicts */
+.animate-fade-in-up,
+.animate-fade-in-left,
+.animate-fade-in-right {
+  animation-fill-mode: forwards;
+  will-change: opacity, transform;
 }
 
 /* 2K Monitor Scaling (2560x1440 and above) */
