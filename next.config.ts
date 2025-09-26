@@ -2,6 +2,15 @@ import { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/referidos",
+        destination: "/es/referidos",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
