@@ -257,7 +257,8 @@ export default async function ReferrerPage({ params }: { params: Promise<{ local
                                 </div>
                             </AnimatedSection>
 
-                            <div className="text-4xl text-accent">→</div>
+                            <div className="text-4xl text-accent md:hidden">↓</div>
+                            <div className="text-4xl text-accent hidden md:block">→</div>
 
                             <AnimatedSection animation="fadeInUp" delay={200}>
                                 <div className="text-center p-6 rounded-2xl border border-border bg-card/95 hover:border-accent/50 transition-all duration-300 shadow-lg">
@@ -271,7 +272,8 @@ export default async function ReferrerPage({ params }: { params: Promise<{ local
                                 </div>
                             </AnimatedSection>
 
-                            <div className="text-4xl text-accent">→</div>
+                            <div className="text-4xl text-accent md:hidden">↓</div>
+                            <div className="text-4xl text-accent hidden md:block">→</div>
 
                             <AnimatedSection animation="fadeInUp" delay={300}>
                                 <div className="text-center p-6 rounded-2xl border border-border bg-card/95 hover:border-accent/50 transition-all duration-300 shadow-lg">

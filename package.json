@@ -17,7 +17,8 @@
     "posthog-js": "^1.261.7",
     "posthog-node": "^5.8.2",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-simply-carousel": "^9.1.11"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

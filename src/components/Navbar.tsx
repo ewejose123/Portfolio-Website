@@ -36,7 +36,8 @@ export default function Navbar() {
   return (
     <header className={`fixed top-0 inset-x-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}>
-      <nav className="mx-auto max-w-6xl px-6 h-16 flex items-center gap-8 text-sm">
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex mx-auto max-w-6xl px-6 h-16 items-center gap-8 text-sm">
         <Link
           href={`/${locale}`}
           className="hover:text-accent transition-colors duration-200 font-medium"
@@ -72,6 +73,26 @@ export default function Navbar() {
           className="hover:text-accent transition-colors duration-200 font-medium ml-auto"
         >
           {t('nav.contact')}
+        </Link>
+        <div className="flex items-center gap-3">
+          <LanguageSwitcher />
+          <ThemeToggle />
+        </div>
+      </nav>
+
+      {/* Mobile Navigation */}
+      <nav className="md:hidden mx-auto max-w-6xl px-6 h-16 flex items-center justify-between text-sm">
+        <Link
+          href={`/${locale}`}
+          className="hover:text-accent transition-colors duration-200 font-medium"
+        >
+          {t('nav.home')}
+        </Link>
+        <Link
+          href={`/${locale}/referidos`}
+          className="hover:text-accent transition-colors duration-200 font-medium"
+        >
+          {t('referrer.nav')}
         </Link>
         <div className="flex items-center gap-3">
           <LanguageSwitcher />

@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server"
 import AnimatedSection from "@/components/AnimatedSection"
 import CollapsibleFAQ from "@/components/CollapsibleFAQ"
 import ContactTracker from "@/components/ContactTracker"
+import TestimonialsCarousel from "@/components/TestimonialsCarousel"
 import Image from "next/image"
 import type { Metadata } from "next"
 
@@ -377,7 +378,8 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                 <section id="simple-websites" className="px-6 py-20">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            <AnimatedSection animation="fadeInLeft">
+                            {/* Image - Hidden on mobile, shown first on desktop */}
+                            <AnimatedSection animation="fadeInLeft" className="hidden lg:block">
                                 <a href="https://xenovarush.com" target="_blank" rel="noopener noreferrer" className="block">
                                     <div className="relative h-[28rem] rounded-2xl overflow-hidden border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
                                         <Image
@@ -390,6 +392,7 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                 </a>
                             </AnimatedSection>
 
+                            {/* Content - Shown first on mobile, second on desktop */}
                             <AnimatedSection animation="fadeInRight">
                                 <div className="space-y-6">
                                     <div className="space-y-4">
@@ -448,6 +451,20 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                         </a>
                                     </ContactTracker>
                                 </div>
+                            </AnimatedSection>
+
+                            {/* Mobile Image - Shown only on mobile, at the bottom */}
+                            <AnimatedSection animation="fadeInUp" className="lg:hidden">
+                                <a href="https://xenovarush.com" target="_blank" rel="noopener noreferrer" className="block">
+                                    <div className="relative h-[20rem] rounded-2xl overflow-hidden border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+                                        <Image
+                                            src="/projects/xenora-rush.jpg"
+                                            alt="Simple Website Mockup"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                </a>
                             </AnimatedSection>
                         </div>
                     </div>
@@ -620,7 +637,8 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                             </p>
                         </AnimatedSection>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {/* All Screen Sizes Carousel */}
+                        <div className="hidden">
                             <AnimatedSection animation="fadeInUp" delay={100}>
                                 <div className="p-6 rounded-2xl border border-border bg-card/95 text-center shadow-lg">
                                     <div className="space-y-4">
@@ -713,6 +731,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                 </div>
                             </AnimatedSection>
                         </div>
+
+                        {/* Responsive Carousel */}
+                        <TestimonialsCarousel />
                     </div>
                 </section>
 
