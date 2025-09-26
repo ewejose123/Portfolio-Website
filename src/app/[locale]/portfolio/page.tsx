@@ -91,7 +91,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                         {/* Right side - Featured Project */}
                         <AnimatedSection animation="fadeInRight" className="flex justify-center xl:justify-start items-center" immediate={true}>
                             <div className="w-full max-w-lg xl:max-w-xl 2xl:max-w-2xl featured-project-container">
-                                <FeaturedProject locale={locale} />
+                                <FeaturedProject />
                             </div>
                         </AnimatedSection>
                     </div>
@@ -120,7 +120,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                     </AnimatedSection>
 
                     <div className="w-full">
-                        <SkillsHighlight locale={locale} />
+                        <SkillsHighlight />
                     </div>
                 </div>
             </section>

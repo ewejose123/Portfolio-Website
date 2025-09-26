@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

@@ -50,7 +50,7 @@ const skills: Skill[] = [
   { name: 'Teaching/Mentoring', level: 3, category: 'soft' },
 ]
 
-export default function SkillsHighlight({ locale }: { locale: string }) {
+export default function SkillsHighlight() {
   const t = useTranslations('hero.skills')
 
   const categories = [
