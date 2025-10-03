@@ -359,16 +359,16 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                             </AnimatedSection>
 
                             <AnimatedSection animation="fadeInRight">
-                                <a href="https://thesamsneakers.com" target="_blank" rel="noopener noreferrer" className="block">
-                                    <div className="relative h-[28rem] rounded-2xl overflow-hidden border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
-                                        <Image
-                                            src="/projects/shopify-mockup.jpg"
-                                            alt="Simple Shopify Shop Mockup"
-                                            fill
-                                            className="object-cover"
-                                        />
-                                    </div>
-                                </a>
+                                {/* <a href="https://thesamsneakers.com" target="_blank" rel="noopener noreferrer" className="block"> */}
+                                <div className="relative h-[28rem] rounded-2xl overflow-hidden border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+                                    <Image
+                                        src="/projects/shopify-mockup.jpg"
+                                        alt="Simple Shopify Shop Mockup"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                                {/* </a> */}
                             </AnimatedSection>
                         </div>
                     </div>
