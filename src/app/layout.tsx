@@ -16,8 +16,56 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ewe José Omusi Sáez — Portfolio",
-  description: "Full Stack Developer & Game Creator",
+  title: "Ewe José - Desarrollo Web Profesional | Páginas Web desde €300",
+  description: "Desarrollador web profesional con 5+ años de experiencia. Páginas web desde €300, tiendas Shopify, aplicaciones personalizadas. Entrega en 3-7 días.",
+  keywords: "desarrollo web, páginas web, diseño web profesional, páginas web baratas, desarrollo web España, páginas web responsive, SEO web, tiendas online, Shopify España",
+  authors: [{ name: "Ewe José Omusi Sáez" }],
+  creator: "Ewe José Omusi Sáez",
+  publisher: "Ewe José Omusi Sáez",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'es_ES',
+    url: 'https://ewejose.com',
+    title: "Ewe José - Desarrollo Web Profesional | Páginas Web desde €300",
+    description: "Desarrollador web profesional con 5+ años de experiencia. Páginas web desde €300, tiendas Shopify, aplicaciones personalizadas.",
+    siteName: "Ewe José - Desarrollo Web",
+    images: [
+      {
+        url: 'https://ewejose.com/og-image-es.jpg',
+        width: 1200,
+        height: 630,
+        alt: "Desarrollo Web Profesional - Páginas Web España",
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Ewe José - Desarrollo Web Profesional",
+    description: "Desarrollador web profesional con 5+ años de experiencia. Páginas web desde €300.",
+    images: ['https://ewejose.com/og-image-es.jpg'],
+  },
+  alternates: {
+    canonical: 'https://ewejose.com',
+    languages: {
+      'es': 'https://ewejose.com',
+      'en': 'https://ewejose.com/en',
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
+  },
+  category: 'Technology',
   icons: {
     icon: "/favicon.ico",
   },

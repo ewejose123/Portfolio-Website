@@ -3,15 +3,15 @@
     "home": "Home",
     "projects": "Projects",
     "articles": "Articles",
-    "about": "About",
+    "about": "About Me",
     "contact": "Contact"
   },
   "hero": {
     "name": "Ewe José Omusi Sáez",
-    "title": "Full Stack Developer & Game Creator",
+    "title": "Full Stack Developer and Game Creator",
     "age": "27 years old",
     "location": "Spain / US",
-    "tagline": "Building seamless web apps and competitive multiplayer games.",
+    "tagline": "Building smooth web applications and competitive multiplayer games.",
     "ctaProjects": "View Projects",
     "ctaContact": "Contact",
     "languages": {
@@ -20,10 +20,10 @@
     },
     "skillsPreview": "Skills",
     "skills": {
-      "title": "Core Skills Highlights",
+      "title": "Main Highlighted Skills",
       "backend": "Backend",
-      "frontend": "Frontend", 
-      "tools": "Tools",
+      "frontend": "Frontend",
+      "tools": "Tools", 
       "soft": "Soft Skills",
       "proficiency": {
         "label": "Proficiency:",
@@ -35,16 +35,16 @@
     },
     "featuredProject": {
       "title": "Featured Project",
-      "viewProject": "See more projects"
+      "viewProject": "View more projects"
     }
   },
   "projects": {
     "title": "Featured Projects",
-    "tagline": "Visual-first proof of abilities",
+    "tagline": "Visual proof of my skills",
     "items": {
       "xenora-rush": {
         "title": "Xenova Rush",
-        "summary": "Competitive multiplayer game with fast-paced mobility and combat featuring 120Hz authoritative physics completely synchronized with local prediction and other advanced networking techniques.",
+        "summary": "Competitive multiplayer game with fast-paced mobility and combat with 120Hz authoritative physics fully synchronized with local prediction and other advanced networking techniques.",
         "technologies": ["Unity", "C#", ".NET", "PostgreSQL", "Redis", "AWS", "Next.js", "PostHog", "Blender", "Substance Painter", "Photoshop", "Visual Studio"]
       },
       "taskmanager-pro": {
@@ -54,12 +54,12 @@
       },
       "brutoria": {
         "title": "Brutoria",
-        "summary": "Mobile autobattler game featuring strategic gameplay and automated combat mechanics. Served as co-creator and senior developer, providing technical guidance and code architecture mentorship to the development team.",
+        "summary": "Mobile autobattler game with strategic gameplay mechanics and automated combat. I worked as co-creator and senior developer, providing technical guidance and mentoring in code architecture to the development team.",
         "technologies": ["Unity", "C#", "Mobile", "Game Design", "Mentoring"]
       },
       "portfolio-site": {
         "title": "Portfolio Website",
-        "summary": "Modern responsive portfolio showcasing professional work. Built with Next.js 15 App Router, featuring internationalization, dark/light themes, and smooth animations.",
+        "summary": "Modern and responsive portfolio showcasing professional work. Built with Next.js 15 App Router, with internationalization, dark/light themes and smooth animations.",
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "next-intl", "Vercel"]
       }
     }
@@ -69,7 +69,7 @@
     "tagline": "Technologies and tools I work with"
   },
   "articles": {
-    "title": "Problem-Solving",
+    "title": "Problem Solving",
     "tagline": "Technical challenges and optimization solutions",
     "cta": "View articles",
     "readMore": "Read more",
@@ -81,13 +81,13 @@
     "items": {
       "delta-compression": {
         "title": "10x Performance Improvement with Custom Delta Compression",
-        "summary": "Optimized server-client data transmission by implementing custom Delta compression algorithms, achieving significant performance improvements for real-time synchronization in multiplayer applications.",
+        "summary": "I optimized server-client data transmission by implementing custom Delta compression algorithms, achieving significant performance improvements for real-time synchronization in multiplayer applications.",
         "date": "2024-12-10",
         "tags": ["optimization", "networking", "algorithms"]
       },
       "local-prediction": {
-        "title": "Local Prediction & Server Reconciliation for Instant Feedback",
-        "summary": "Implemented client-side prediction with server reconciliation to provide instant user feedback while maintaining server authority and preventing cheating in multiplayer games.",
+        "title": "Local Prediction and Server Reconciliation for Instant Feedback",
+        "summary": "I implemented client-side prediction with server reconciliation to provide instant feedback to the user while maintaining server authority and preventing cheating in multiplayer games.",
         "date": "2024-12-05",
         "tags": ["gamedev", "networking", "prediction"]
       }
@@ -95,223 +95,223 @@
   },
   "about": {
     "title": "About Me",
-    "bio": "I'm currently living in Spain and looking for remote work opportunities. I'm available and have a very flexible schedule, ready to adapt to different time zones and project needs.",
-    "resumeText": "Download Resume",
+    "bio": "I currently live in Spain and am looking for remote work opportunities. I am available and have a very flexible schedule, ready to adapt to different time zones and project needs.",
+    "resumeText": "Download CV",
     "personalLife": {
-      "title": "When I'm not coding",
+      "title": "When I'm not programming",
       "intro": "I believe in maintaining a healthy work-life balance:",
       "item1": "📺 Watching series",
-      "item2": "⚽ Playing sports and staying active",
+      "item2": "⚽ Practicing sports and staying active",
       "item3": "🎮 Creating video games and exploring new game mechanics"
     }
   },
   "contact": {
-    "cta": "Get in conctact!",
+    "cta": "Contact me!",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "email": "Email"
   },
   "referrer": {
-    "nav": "Referrer Program",
+    "nav": "Referral Program",
     "hero": {
-      "title": "Earn €50-€200+ Per Website Referral",
-      "subtitle": "Get paid 10% commission for every person you refer to us for website creation",
-      "fomo": "Don't miss out on easy money",
-      "limited": "Only 3 custom projects this month",
-      "easy": "No work required - just connect people",
-      "tagline": "Help your business contacts and get paid",
-      "cta": "Refer & Earn"
+      "title": "Earn Extra Money Just by Connecting People",
+      "subtitle": "Do you know someone who needs a website? Receive €50-€200+ for each successful referral",
+      "fomo": "Don't miss this passive income opportunity",
+      "limited": "Only 3 premium referral slots available this month!",
+      "easy": "Zero technical work - just introduce contacts and receive your commission",
+      "tagline": "Help businesses grow while you earn",
+      "cta": "Start Earning Now"
     },
     "howItWorks": {
-      "title": "How It Works",
-      "subtitle": "Three simple steps to start earning",
+      "title": "This Easy: 3 Steps to Earn",
+      "subtitle": "The simplest process to generate additional income",
       "step1": {
-        "title": "Know Someone?",
-        "description": "Do you know business owners who need a website?"
+        "title": "Do You Know Someone?",
+        "description": "Think of entrepreneurs, friends or family members who need to improve their online presence with a website"
       },
       "step2": {
-        "title": "Send Them Our Way",
-        "description": "Connect them with us for website creation - we handle everything"
+        "title": "Present It to Us",
+        "description": "Introduce us through an email, WhatsApp or call - we do all the technical work"
       },
       "step3": {
-        "title": "Get Paid",
-        "description": "Receive your commission when they pay us for their website"
+        "title": "Receive Your Payment",
+        "description": "Collect your commission in less than 72 hours after the client pays for their project"
       }
     },
     "commission": {
-      "title": "Commission Structure",
-      "subtitle": "Earn 10% of every project you refer",
+      "title": "Potential Earnings per Referral",
+      "subtitle": "Generous commissions that grow with each project",
       "simple": {
         "title": "Simple Website",
-        "description": "Perfect for small businesses and personal brands",
-        "price": "€50 commission (10% of €500)"
+        "description": "Ideal for small businesses and independent professionals",
+        "price": "€50 direct commission (10% of €500)"
       },
       "shopify": {
-        "title": "Shopify Shop",
-        "description": "E-commerce stores with online selling",
-        "price": "€150 commission (10% of €1500)"
+        "title": "Shopify Store",
+        "description": "For businesses that want to sell products online",
+        "price": "€150 guaranteed commission (10% of €1500)"
       },
       "custom": {
         "title": "Custom Project",
-        "description": "Complex websites and web applications",
+        "description": "Complex web applications and custom solutions",
         "price": "€200+ commission (10% of €2000+)"
       }
     },
     "whyRefer": {
-      "title": "Why Refer to Us?",
-      "subtitle": "We make it easy for you to earn",
+      "title": "Why Is This Program Different?",
+      "subtitle": "The easiest way to generate additional income",
       "fast": {
-        "title": "Fast Delivery",
-        "description": "3-7 days delivery means faster payouts"
+        "title": "Fast Payments",
+        "description": "Receive your money in less than 72 hours - don't wait months"
       },
       "quality": {
-        "title": "Professional Quality",
-        "description": "High-quality work that clients love"
+        "title": "Premium Service",
+        "description": "We work so well that your contacts will thank you for the recommendation"
       },
       "support": {
-        "title": "Great Support",
+        "title": "We Back You Up",
         "description": "We handle all customer service"
       },
       "conversion": {
-        "title": "High Conversion",
-        "description": "Most referrals become paying customers"
+        "title": "Conversion Rate Over 85%",
+        "description": "Most of your referrals will become satisfied customers"
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know",
+      "title": "Common Questions About the Program",
+      "subtitle": "Everything you need to know to start earning today",
       "items": {
         "payment": {
-          "question": "When do I get paid?",
-          "answer": "You receive your commission within 3 days after the client pays for their project. We're flexible with payment methods - bank transfer, PayPal, or Bizum."
+          "question": "When and how do I receive my money?",
+          "answer": "You receive your commission within 72 business hours after the client pays. We accept bank transfer, PayPal, Bizum or the method you prefer."
         },
         "referral": {
-          "question": "What counts as a referral?",
-          "answer": "Any business owner you connect with us who ends up hiring us for a website project. We'll track it and let you know when it's confirmed."
+          "question": "How are my referrals counted?",
+          "answer": "Any contact you introduce to us who hires our services counts as a referral. Just let me know who you're referring and I'll confirm the connection with you."
         },
         "tracking": {
-          "question": "How do you track referrals?",
-          "answer": "We'll give you a unique referral code or ask clients to mention your name when they contact us. We keep detailed records of all referrals."
+          "question": "How do I know the status of my referrals?",
+          "answer": "I'll keep you informed directly via WhatsApp or email whenever a referral advances in the process. You'll have full visibility of the progress."
         },
         "friends": {
-          "question": "Can I refer friends or family?",
-          "answer": "Absolutely! Anyone who needs a website - friends, family, business contacts, or even people who know people who need websites."
+          "question": "Can I refer family members?",
+          "answer": "Of course! Anyone who needs a website, whether it's a direct contact, friend of a friend, or your client who needs to improve their online presence."
         }
       }
     },
     "contact": {
-      "title": "Ready to Start Earning?",
-      "subtitle": "Contact us to get your referral code and start earning",
-      "phoneCta": "Call me right now - it's free!",
+      "title": "Ready to Start Earning Extra Money?",
+      "subtitle": "Contact me directly and start generating income today",
+      "phoneCta": "Call me now and let's get started!",
       "phone": "+34 632 239 50",
       "whatsapp": "WhatsApp",
       "email": "Email",
-      "freeConsultation": "Free consultation to discuss the program",
-      "urgency": "Limited referral spots available",
-      "guarantee": "Guaranteed payment for successful referrals"
+      "freeConsultation": "No hidden costs or membership fees",
+      "urgency": "Last 3 premium slots available this month!",
+      "guarantee": "Payment guarantee in 72 hours or we compensate your time"
     }
   },
   "webpages": {
-    "nav": "Webpages",
+    "nav": "Web Pages",
     "starRating": {
       "title": "5 average rating",
       "subtitle": "Based on 10+ satisfied customers"
     },
     "hero": {
-      "title": "Stop Losing Customers to Competitors",
-      "subtitle": "Get a professional website that converts visitors into customers - delivered in days, not months",
-      "socialProof": "Trusted by 10+ small businesses",
-      "pricing": "Starting from €300",
-      "cta": "Get Your Website Quote",
-      "urgency": "Limited spots this month",
-      "tagline": "Telematic Engineer • 5+ years specialized experience"
+      "title": "Does your competition already have a website and you don't?",
+      "subtitle": "Convert visitors into customers with a professional website - ready in less than a week",
+      "socialProof": "Join 10+ companies that are already winning customers online",
+      "pricing": "From €300 (50% less than traditional agencies)",
+      "cta": "Get Your Quote",
+      "urgency": "Only 3 custom projects available this month",
+      "tagline": "Telecommunications Engineer • 5+ years specialized in websites that CONVERT"
     },
     "services": {
       "simpleWebsites": {
-        "title": "Simple Websites",
+        "title": "Websites That Attract Customers",
         "price": "€300 - €500",
-        "priceAnchor": "vs €1000+ agencies",
-        "target": "Perfect for restaurants, local services, and small businesses",
-        "painPoint": "Start winning customers this week, the sooner the better",
+        "priceAnchor": "Save €500+ compared to agencies!",
+        "target": "The perfect solution for restaurants, local services and small businesses",
+        "painPoint": "Start receiving calls from NEW customers this same week",
         "features": [
-          "Dynamic design for mobile and PC",
-          "Contact forms",
+          "Design designed for mobile and PC",
+          "Contact section",
           "SEO optimization for Google",
-          "Lightning-fast loading speed",
-          "Analytics to track results"
+          "Ultra-fast loading speed",
+          "Analytics to measure results",
+          "Free hosting the first year (normal traffic)"
         ],
-        "timeline": "3-5 days delivery",
+        "timeline": "Delivery in 3-5 days",
         "guarantee": "30-day support guarantee",
-        "cta": "Get Simple Website Quote"
+        "cta": "Get Simple Web Quote"
       },
       "simpleShopify": {
-        "title": "Shopify Shops",
+        "title": "Shopify Stores",
         "price": "€1000 - €1500",
         "target": "Start selling online immediately",
-        "painPoint": "Your customers are buying online - are you?",
+        "painPoint": "Your customers already buy online - and you?",
         "features": [
-          "Professional theme customization",
-          "Payment gateway setup (Stripe, PayPal)",
+          "Custom visual customization",
+          "Secure payments included",
           "Product catalog management",
           "Order tracking system",
-          "Professional SEO and marketing tools",
-          "Training on how to manage your shop",
-          "Guide on adding products and collections"
+          "Professional SEO",
+          "Training on how to manage your store",
+          "Guide to adding products and collections"
         ],
-        "timeline": "5-7 days delivery",
-        "socialProof": "Average 40% increase in online sales",
-        "cta": "Get Shopify Shop Quote"
+        "timeline": "Delivery in 5-7 days",
+        "socialProof": "30 days of free support",
+        "cta": "Get Shopify Quote"
       },
       "customShopify": {
-        "title": "All Types of Customized Pages and Applications",
-        "price": "Customized price",
+        "title": "All Types of Custom Pages and Applications",
+        "price": "Custom quote",
         "exclusivity": "Only 3 custom projects per month",
-        "target": "Applications, Products, Services, etc.",
-        "painPoint": "Generic solutions won't differentiate you from competitors",
+        "target": "Applications, Products, Services and many more.",
+        "painPoint": "Generic solutions won't differentiate you from the competition",
         "features": [
-          "Fully custom design and functionality",
+          "Completely customized design and functionality",
           "Advanced integrations and APIs",
-          "Custom checkout process",
           "Multi-language support",
-          "Advanced analytics and reporting",
-          "Unlimited revisions included",
-          "Custom web applications",
-          "Complete training and management guide"
+          "Advanced analytics and reports",
+          "Unlimited revisions",
+          "Complete training and management guide",
+          "Etc..."
         ],
-        "timeline": "1-2 weeks delivery",
-        "roi": "Average 200% ROI within 6 months",
+        "timeline": "Delivery in 1-2 weeks",
+        "roi": "30 days of free support",
         "cta": "Get Custom Quote"
       }
     },
     "whyChooseMe": {
       "title": "Why They Choose Me",
-      "subtitle": "Professional expertise with personal attention",
+      "subtitle": "Professional experience with personal attention",
       "points": {
         "experience": {
-          "title": "5+ Years Specialized Experience",
-          "description": "Telematic Engineer with proven track record in web development"
+          "title": "5+ Years of Specialized Experience",
+          "description": "Telecommunications Engineer with proven track record in web development"
         },
         "education": {
           "title": "Technical Excellence",
-          "description": "Engineering background ensures robust, scalable solutions"
+          "description": "Engineering training ensures robust and scalable solutions"
         },
         "languages": {
           "title": "Bilingual Support",
-          "description": "Native Spanish and professional English - perfect for international clients"
+          "description": "Native Spanish and professional English"
         },
         "speed": {
-          "title": "Fastest Delivery",
-          "description": "Most websites delivered in less than a week - industry-leading speed"
+          "title": "Faster Delivery",
+          "description": "Most websites delivered in less than a week"
         },
         "support": {
           "title": "Ongoing Partnership",
-          "description": "Continuous support and updates - we grow together"
+          "description": "I stay in contact a WhatsApp away."
         }
       }
     },
     "testimonials": {
-      "title": "What Business Owners Say",
-      "subtitle": "Real results from real clients",
+      "title": "How I've Helped Entrepreneurs Like You",
+      "subtitle": "Discover how these companies increased their customers with their new websites",
       "items": {
         "restaurant": {
           "name": "Ana García",
@@ -323,41 +323,41 @@
           "name": "Miguel López",
           "business": "Chen Consulting",
           "quote": "The website works well and loads fast. José explained everything clearly and was easy to work with.",
-          "result": "Fast, professional website"
+          "result": "Fast and professional website"
         },
         "plumber": {
           "name": "Carlos Rodríguez",
           "business": "Aguirre Fontanería",
-          "quote": "Got my website in 3 days as promised. Now I have somewhere to send customers when they ask about my services.",
+          "quote": "I got my website in 3 days as promised. Now I have a place to send customers when they ask about my services.",
           "result": "Delivered in 3 days"
         },
         "boutique": {
           "name": "Laura Martín",
-          "business": "Sarah's Boutique",
-          "quote": "The Shopify shop works great. José showed me how to add products and manage orders. Very helpful.",
-          "result": "Easy to manage shop"
+          "business": "Boutique de Sarah",
+          "quote": "The Shopify store works great. José showed me how to add products and manage orders. Very useful.",
+          "result": "Easy to manage store"
         }
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know about our web development services",
+      "title": "Questions You're Probably Asking Yourself",
+      "subtitle": "The answers you need to make the best decision for your business",
       "questions": {
         "pricing": {
-          "question": "What's included in the pricing?",
-          "answer": "All prices include design, development, basic SEO setup, and 30 days of free support. Hosting and domain are separate costs (we'll help you set these up)."
+          "question": "What does the price include?",
+          "answer": "All prices include design, development, basic SEO setup and 30 days of free support. Hosting and domain are usually separate costs (we help you set them up)."
         },
         "timeline": {
-          "question": "How long does it take to build a website?",
-          "answer": "Simple websites: 3-5 days. Shopify shops: 5-7 days. Custom projects: 1-2 weeks. We're the fastest in the industry - no months of delays."
+          "question": "How long does it take us to build a website?",
+          "answer": "Simple pages: 3-5 days. Shopify stores: 5-7 days. Custom projects: 1-2 weeks. We are the fastest in the industry - no months of delays."
         },
         "revisions": {
           "question": "How many revisions are included?",
-          "answer": "Simple websites: 2 rounds. Shopify shops: 3 rounds. Custom projects: Unlimited revisions. We want you 100% satisfied."
+          "answer": "Simple pages: 3 rounds. Shopify stores: 4 rounds. Custom projects: Unlimited revisions. We want you to be 100% satisfied."
         },
         "hosting": {
           "question": "Do you provide hosting?",
-          "answer": "For simple websites with normal traffic, I provide free hosting for the first year. For Shopify shops, hosting is included in Shopify's monthly plan. For high-traffic sites, I can recommend reliable hosting providers."
+          "answer": "For simple websites with normal traffic, I provide free hosting the first year. For Shopify stores, hosting is included in the monthly Shopify plan. For high-traffic sites, we recommend reliable hosting providers."
         },
         "maintenance": {
           "question": "What about ongoing maintenance?",
@@ -369,28 +369,28 @@
         },
         "domain": {
           "question": "Do you help with domain setup?",
-          "answer": "Yes, we can help you purchase and configure your domain name, or work with your existing domain."
+          "answer": "Yes, we can help you purchase and set up your domain name, or work with your existing domain."
         },
         "seo": {
           "question": "Is SEO included?",
-          "answer": "Basic SEO setup is included in all packages. Advanced SEO strategies and ongoing optimization can be added as an additional service."
+          "answer": "Basic SEO setup is included in all packages. Advanced SEO strategies and continuous optimization can be added as an additional service."
         },
         "competitors": {
           "question": "Why not use a cheaper freelancer?",
-          "answer": "Most freelancers aren't actually cheaper, and the few that are usually don't offer the same quality, guarantees, and ongoing support that I provide. If you find someone with better prices and better service, let me know and I might adjust my pricing to match or beat their offer."
+          "answer": "Most freelancers aren't really cheaper, and the few who are usually don't offer the same quality, guarantees, and ongoing support that I provide. If you find someone with better prices and better service, let me know and I might adjust my prices to match or exceed their offer."
         }
       }
     },
     "contact": {
-      "title": "Ready to Start Gaining Clients?",
-      "subtitle": "Let's discuss your project and get your website online this week",
+      "title": "Ready to Stop Losing Business Opportunities?",
+      "subtitle": "Let's talk 15 minutes without commitment about how a website can transform your business",
       "phoneCta": "Call me right now - it's free!",
       "phone": "+34 632 239 50",
       "whatsapp": "WhatsApp",
       "email": "ewejose@gmail.com",
-      "freeConsultation": "Free 30-minute consultation to discuss your needs",
-      "urgency": "Only 3 custom projects available this month",
-      "guarantee": "30-day support guarantee on all projects"
+      "freeConsultation": "FREE consultation to identify exactly what you need",
+      "urgency": "Attention! Only 3 slots available this month for custom projects",
+      "guarantee": "Satisfaction guarantee: if you're not happy, we'll redo until you are"
     }
   }
 }

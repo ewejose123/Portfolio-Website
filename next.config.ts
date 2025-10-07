@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
         destination: "/es/referidos",
         permanent: true,
       },
+      {
+        source: "/portfolio",
+        destination: "/es/portfolio",
+        permanent: true,
+      },
     ];
   },
   async rewrites() {

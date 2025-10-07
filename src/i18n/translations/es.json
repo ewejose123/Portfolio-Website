@@ -114,101 +114,101 @@
   "referrer": {
     "nav": "Programa de Referidos",
     "hero": {
-      "title": "Gana €50-€200+ Por Cada Referido",
-      "subtitle": "Cobra 10% de comisión por persona que nos refieras para crear páginas web",
-      "fomo": "No te pierdas dinero fácil",
-      "limited": "Solo 3 proyectos personalizados este mes",
-      "easy": "Sin trabajo requerido - solo conecta personas",
-      "tagline": "Ayuda a tus contactos de negocio y gana",
-      "cta": "Refiere y Gana"
+      "title": "Gana Dinero Extra Solo por Conectar Personas",
+      "subtitle": "¿Conoces a alguien que necesite una página web? Recibe €50-€200+ por cada referencia exitosa",
+      "fomo": "No dejes pasar esta oportunidad de ingresos pasivos",
+      "limited": "¡Solo 3 cupos de referidos premium disponibles este mes!",
+      "easy": "Cero trabajo técnico - solo presenta contactos y recibe tu comisión",
+      "tagline": "Ayuda a negocios a crecer mientras tú ganas",
+      "cta": "Empezar a Ganar Ahora"
     },
     "howItWorks": {
-      "title": "Cómo Funciona",
-      "subtitle": "Tres pasos simples para empezar a ganar",
+      "title": "Así de Fácil: 3 Pasos para Ganar",
+      "subtitle": "El proceso más simple para generar ingresos adicionales",
       "step1": {
-        "title": "¿Conoces a Alguien?",
-        "description": "¿Conoces empresarios que necesiten una página web?"
+        "title": "¿Conoces a alguien?",
+        "description": "Piensa en empresarios, amigos o familiares que necesiten mejorar su presencia online con una página web"
       },
       "step2": {
-        "title": "Envíanoslos",
-        "description": "Conéctalos con nosotros para crear páginas web - nosotros nos encargamos de todo"
+        "title": "Preséntanoslo",
+        "description": "Preséntanos a través de un email, WhatsApp o llamada - nosotros hacemos todo el trabajo técnico"
       },
       "step3": {
-        "title": "Cobra",
-        "description": "Recibe tu comisión cuando nos paguen la página web"
+        "title": "Recibe tu Pago",
+        "description": "Cobra tu comisión en menos de 72 horas después de que el cliente pague su proyecto"
       }
     },
     "commission": {
-      "title": "Estructura de Comisiones",
-      "subtitle": "Gana 10% de cada proyecto que refieras",
+      "title": "Ganancias Potenciales por Referencia",
+      "subtitle": "Comisiones generosas que crecen con cada proyecto",
       "simple": {
         "title": "Página Web Simple",
-        "description": "Perfecto para pequeñas empresas y marcas personales",
-        "price": "€50 comisión (10% de €500)"
+        "description": "Ideal para pequeños negocios y profesionales independientes",
+        "price": "€50 comisión directa (10% de €500)"
       },
       "shopify": {
         "title": "Tienda Shopify",
-        "description": "Tiendas online con ventas por internet",
-        "price": "€150 comisión (10% de €1500)"
+        "description": "Para negocios que quieren vender productos online",
+        "price": "€150 comisión garantizada (10% de €1500)"
       },
       "custom": {
         "title": "Proyecto Personalizado",
-        "description": "Páginas web complejas y aplicaciones web",
+        "description": "Aplicaciones web complejas y soluciones a medida",
         "price": "€200+ comisión (10% de €2000+)"
       }
     },
     "whyRefer": {
-      "title": "¿Por Qué Referir a Nosotros?",
-      "subtitle": "Hacemos que sea fácil para ti ganar",
+      "title": "¿Por Qué Este Programa es Diferente?",
+      "subtitle": "La forma más fácil de generar ingresos adicionales",
       "fast": {
-        "title": "Entrega Rápida",
-        "description": "Entrega en 3-7 días significa pagos más rápidos"
+        "title": "Pagos Rápidos",
+        "description": "Recibe tu dinero en menos de 72 horas - no esperes meses"
       },
       "quality": {
-        "title": "Calidad Profesional",
-        "description": "Trabajo de alta calidad que los clientes aman"
+        "title": "Servicio Premium",
+        "description": "Trabajamos tan bien que tus contactos te agradecerán la recomendación"
       },
       "support": {
-        "title": "Gran Soporte",
+        "title": "Te Respaldamos",
         "description": "Nos encargamos de todo el servicio al cliente"
       },
       "conversion": {
-        "title": "Alta Conversión",
-        "description": "La mayoría de referidos se convierten en clientes"
+        "title": "Tasa de Conversión Superior al 85%",
+        "description": "La mayoría de tus referidos se convertirán en clientes satisfechos"
       }
     },
     "faq": {
-      "title": "Preguntas Frecuentes",
-      "subtitle": "Todo lo que necesitas saber",
+      "title": "Preguntas Comunes sobre el Programa",
+      "subtitle": "Todo lo que necesitas saber para empezar a ganar hoy mismo",
       "items": {
         "payment": {
-          "question": "¿Cuándo me pagan?",
-          "answer": "Recibes tu comisión dentro de 3 días después de que el cliente pague su proyecto. Somos flexibles con los métodos de pago - transferencia bancaria, PayPal, o Bizum."
+          "question": "¿Cuándo y cómo recibo mi dinero?",
+          "answer": "Recibes tu comisión dentro de 72 horas hábiles después de que el cliente pague. Aceptamos transferencia bancaria, PayPal, Bizum o el método que prefieras."
         },
         "referral": {
-          "question": "¿Qué cuenta como referido?",
-          "answer": "Cualquier empresario que conectes con nosotros y que termine contratándonos para un proyecto de página web. Lo rastrearemos y te avisaremos cuando se confirme."
+          "question": "¿Cómo cuentan mis referencias?",
+          "answer": "Cualquier contacto que nos presentes y que contrate nuestros servicios cuenta como referencia. Simplemente avísame quién estás refiriendo y confirmaré la conexión contigo."
         },
         "tracking": {
-          "question": "¿Cómo rastrean los referidos?",
-          "answer": "Te daremos un código de referido único o pediremos a los clientes que mencionen tu nombre cuando nos contacten. Mantenemos registros detallados de todos los referidos."
+          "question": "¿Cómo sé el estado de mis referencias?",
+          "answer": "Te mantendré informado directamente por WhatsApp o email cada vez que una referencia avance en el proceso. Tendrás visibilidad total del progreso."
         },
         "friends": {
-          "question": "¿Puedo referir amigos o familia?",
-          "answer": "¡Absolutamente! Cualquier persona que necesite una página web - amigos, familia, contactos de negocio, o incluso personas que conocen a personas que necesitan páginas web."
+          "question": "¿Puedo referir a familiares?",
+          "answer": "¡Por supuesto! Cualquier persona que necesite una página web, ya sea un contacto directo, amigo de un amigo o cliente tuyo que necesite mejorar su presencia online."
         }
       }
     },
     "contact": {
-      "title": "¿Listo para Empezar a Ganar?",
-      "subtitle": "Contáctanos para obtener tu código de referido y empezar a ganar",
-      "phoneCta": "¡Llámame ahora mismo - es gratis!",
+      "title": "¿Listo para Empezar a Ganar Dinero Extra?",
+      "subtitle": "Contáctame directamente y empieza a generar ingresos hoy mismo",
+      "phoneCta": "¡Llámame ahora y empecemos!",
       "phone": "+34 632 239 50",
       "whatsapp": "WhatsApp",
       "email": "Email",
-      "freeConsultation": "Consulta gratuita para discutir el programa",
-      "urgency": "Espacios limitados de referidos disponibles",
-      "guarantee": "Pago garantizado por referidos exitosos"
+      "freeConsultation": "Sin costos ocultos ni cuotas de membresía",
+      "urgency": "¡Últimos 3 cupos premium disponibles este mes!",
+      "guarantee": "Garantía de pago en 72 horas o te compensamos el tiempo"
     }
   },
   "webpages": {
@@ -218,27 +218,28 @@
       "subtitle": "Basado en 10+ clientes satisfechos"
     },
     "hero": {
-      "title": "Deja de Perder Clientes por la Competencia",
-      "subtitle": "Consigue una página web profesional que convierta visitantes en clientes - entregada en días, no meses",
-      "socialProof": "Confianza de 10+ pequeñas empresas",
-      "pricing": "Desde €300",
+      "title": "¿Tu competencia ya tiene página web y tú aún no?",
+      "subtitle": "Convierte visitantes en clientes con una página web profesional - lista en menos de una semana",
+      "socialProof": "Únete a 10+ empresas que ya están ganando clientes online",
+      "pricing": "Desde €300 (50% menos que agencias tradicionales)",
       "cta": "Obtén tu Presupuesto",
-      "urgency": "Plazas limitadas este mes",
-      "tagline": "Ingeniero Telemático • 5+ años de experiencia especializada"
+      "urgency": "Solo 3 proyectos personalizados disponibles este mes",
+      "tagline": "Ingeniero Telemático • 5+ años especializado en páginas que CONVIERTEN"
     },
     "services": {
       "simpleWebsites": {
-        "title": "Páginas Web Básicas",
+        "title": "Páginas Web que Atraen Clientes",
         "price": "€300 - €500",
-        "priceAnchor": "vs agencias de €1000+",
-        "target": "Perfecto para restaurantes, servicios locales y pequeñas empresas",
-        "painPoint": "Empieza a Ganar Clientes esta semana, cuanto antes mejor",
+        "priceAnchor": "¡Ahorra €500+ comparado con agencias!",
+        "target": "La solución perfecta para restaurantes, servicios locales y pequeñas empresas",
+        "painPoint": "Empieza a recibir llamadas de clientes NUEVOS esta misma semana",
         "features": [
-          "Diseño dinámico para móviles y PC",
-          "Formularios de contacto",
+          "Diseño pensado para móviles y PC",
+          "Sección de contacto",
           "Optimización SEO para Google",
           "Velocidad de carga ultrarrápida",
-          "Analíticas para medir resultados"
+          "Analíticas para medir resultados",
+          "Hosting gratuito el primer año (tráfico normal)"
         ],
         "timeline": "Entrega en 3-5 días",
         "guarantee": "Garantía de soporte de 30 días",
@@ -248,18 +249,18 @@
         "title": "Tiendas Shopify",
         "price": "€1000 - €1500",
         "target": "Empieza a vender online inmediatamente",
-        "painPoint": "Tus clientes compran online - ¿y tú?",
+        "painPoint": "Tus clientes ya compran online - ¿y tú?",
         "features": [
-          "Personalización profesional de tema",
-          "Configuración de pasarelas de pago (Stripe, PayPal)",
+          "Personalización visual a medida",
+          "Pagos seguros incluidos",
           "Gestión de catálogo de productos",
           "Sistema de seguimiento de pedidos",
-          "SEO profesional y herramientas de marketing",
+          "SEO profesional",
           "Entrenamiento sobre cómo gestionar tu tienda",
           "Guía para agregar productos y colecciones"
         ],
         "timeline": "Entrega en 5-7 días",
-        "socialProof": "Promedio de 40% más ventas online",
+        "socialProof": "30 días de soporte gratuito",
         "cta": "Obtén Presupuesto Shopify"
       },
       "customShopify": {
@@ -271,15 +272,14 @@
         "features": [
           "Diseño y funcionalidad completamente personalizados",
           "Integraciones avanzadas y APIs",
-          "Proceso de checkout personalizado",
-          "Soporte multiidioma",
+          "Soporte multi-idioma",
           "Analíticas avanzadas y reportes",
-          "Revisiones ilimitadas incluidas",
-          "Aplicaciones web personalizadas",
-          "Entrenamiento completo y guía de gestión"
+          "Revisiones ilimitadas",
+          "Entrenamiento completo y guía de gestión",
+          "Etc..."
         ],
         "timeline": "Entrega en 1-2 semanas",
-        "roi": "Promedio de 200% ROI en 6 meses",
+        "roi": "30 días de soporte gratuito",
         "cta": "Obtén Presupuesto Personalizado"
       }
     },
@@ -297,21 +297,21 @@
         },
         "languages": {
           "title": "Soporte Bilingüe",
-          "description": "Español nativo e inglés profesional - perfecto para clientes internacionales"
+          "description": "Español nativo e inglés profesional"
         },
         "speed": {
           "title": "Entrega Más Rápida",
-          "description": "La mayoría de páginas web entregadas en menos de una semana - velocidad líder en la industria"
+          "description": "La mayoría de páginas web entregadas en menos de una semana"
         },
         "support": {
           "title": "Asociación Continua",
-          "description": "Soporte continuo y actualizaciones - crecemos juntos"
+          "description": "Me mantengo en contacto a un whatsapp de distancia."
         }
       }
     },
     "testimonials": {
-      "title": "Lo Que Dicen los Empresarios",
-      "subtitle": "Resultados reales de clientes reales",
+      "title": "Así He Ayudado a Empresarios Como Tú",
+      "subtitle": "Descubre cómo estas empresas aumentaron sus clientes con sus nuevas páginas web",
       "items": {
         "restaurant": {
           "name": "Ana García",
@@ -340,24 +340,24 @@
       }
     },
     "faq": {
-      "title": "Preguntas Frecuentes",
-      "subtitle": "Todo lo que necesitas saber sobre nuestros servicios de desarrollo web",
+      "title": "Preguntas que Probablemente Te Estás Haciendo",
+      "subtitle": "Las respuestas que necesitas para tomar la mejor decisión para tu negocio",
       "questions": {
         "pricing": {
           "question": "¿Qué incluye el precio?",
-          "answer": "Todos los precios incluyen diseño, desarrollo, configuración SEO básica y 30 días de soporte gratuito. Hosting y dominio son costos separados (te ayudamos a configurarlos)."
+          "answer": "Todos los precios incluyen diseño, desarrollo, configuración SEO básica y 30 días de soporte gratuito. Hosting y dominio suelen ser costes separados (te ayudamos a configurarlos)."
         },
         "timeline": {
-          "question": "¿Cuánto tiempo toma construir una página web?",
+          "question": "¿Cuánto tiempo tardamos en construir una página web?",
           "answer": "Páginas simples: 3-5 días. Tiendas Shopify: 5-7 días. Proyectos personalizados: 1-2 semanas. Somos los más rápidos de la industria - sin retrasos de meses."
         },
         "revisions": {
           "question": "¿Cuántas revisiones están incluidas?",
-          "answer": "Páginas simples: 2 rondas. Tiendas Shopify: 3 rondas. Proyectos personalizados: Revisiones ilimitadas. Queremos que estés 100% satisfecho."
+          "answer": "Páginas simples: 3 rondas. Tiendas Shopify: 4 rondas. Proyectos personalizados: Revisiones ilimitadas. Queremos que estés 100% satisfecho."
         },
         "hosting": {
           "question": "¿Proporcionan hosting?",
-          "answer": "Para páginas web simples con tráfico normal, proporciono hosting gratuito el primer año. Para tiendas Shopify, el hosting está incluido en el plan mensual de Shopify. Para sitios de alto tráfico, puedo recomendar proveedores de hosting confiables."
+          "answer": "Para páginas web simples con tráfico normal, proporciono hosting gratuito el primer año. Para tiendas Shopify, el hosting está incluido en el plan mensual de Shopify. Para sitios de alto tráfico, recomendamos proveedores de hosting confiables."
         },
         "maintenance": {
           "question": "¿Qué pasa con el mantenimiento continuo?",
@@ -382,15 +382,15 @@
       }
     },
     "contact": {
-      "title": "¿Listo para Empezar a Ganar Clientes?",
-      "subtitle": "Hablemos de tu proyecto y pongamos tu página web online esta semana",
+      "title": "¿Preparado para Dejar de Perder Oportunidades de Negocio?",
+      "subtitle": "Hablemos 15 minutos sin compromiso sobre cómo una página web puede transformar tu negocio",
       "phoneCta": "¡Llámame ahora mismo - es gratis!",
       "phone": "+34 632 239 50",
       "whatsapp": "WhatsApp",
       "email": "ewejose@gmail.com",
-      "freeConsultation": "Consulta gratuita de 30 minutos para discutir tus necesidades",
-      "urgency": "Solo 3 proyectos personalizados disponibles este mes",
-      "guarantee": "Garantía de soporte de 30 días en todos los proyectos"
+      "freeConsultation": "Consulta GRATUITA para identificar exactamente lo que necesitas",
+      "urgency": "¡Atención! Solo 3 cupos disponibles este mes para proyectos personalizados",
+      "guarantee": "Garantía de satisfacción: si no estás contento, rehacemos hasta que lo estés"
     }
   }
 }
