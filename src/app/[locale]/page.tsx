@@ -355,7 +355,7 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                 <StaggeredReveal animationType="content" staggerDelay={250}>
                                     <ContactTracker
                                         contactType="contact_section"
-                                        serviceType="simple_shopify"
+                                        serviceType="shopping_website"
                                         priceRange="€1000 - €1500"
                                     >
                                         <a
@@ -456,7 +456,7 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                 <StaggeredReveal animationType="content" staggerDelay={250}>
                                     <ContactTracker
                                         contactType="contact_section"
-                                        serviceType="simple_website"
+                                        serviceType="basic_website"
                                         priceRange="€300 - €500"
                                     >
                                         <a
@@ -544,7 +544,7 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                 <StaggeredReveal animationType="content" staggerDelay={250}>
                                     <ContactTracker
                                         contactType="contact_section"
-                                        serviceType="custom_shopify"
+                                        serviceType="custom_website"
                                         priceRange="€1500+"
                                     >
                                         <a

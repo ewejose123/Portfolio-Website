@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { headers } from "next/headers";
 import { CSPostHogProvider } from "@/components/PostHogProvider";
 import CookiePopup from "@/components/CookiePopup";
+import MetaPixelProvider from "@/components/MetaPixelProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -88,11 +89,16 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}>
         <CSPostHogProvider>
-          <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-            {/* Navbar is rendered inside the locale layout to get i18n context */}
-            <div className="pt-16">{children}</div>
-            <CookiePopup />
-          </ThemeProvider>
+          <MetaPixelProvider
+            pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID || ''}
+            testEventCode={process.env.META_TEST_EVENT_CODE}
+          >
+            <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+              {/* Navbar is rendered inside the locale layout to get i18n context */}
+              <div className="pt-16">{children}</div>
+              <CookiePopup />
+            </ThemeProvider>
+          </MetaPixelProvider>
         </CSPostHogProvider>
       </body>
     </html>

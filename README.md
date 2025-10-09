@@ -1,17 +1,18 @@
-# 🚀 Portfolio Website - Ewe José Omusi Sáez
+# 🌐 Professional Website Development Services - Ewe José Omusi Sáez
 
-> **Full Stack Developer & Game Creator** building seamless web applications and competitive multiplayer games.
+> **Telecommunications Engineer & Web Developer** specializing in fast, professional website creation for small businesses and entrepreneurs.
 
-## 👋 About Me
+## 👋 About My Services
 
-I'm a passionate Full Stack Developer with expertise in creating modern web applications and immersive gaming experiences. Currently living in Spain and available for remote work opportunities with a very flexible schedule, ready to adapt to different time zones and project needs.
+I'm a Telecommunications Engineer with 5+ years of specialized experience in web development, offering professional website creation services to help businesses establish their online presence. Based in Spain, I provide fast, affordable, and high-quality web solutions with a focus on conversion and results.
 
-### 🌟 What I Do
+### 🌟 What I Offer
 
-- **🎮 Game Development**: Creating competitive multiplayer games with advanced networking, 120Hz authoritative physics, and real-time synchronization
-- **💻 Full Stack Web Development**: Building responsive, scalable web applications using modern frameworks and best practices
-- **🔧 Technical Leadership**: Providing code architecture mentorship and technical guidance to development teams
-- **🌍 International Projects**: Working across different time zones with multicultural teams
+- **🌐 Simple Business Websites**: Professional websites for restaurants, local services, and small businesses (€300-€500)
+- **🛒 Online Stores**: Complete Shopify e-commerce solutions for businesses wanting to sell online (€1000-€1500)
+- **⚙️ Custom Web Applications**: Fully customized web applications and complex solutions (€1500+)
+- **📱 Mobile-First Design**: All websites optimized for mobile and desktop devices
+- **⚡ Fast Delivery**: Most websites delivered in 3-7 days, not months
 
 ### 🗣️ Languages
 
@@ -20,32 +21,34 @@ I'm a passionate Full Stack Developer with expertise in creating modern web appl
 
 ---
 
-## 🏗️ Featured Projects
+## 🛠️ Service Offerings
 
-### 🎯 Xenova Rush
-**Competitive Multiplayer Game** - [Visit Website](https://xenovarush.com)
-- Fast-paced mobility and combat with 120Hz authoritative physics
-- Local prediction and server reconciliation for instant feedback
-- Custom Delta compression for optimized real-time synchronization
-- **Tech Stack**: Unity, C#, .NET, PostgreSQL, Redis, AWS, Blender, Substance Painter
+### 🌐 Simple Business Websites
+**Perfect for restaurants, local services, and small businesses**
+- **Price**: €300 - €500 (Save €500+ compared to agencies!)
+- **Timeline**: 3-5 days delivery
+- **Features**: Mobile & PC design, contact section, SEO optimization, ultra-fast loading, analytics, free hosting first year
+- **Target**: Start receiving calls from NEW customers this same week
 
-### 📋 TaskManager Pro
-**Full-Stack Task Management Platform**
-- Team collaboration and real-time task tracking
-- Modern architecture with best practices
-- **Tech Stack**: React, TypeScript, Node.js, Express, PostgreSQL, Prisma
+### 🛒 Online Stores (Shopify)
+**Complete e-commerce solutions for businesses wanting to sell online**
+- **Price**: €1000 - €1500
+- **Timeline**: 5-7 days delivery
+- **Features**: Custom visual design, secure payments, product catalog management, order tracking, professional SEO, training included
+- **Target**: Start selling online immediately
 
-### ⚔️ Brutoria
-**Mobile Autobattler Game** - [Visit Website](https://brutoria.com)
-- Strategic gameplay with automated combat mechanics
-- Role: Co-creator and Senior Developer providing technical guidance
-- **Tech Stack**: Unity, C#, Mobile Development, Game Design
+### ⚙️ Custom Web Applications
+**Fully customized solutions for complex business needs**
+- **Price**: €1500+ (Custom quote)
+- **Timeline**: 1-2 weeks delivery
+- **Features**: Completely customized design & functionality, advanced integrations, multi-language support, advanced analytics, unlimited revisions
+- **Exclusivity**: Only 3 custom projects available per month
 
 ---
 
 ## 💻 Technology Stack
 
-### **Frontend**
+### **Frontend Development**
 - **Framework**: Next.js 15 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS v4
@@ -57,26 +60,25 @@ I'm a passionate Full Stack Developer with expertise in creating modern web appl
 - **Runtime**: Node.js
 - **APIs**: Express.js, REST APIs
 - **Databases**: PostgreSQL, Redis
-- **Cloud**: AWS Services
+- **Cloud**: AWS Services, Vercel
 - **ORM**: Prisma
 
-### **Game Development**
-- **Engine**: Unity
-- **Programming**: C#, .NET Framework
-- **3D Modeling**: Blender
-- **Texturing**: Substance Painter, Photoshop
-- **IDE**: Visual Studio
+### **E-commerce & CMS**
+- **Shopify**: Complete e-commerce platform integration
+- **Content Management**: Custom CMS solutions
+- **Payment Processing**: Stripe, PayPal integration
+- **Analytics**: Google Analytics, PostHog
 
 ### **DevOps & Tools**
 - **Version Control**: Git
 - **Deployment**: Vercel, AWS
 - **CI/CD**: Automated deployment pipelines
 - **Development**: Docker, Figma
-- **Analytics**: PostHog
+- **SEO**: Advanced SEO optimization and structured data
 
 ---
 
-## 🌐 Website Features
+## 🌐 Business Website Features
 
 ### ✨ **Modern Design**
 - Responsive layout optimized for all devices
@@ -95,46 +97,66 @@ I'm a passionate Full Stack Developer with expertise in creating modern web appl
 - Automatic code splitting and lazy loading
 - Image optimization with Next.js Image component
 
-### 📱 **Sections**
-- **Hero**: Personal introduction with language proficiency indicators
-- **Skills**: Interactive proficiency visualization with 4-tier system
-- **Featured Project**: Highlighted project with video/image showcase
-- **Projects**: Portfolio of key development work
-- **Problem-Solving Articles**: Technical challenges and solutions
-- **About Me**: Personal background and interests
-- **Contact**: Professional networking links
+### 📱 **Service Sections**
+- **Hero**: Compelling value proposition and social proof
+- **Service Offerings**: Three main service tiers with pricing
+- **Why Choose Me**: Professional credentials and benefits
+- **Testimonials**: Client success stories and reviews
+- **FAQ**: Common questions and detailed answers
+- **Contact**: Multiple contact methods and availability indicator
 
 ---
 
 ## 🎨 Design Philosophy
 
-- **Clean & Modern**: Minimalist design with focus on content
+- **Clean & Modern**: Minimalist design with focus on conversion
 - **Performance First**: Optimized for speed and user experience
 - **Accessibility**: WCAG compliant with keyboard navigation support
 - **Mobile-First**: Responsive design that works on all devices
 - **International**: Built for global audience with multi-language support
+- **Conversion-Focused**: Every element designed to convert visitors into clients
 
 ---
 
-## 📞 Contact
+## 📞 Contact & Business Information
 
-**Ready for new opportunities and exciting projects!**
+**Ready to get your professional website?**
 
-- 💼 Available for remote work
-- 🌍 Flexible schedule across time zones
-- 🤝 Open to collaboration and consulting
+- 💼 **Free Consultation**: 15-minute call to identify exactly what you need
+- ⚡ **Fast Response**: I'll contact you within 1 hour
+- 🎯 **Conversion Guarantee**: If you're not happy, we'll redo until you are
+- 📱 **Ongoing Support**: Available via WhatsApp for ongoing partnership
 
 **Get in touch:**
-- 📧 [Email](mailto:ewejose@gmail.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/ewejose/)
-- 💻 [GitHub](https://github.com/ewejose123)
+- 📞 **Phone**: +34 624 981 668
+- 📧 **Email**: [ewejose@gmail.com](mailto:ewejose@gmail.com)
+- 💬 **WhatsApp**: [Message me directly](https://wa.me/34624981668)
+- 💼 **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/ewejose/)
+
+**Business Hours**: Available with flexible schedule across time zones
 
 ---
 
 ## 📜 License
 
-This project is personal portfolio website. Feel free to draw inspiration, but please don't copy directly.
+This is a professional business website for web development services. Feel free to draw inspiration, but please don't copy directly.
 
 ---
 
-*Built with ❤️ using Next.js, TypeScript, and modern web technologies.*
+## 🚀 Additional Features
+
+### **Referral Program**
+- **Earn €50-€200+** for each successful client referral
+- **Fast Payments**: Commission paid within 72 hours
+- **Zero Technical Work**: Just introduce contacts and receive commission
+- **High Conversion Rate**: Over 85% of referrals become satisfied customers
+
+### **SEO & Analytics**
+- **Advanced SEO**: Structured data, meta tags, and optimization
+- **Performance Tracking**: PostHog analytics integration
+- **Conversion Tracking**: Meta Pixel for business insights
+- **Multi-language SEO**: Optimized for both English and Spanish markets
+
+---
+
+*Built with ❤️ using Next.js, TypeScript, and modern web technologies to help businesses succeed online.*

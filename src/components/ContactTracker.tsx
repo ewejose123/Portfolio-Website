@@ -1,11 +1,12 @@
 'use client'
 
 import { useContactTracking } from '@/hooks/useContactTracking'
+import { useMetaTracking } from '@/hooks/useMetaTracking'
 
 interface ContactTrackerProps {
     children: React.ReactNode
     contactType: 'phone' | 'whatsapp' | 'email' | 'contact_section'
-    serviceType?: 'simple_website' | 'simple_shopify' | 'custom_shopify'
+    serviceType?: 'basic_website' | 'shopping_website' | 'custom_website'
     priceRange?: string
     testimonialIndex?: number
     testimonialName?: string
@@ -35,13 +36,24 @@ export default function ContactTracker({
         trackPricingInterest
     } = useContactTracking()
 
+    const { trackContact, trackContactSection } = useMetaTracking()
+
     const handleClick = (e: React.MouseEvent) => {
-        // Track contact clicks
+        // Track contact clicks with PostHog
         if (contactType) {
             trackContactClick(contactType, {
                 element_text: e.currentTarget.textContent?.trim(),
                 element_type: e.currentTarget.tagName.toLowerCase()
             })
+        }
+
+        // Track with Meta Pixel based on contact type
+        if (contactType === 'contact_section') {
+            // MEDIUM priority - Contact section click
+            trackContactSection()
+        } else {
+            // HIGHEST priority - Actual contact (phone/WhatsApp/email)
+            trackContact(contactType)
         }
 
         // Track service interest for CTAs
