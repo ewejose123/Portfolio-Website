@@ -485,5 +485,11 @@
     "message": "Utilizamos cookies para mejorar tu experiencia en nuestro sitio web.",
     "accept": "OK",
     "decline": "Rechazar"
+  },
+  "availability": {
+    "available": "Disponible ahora",
+    "busy": "Probablemente ocupado",
+    "willCallLater": "Te llamaré más tarde",
+    "spainTime": "España"
   }
 }

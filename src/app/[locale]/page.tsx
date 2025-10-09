@@ -4,6 +4,7 @@ import StaggeredReveal from "@/components/StaggeredReveal"
 import CollapsibleFAQ from "@/components/CollapsibleFAQ"
 import ContactTracker from "@/components/ContactTracker"
 import CompactContactForm from "@/components/CompactContactForm"
+import AvailabilityIndicator from "@/components/AvailabilityIndicator"
 import Image from "next/image"
 import type { Metadata } from "next"
 
@@ -798,9 +799,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                                     </a>
                                                 </ContactTracker>
                                             </div>
-                                            <p className="text-base text-muted-foreground">
-                                                {t("webpages.contact.phoneCta")}
-                                            </p>
+                                            <div className="flex justify-center">
+                                                <AvailabilityIndicator />
+                                            </div>
                                         </div>
 
                                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

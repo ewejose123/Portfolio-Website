@@ -47,6 +47,8 @@ ${formData.message}
             const telegramChatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID
 
             if (telegramBotToken && telegramChatId) {
+                console.log('Sending Telegram message...', { telegramBotToken: telegramBotToken.substring(0, 10) + '...', telegramChatId })
+
                 const response = await fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
                     method: 'POST',
                     headers: {
@@ -59,14 +61,19 @@ ${formData.message}
                     })
                 })
 
+                const responseData = await response.json()
+                console.log('Telegram API response:', responseData)
+
                 if (response.ok) {
                     setSubmitStatus('success')
                     setFormData({ name: '', email: '', phone: '', message: '', websiteType: '' })
                 } else {
-                    throw new Error('Failed to send message')
+                    console.error('Telegram API error:', responseData)
+                    throw new Error(`Telegram API error: ${responseData.description || 'Unknown error'}`)
                 }
             } else {
                 // Fallback: log to console (for development)
+                console.log('Telegram credentials missing:', { telegramBotToken: !!telegramBotToken, telegramChatId: !!telegramChatId })
                 console.log('Telegram message:', message)
                 setSubmitStatus('success')
                 setFormData({ name: '', email: '', phone: '', message: '', websiteType: '' })
