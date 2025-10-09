@@ -4,7 +4,10 @@
     "projects": "Proyectos",
     "articles": "Artículos",
     "about": "Sobre mí",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "simpleWebsites": "Web Simple",
+    "onlineStores": "Tienda Online",
+    "customWeb": "Web Personalizada"
   },
   "hero": {
     "name": "Ewe José Omusi Sáez",
@@ -147,7 +150,7 @@
         "price": "€50 comisión directa (10% de €500)"
       },
       "shopify": {
-        "title": "Tienda Shopify",
+        "title": "Tienda Online",
         "description": "Para negocios que quieren vender productos online",
         "price": "€150 comisión garantizada (10% de €1500)"
       },
@@ -179,7 +182,7 @@
     },
     "faq": {
       "title": "Preguntas Comunes sobre el Programa",
-      "subtitle": "Todo lo que necesitas saber para empezar a ganar hoy mismo",
+      "subtitle": "Todo lo que necesitas saber para empezar a ganar",
       "items": {
         "payment": {
           "question": "¿Cuándo y cómo recibo mi dinero?",
@@ -201,14 +204,35 @@
     },
     "contact": {
       "title": "¿Listo para Empezar a Ganar Dinero Extra?",
-      "subtitle": "Contáctame directamente y empieza a generar ingresos hoy mismo",
+      "subtitle": "Contáctame directamente y empieza a generar ingresos",
       "phoneCta": "¡Llámame ahora y empecemos!",
-      "phone": "+34 632 239 50",
+      "phone": "+34 624 981 668",
       "whatsapp": "WhatsApp",
       "email": "Email",
       "freeConsultation": "Sin costos ocultos ni cuotas de membresía",
       "urgency": "¡Últimos 3 cupos premium disponibles este mes!",
-      "guarantee": "Garantía de pago en 72 horas o te compensamos el tiempo"
+      "guarantee": "Garantía de pago en 72 horas o te compensamos el tiempo",
+      "directContactTitle": "¿Prefieres contactarme directamente?",
+      "form": {
+        "title": "Refiere un Cliente y Gana Comisión",
+        "subtitle": "Los contactaré si proporcionas email/teléfono, o los identificaré por nombre cuando me contacten",
+        "submit": "Enviar Referencia y Ganar €50-€200+",
+        "sending": "Enviando referencia...",
+        "success": "¡Referencia enviada! Los contactaré si proporcionaste email/teléfono, o los identificaré por nombre cuando me contacten.",
+        "error": "Error al enviar la referencia. Por favor, inténtalo de nuevo.",
+        "promise": "Comisión pagada en 72 horas tras proyecto exitoso. Sin compromiso.",
+        "telegram": {
+          "newReferral": "Nueva Referencia de Cliente",
+          "referrer": "REFERIDOR",
+          "client": "CLIENTE REFERIDO",
+          "name": "Nombre",
+          "email": "Email",
+          "phone": "Teléfono",
+          "additionalMessage": "Mensaje adicional",
+          "date": "Fecha",
+          "notProvided": "No proporcionado"
+        }
+      }
     }
   },
   "webpages": {
@@ -229,7 +253,7 @@
     "services": {
       "simpleWebsites": {
         "title": "Páginas Web que Atraen Clientes",
-        "price": "€300 - €500",
+        "price": "€300 ~ €500",
         "priceAnchor": "¡Ahorra €500+ comparado con agencias!",
         "target": "La solución perfecta para restaurantes, servicios locales y pequeñas empresas",
         "painPoint": "Empieza a recibir llamadas de clientes NUEVOS esta misma semana",
@@ -246,8 +270,8 @@
         "cta": "Obtén Presupuesto Web Simple"
       },
       "simpleShopify": {
-        "title": "Tiendas Shopify",
-        "price": "€1000 - €1500",
+        "title": "Tiendas Online",
+        "price": "€1000 ~ €1500",
         "target": "Empieza a vender online inmediatamente",
         "painPoint": "Tus clientes ya compran online - ¿y tú?",
         "features": [
@@ -261,7 +285,7 @@
         ],
         "timeline": "Entrega en 5-7 días",
         "socialProof": "30 días de soporte gratuito",
-        "cta": "Obtén Presupuesto Shopify"
+        "cta": "Obtener Presupuesto tienda online"
       },
       "customShopify": {
         "title": "Todo Tipo de Páginas y Aplicaciones a Medida",
@@ -290,14 +314,6 @@
         "experience": {
           "title": "5+ Años de Experiencia Especializada",
           "description": "Ingeniero Telemático con historial probado en desarrollo web"
-        },
-        "education": {
-          "title": "Excelencia Técnica",
-          "description": "Formación en ingeniería asegura soluciones robustas y escalables"
-        },
-        "languages": {
-          "title": "Soporte Bilingüe",
-          "description": "Español nativo e inglés profesional"
         },
         "speed": {
           "title": "Entrega Más Rápida",
@@ -349,15 +365,15 @@
         },
         "timeline": {
           "question": "¿Cuánto tiempo tardamos en construir una página web?",
-          "answer": "Páginas simples: 3-5 días. Tiendas Shopify: 5-7 días. Proyectos personalizados: 1-2 semanas. Somos los más rápidos de la industria - sin retrasos de meses."
+          "answer": "Páginas simples: 3-5 días. Tiendas Online: 5-7 días. Proyectos personalizados: 1-2 semanas. Somos los más rápidos de la industria - sin retrasos de meses."
         },
         "revisions": {
           "question": "¿Cuántas revisiones están incluidas?",
-          "answer": "Páginas simples: 3 rondas. Tiendas Shopify: 4 rondas. Proyectos personalizados: Revisiones ilimitadas. Queremos que estés 100% satisfecho."
+          "answer": "Páginas simples: 3 rondas. Tiendas Online: 4 rondas. Proyectos personalizados: Revisiones ilimitadas. Queremos que estés 100% satisfecho."
         },
         "hosting": {
           "question": "¿Proporcionan hosting?",
-          "answer": "Para páginas web simples con tráfico normal, proporciono hosting gratuito el primer año. Para tiendas Shopify, el hosting está incluido en el plan mensual de Shopify. Para sitios de alto tráfico, recomendamos proveedores de hosting confiables."
+          "answer": "Para páginas web simples con tráfico normal, proporciono hosting gratuito el primer año. Para tiendas online, el hosting está incluido en el plan mensual. Para otros tipos como sitios de alto tráfico, recomendamos proveedores de hosting confiables."
         },
         "maintenance": {
           "question": "¿Qué pasa con el mantenimiento continuo?",
@@ -366,10 +382,6 @@
         "payment": {
           "question": "¿Cuáles son los términos de pago?",
           "answer": "50% por adelantado para comenzar el proyecto, 50% al completar. Para proyectos más grandes, podemos discutir pagos basados en hitos."
-        },
-        "domain": {
-          "question": "¿Ayudan con la configuración del dominio?",
-          "answer": "Sí, podemos ayudarte a comprar y configurar tu nombre de dominio, o trabajar con tu dominio existente."
         },
         "seo": {
           "question": "¿Está incluido el SEO?",
@@ -384,13 +396,94 @@
     "contact": {
       "title": "¿Preparado para Dejar de Perder Oportunidades de Negocio?",
       "subtitle": "Hablemos 15 minutos sin compromiso sobre cómo una página web puede transformar tu negocio",
+      "directContactTitle": "Contacto Directo",
+      "directContactSubtitle": "¿Prefieres hablar directamente? Contáctame por el medio que prefieras: llamada, WhatsApp o email.",
       "phoneCta": "¡Llámame ahora mismo - es gratis!",
-      "phone": "+34 632 239 50",
+      "phone": "+34 624 981 668",
       "whatsapp": "WhatsApp",
       "email": "ewejose@gmail.com",
       "freeConsultation": "Consulta GRATUITA para identificar exactamente lo que necesitas",
       "urgency": "¡Atención! Solo 3 cupos disponibles este mes para proyectos personalizados",
-      "guarantee": "Garantía de satisfacción: si no estás contento, rehacemos hasta que lo estés"
+      "guarantee": "Garantía de satisfacción: si no estás contento, rehacemos hasta que lo estés",
+      "form": {
+        "title": "¿Prefieres que te llame yo?",
+        "subtitle": "Déjame tu mensaje y te contacto en menos de 1 hora",
+        "name": "Nombre",
+        "email": "Email",
+        "phone": "Teléfono (opcional)",
+        "websiteType": "¿Qué tipo de página web necesitas?",
+        "submit": "Obtener mi presupuesto GRATIS en 1h",
+        "sending": "Enviando...",
+        "success": "¡Mensaje enviado! Te contactaré en 1 hora.",
+        "error": "Error al enviar mensaje. Inténtalo de nuevo.",
+        "promise": "Te responderé en menos de 1 hora. Sin compromiso.",
+        "websiteTypes": {
+          "simple": "Página Web Empresarial Simple",
+          "shopify": "Tienda Online",
+          "custom": "Aplicación Web Personalizada",
+          "other": "Otro"
+        },
+        "placeholders": {
+          "name": "Nombre",
+          "email": "Email",
+          "phone": "Teléfono (opcional)",
+          "message": "Mensaje"
+        },
+        "sections": {
+          "referrerData": "Tus datos (Referidor)",
+          "clientData": "Datos del cliente a referir",
+          "additionalInfo": "Información adicional"
+        },
+        "referrerPlaceholders": {
+          "name": "Tu nombre",
+          "email": "Tu email",
+          "phone": "Tu teléfono (opcional)"
+        },
+        "clientPlaceholders": {
+          "name": "Nombre del cliente",
+          "email": "Email del cliente (opcional)",
+          "phone": "Teléfono del cliente (opcional)"
+        },
+        "additionalInfoPlaceholder": "Información adicional sobre el proyecto o cliente...",
+        "telegram": {
+          "newInquiry": "Nueva consulta de presupuesto",
+          "name": "Nombre",
+          "email": "Email",
+          "phone": "Teléfono",
+          "websiteType": "Tipo de web",
+          "message": "Mensaje",
+          "date": "Fecha",
+          "notProvided": "No proporcionado",
+          "notSpecified": "No especificado"
+        }
+      }
     }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Diciembre 2024",
+    "introduction": "Esta política de privacidad describe cómo recopilamos, usamos y protegemos tu información personal cuando utilizas nuestro sitio web.",
+    "dataCollection": {
+      "title": "Datos que Recopilamos",
+      "content": "Recopilamos información que nos proporcionas directamente, como cuando completas nuestros formularios de contacto, incluyendo tu nombre, dirección de email, número de teléfono y cualquier mensaje que nos envíes."
+    },
+    "dataUsage": {
+      "title": "Cómo Usamos tus Datos",
+      "content": "Utilizamos tu información para responder a tus consultas, proporcionar nuestros servicios y mejorar nuestro sitio web. No vendemos ni compartimos tu información personal con terceros."
+    },
+    "dataProtection": {
+      "title": "Protección de Datos",
+      "content": "Implementamos medidas de seguridad apropiadas para proteger tu información personal contra acceso no autorizado, alteración, divulgación o destrucción."
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "content": "Si tienes alguna pregunta sobre esta política de privacidad, por favor contáctanos en ewejose@gmail.com"
+    }
+  },
+  "cookies": {
+    "title": "Cookies",
+    "message": "Utilizamos cookies para mejorar tu experiencia en nuestro sitio web.",
+    "accept": "OK",
+    "decline": "Rechazar"
   }
 }

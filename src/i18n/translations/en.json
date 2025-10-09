@@ -4,7 +4,10 @@
     "projects": "Projects",
     "articles": "Articles",
     "about": "About Me",
-    "contact": "Contact"
+    "contact": "Contact",
+    "simpleWebsites": "Simple Website",
+    "onlineStores": "Online Store",
+    "customWeb": "Custom Web"
   },
   "hero": {
     "name": "Ewe José Omusi Sáez",
@@ -147,7 +150,7 @@
         "price": "€50 direct commission (10% of €500)"
       },
       "shopify": {
-        "title": "Shopify Store",
+        "title": "Online Store",
         "description": "For businesses that want to sell products online",
         "price": "€150 guaranteed commission (10% of €1500)"
       },
@@ -179,7 +182,7 @@
     },
     "faq": {
       "title": "Common Questions About the Program",
-      "subtitle": "Everything you need to know to start earning today",
+      "subtitle": "Everything you need to know to start earning",
       "items": {
         "payment": {
           "question": "When and how do I receive my money?",
@@ -201,14 +204,35 @@
     },
     "contact": {
       "title": "Ready to Start Earning Extra Money?",
-      "subtitle": "Contact me directly and start generating income today",
+      "subtitle": "Contact me directly and start generating income",
       "phoneCta": "Call me now and let's get started!",
-      "phone": "+34 632 239 50",
+      "phone": "+34 624 981 668",
       "whatsapp": "WhatsApp",
       "email": "Email",
       "freeConsultation": "No hidden costs or membership fees",
       "urgency": "Last 3 premium slots available this month!",
-      "guarantee": "Payment guarantee in 72 hours or we compensate your time"
+      "guarantee": "Payment guarantee in 72 hours or we compensate your time",
+      "directContactTitle": "Prefer to contact me directly?",
+      "form": {
+        "title": "Refer a Client & Earn Commission",
+        "subtitle": "I'll contact them if you provide email/phone, or identify by name when they contact me",
+        "submit": "Send Referral & Earn €50-€200+",
+        "sending": "Sending referral...",
+        "success": "Referral sent! I'll contact them if you provided email/phone, or identify by name when they contact me.",
+        "error": "Error sending referral. Please try again.",
+        "promise": "Commission paid within 72 hours of successful project. No commitment required.",
+        "telegram": {
+          "newReferral": "New Client Referral",
+          "referrer": "REFERRER",
+          "client": "REFERRED CLIENT",
+          "name": "Name",
+          "email": "Email",
+          "phone": "Phone",
+          "additionalMessage": "Additional message",
+          "date": "Date",
+          "notProvided": "Not provided"
+        }
+      }
     }
   },
   "webpages": {
@@ -229,7 +253,7 @@
     "services": {
       "simpleWebsites": {
         "title": "Websites That Attract Customers",
-        "price": "€300 - €500",
+        "price": "€300 ~ €500",
         "priceAnchor": "Save €500+ compared to agencies!",
         "target": "The perfect solution for restaurants, local services and small businesses",
         "painPoint": "Start receiving calls from NEW customers this same week",
@@ -246,8 +270,8 @@
         "cta": "Get Simple Web Quote"
       },
       "simpleShopify": {
-        "title": "Shopify Stores",
-        "price": "€1000 - €1500",
+        "title": "Online Stores",
+        "price": "€1000 ~ €1500",
         "target": "Start selling online immediately",
         "painPoint": "Your customers already buy online - and you?",
         "features": [
@@ -261,7 +285,7 @@
         ],
         "timeline": "Delivery in 5-7 days",
         "socialProof": "30 days of free support",
-        "cta": "Get Shopify Quote"
+        "cta": "Get Online Store Quote"
       },
       "customShopify": {
         "title": "All Types of Custom Pages and Applications",
@@ -290,14 +314,6 @@
         "experience": {
           "title": "5+ Years of Specialized Experience",
           "description": "Telecommunications Engineer with proven track record in web development"
-        },
-        "education": {
-          "title": "Technical Excellence",
-          "description": "Engineering training ensures robust and scalable solutions"
-        },
-        "languages": {
-          "title": "Bilingual Support",
-          "description": "Native Spanish and professional English"
         },
         "speed": {
           "title": "Faster Delivery",
@@ -349,15 +365,15 @@
         },
         "timeline": {
           "question": "How long does it take us to build a website?",
-          "answer": "Simple pages: 3-5 days. Shopify stores: 5-7 days. Custom projects: 1-2 weeks. We are the fastest in the industry - no months of delays."
+          "answer": "Simple pages: 3-5 days. Online stores: 5-7 days. Custom projects: 1-2 weeks. We are the fastest in the industry - no months of delays."
         },
         "revisions": {
           "question": "How many revisions are included?",
-          "answer": "Simple pages: 3 rounds. Shopify stores: 4 rounds. Custom projects: Unlimited revisions. We want you to be 100% satisfied."
+          "answer": "Simple pages: 3 rounds. Online stores: 4 rounds. Custom projects: Unlimited revisions. We want you to be 100% satisfied."
         },
         "hosting": {
           "question": "Do you provide hosting?",
-          "answer": "For simple websites with normal traffic, I provide free hosting the first year. For Shopify stores, hosting is included in the monthly Shopify plan. For high-traffic sites, we recommend reliable hosting providers."
+          "answer": "For simple websites with normal traffic, I provide free hosting the first year. For online stores, hosting is included in the monthly plan. For high-traffic sites, we recommend reliable hosting providers."
         },
         "maintenance": {
           "question": "What about ongoing maintenance?",
@@ -366,10 +382,6 @@
         "payment": {
           "question": "What are the payment terms?",
           "answer": "50% upfront to start the project, 50% upon completion. For larger projects, we can discuss milestone-based payments."
-        },
-        "domain": {
-          "question": "Do you help with domain setup?",
-          "answer": "Yes, we can help you purchase and set up your domain name, or work with your existing domain."
         },
         "seo": {
           "question": "Is SEO included?",
@@ -384,13 +396,94 @@
     "contact": {
       "title": "Ready to Stop Losing Business Opportunities?",
       "subtitle": "Let's talk 15 minutes without commitment about how a website can transform your business",
+      "directContactTitle": "Direct Contact",
+      "directContactSubtitle": "Prefer to talk directly? Contact me through your preferred method: call, WhatsApp or email.",
       "phoneCta": "Call me right now - it's free!",
-      "phone": "+34 632 239 50",
+      "phone": "+34 624 981 668",
       "whatsapp": "WhatsApp",
       "email": "ewejose@gmail.com",
       "freeConsultation": "FREE consultation to identify exactly what you need",
       "urgency": "Attention! Only 3 slots available this month for custom projects",
-      "guarantee": "Satisfaction guarantee: if you're not happy, we'll redo until you are"
+      "guarantee": "Satisfaction guarantee: if you're not happy, we'll redo until you are",
+      "form": {
+        "title": "Prefer me to call you?",
+        "subtitle": "Leave me your message and I'll contact you in less than 1 hour",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone (optional)",
+        "websiteType": "What type of website do you need?",
+        "submit": "Get my FREE quote in 1h",
+        "sending": "Sending...",
+        "success": "Message sent! I'll contact you within 1 hour.",
+        "error": "Error sending message. Please try again.",
+        "promise": "I'll respond in less than 1 hour. No commitment.",
+        "websiteTypes": {
+          "simple": "Simple Business Website",
+          "shopify": "Online Store",
+          "custom": "Custom Web Application",
+          "other": "Other"
+        },
+        "placeholders": {
+          "name": "Name",
+          "email": "Email",
+          "phone": "Phone (optional)",
+          "message": "Message"
+        },
+        "sections": {
+          "referrerData": "Your Data (Referrer)",
+          "clientData": "Client Data to Refer",
+          "additionalInfo": "Additional Information"
+        },
+        "referrerPlaceholders": {
+          "name": "Your name",
+          "email": "Your email",
+          "phone": "Your phone (optional)"
+        },
+        "clientPlaceholders": {
+          "name": "Client name",
+          "email": "Client email (optional)",
+          "phone": "Client phone (optional)"
+        },
+        "additionalInfoPlaceholder": "Additional information about the project or client...",
+        "telegram": {
+          "newInquiry": "New Quote Inquiry",
+          "name": "Name",
+          "email": "Email",
+          "phone": "Phone",
+          "websiteType": "Website Type",
+          "message": "Message",
+          "date": "Date",
+          "notProvided": "Not provided",
+          "notSpecified": "Not specified"
+        }
+      }
     }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: December 2024",
+    "introduction": "This privacy policy describes how we collect, use, and protect your personal information when you use our website.",
+    "dataCollection": {
+      "title": "Data We Collect",
+      "content": "We collect information you provide directly to us, such as when you fill out our contact forms, including your name, email address, phone number, and any messages you send us."
+    },
+    "dataUsage": {
+      "title": "How We Use Your Data",
+      "content": "We use your information to respond to your inquiries, provide our services, and improve our website. We do not sell or share your personal information with third parties."
+    },
+    "dataProtection": {
+      "title": "Data Protection",
+      "content": "We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about this privacy policy, please contact us at ewejose@gmail.com"
+    }
+  },
+  "cookies": {
+    "title": "Cookies",
+    "message": "We use cookies to improve your experience on our website.",
+    "accept": "OK",
+    "decline": "Decline"
   }
 }

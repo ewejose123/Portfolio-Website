@@ -1,23 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { headers } from "next/headers";
 import { CSPostHogProvider } from "@/components/PostHogProvider";
+import CookiePopup from "@/components/CookiePopup";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Ewe José - Desarrollo Web Profesional | Páginas Web desde €300",
-  description: "Desarrollador web profesional con 5+ años de experiencia. Páginas web desde €300, tiendas Shopify, aplicaciones personalizadas. Entrega en 3-7 días.",
+  description: "Desarrollador web profesional con 5+ años de experiencia. Páginas web desde €300, tiendas online, aplicaciones personalizadas. Entrega en 3-7 días.",
   keywords: "desarrollo web, páginas web, diseño web profesional, páginas web baratas, desarrollo web España, páginas web responsive, SEO web, tiendas online, Shopify España",
   authors: [{ name: "Ewe José Omusi Sáez" }],
   creator: "Ewe José Omusi Sáez",
@@ -38,7 +41,7 @@ export const metadata: Metadata = {
     locale: 'es_ES',
     url: 'https://ewejose.com',
     title: "Ewe José - Desarrollo Web Profesional | Páginas Web desde €300",
-    description: "Desarrollador web profesional con 5+ años de experiencia. Páginas web desde €300, tiendas Shopify, aplicaciones personalizadas.",
+    description: "Desarrollador web profesional con 5+ años de experiencia. Páginas web desde €300, tiendas online, aplicaciones personalizadas.",
     siteName: "Ewe José - Desarrollo Web",
     images: [
       {
@@ -83,11 +86,12 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}>
         <CSPostHogProvider>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
             {/* Navbar is rendered inside the locale layout to get i18n context */}
             <div className="pt-16">{children}</div>
+            <CookiePopup />
           </ThemeProvider>
         </CSPostHogProvider>
       </body>

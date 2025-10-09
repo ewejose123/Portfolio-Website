@@ -6,7 +6,7 @@ import { ReactNode, useEffect, useState } from 'react'
 interface AnimatedSectionProps {
   children: ReactNode
   className?: string
-  animation?: 'fadeInUp' | 'fadeInLeft' | 'fadeInRight'
+  animation?: 'fadeInUp' | 'fadeInLeft' | 'fadeInRight' | 'slideInUp' | 'scaleIn'
   delay?: number
   immediate?: boolean
 }
@@ -28,7 +28,9 @@ export default function AnimatedSection({
   const animationClasses = {
     fadeInUp: 'animate-fade-in-up',
     fadeInLeft: 'animate-fade-in-left',
-    fadeInRight: 'animate-fade-in-right'
+    fadeInRight: 'animate-fade-in-right',
+    slideInUp: 'animate-slide-in-up',
+    scaleIn: 'animate-scale-in'
   }
 
   // If immediate is true, always show as visible
@@ -43,7 +45,7 @@ export default function AnimatedSection({
         } ${className}`}
       style={{
         transitionDelay: `${delay}ms`,
-        transition: shouldShow ? 'opacity 0.6s ease-out, transform 0.6s ease-out' : 'none'
+        transition: shouldShow ? 'none' : 'none'
       }}
     >
       {children}

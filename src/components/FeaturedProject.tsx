@@ -22,19 +22,19 @@ export default function FeaturedProject() {
                         rel="noopener noreferrer"
                         className="block"
                     >
-                        <div className="w-full h-32 sm:h-40 lg:h-48 xl:h-56 2xl:h-64 rounded-xl overflow-hidden relative cursor-pointer featured-project-image">
+                        <div className="w-full h-32 sm:h-40 lg:h-48 xl:h-56 2xl:h-64 rounded-xl relative cursor-pointer featured-project-image project-image-container">
                             {/* Fallback Image */}
                             <Image
                                 src="/projects/xenora-rush.jpg"
                                 alt="Xenora Rush - Competitive Multiplayer Game"
                                 fill
-                                className="object-cover transition-transform duration-300 hover:scale-105"
+                                className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 600px"
                                 priority
                             />
                             {/* Auto-playing Video Overlay */}
                             <video
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                                className="absolute inset-0 w-full h-full object-cover"
                                 autoPlay
                                 loop
                                 muted

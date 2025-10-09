@@ -34,7 +34,7 @@ export default function Navbar() {
   }, [lastScrollY])
 
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'
+    <header className={`fixed top-0 inset-x-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border transition-transform duration-300 font-sans ${isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}>
       {/* Desktop Navigation */}
       <nav className="hidden md:flex mx-auto max-w-6xl px-6 h-16 items-center gap-8 text-sm">
@@ -48,19 +48,19 @@ export default function Navbar() {
           href={`/${locale}#simple-websites`}
           className="hover:text-accent transition-colors duration-200 font-medium"
         >
-          Simple Website
+          {t('nav.simpleWebsites')}
         </Link>
         <Link
           href={`/${locale}#simple-shopify`}
           className="hover:text-accent transition-colors duration-200 font-medium"
         >
-          Shopify Shop
+          {t('nav.onlineStores')}
         </Link>
         <Link
           href={`/${locale}#custom-shopify`}
           className="hover:text-accent transition-colors duration-200 font-medium"
         >
-          Custom Web
+          {t('nav.customWeb')}
         </Link>
         <Link
           href={`/${locale}/referidos`}

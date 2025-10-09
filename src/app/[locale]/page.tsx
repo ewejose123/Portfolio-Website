@@ -1,8 +1,9 @@
 import { getTranslations } from "next-intl/server"
 import AnimatedSection from "@/components/AnimatedSection"
+import StaggeredReveal from "@/components/StaggeredReveal"
 import CollapsibleFAQ from "@/components/CollapsibleFAQ"
 import ContactTracker from "@/components/ContactTracker"
-import TestimonialsCarousel from "@/components/TestimonialsCarousel"
+import CompactContactForm from "@/components/CompactContactForm"
 import Image from "next/image"
 import type { Metadata } from "next"
 
@@ -141,7 +142,7 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                         "url": `https://ewejose.com/${locale}`,
                         "logo": "https://ewejose.com/logo.png",
                         "image": "https://ewejose.com/og-image.jpg",
-                        "telephone": "+34 632 239 50",
+                        "telephone": "+34 624 981 668",
                         "email": "ewejose@gmail.com",
                         "address": {
                             "@type": "PostalAddress",
@@ -223,12 +224,12 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
             <main>
                 {/* Hero Section */}
                 <section id="hero" className="min-h-[70vh] flex items-center justify-center px-4 sm:px-8 lg:px-16 xl:px-20 2xl:px-24 py-16 relative">
-                    <div className="absolute inset-0 z-0">
+                    <div className="absolute inset-0 z-0 overflow-hidden">
                         <Image
                             src="/hero-background.jpg"
                             alt="Hero Background"
                             fill
-                            className="object-cover"
+                            className="object-cover animate-hero-background-zoom"
                             priority
                         />
                         <div className="absolute inset-0 bg-black/70"></div>
@@ -277,56 +278,32 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                 </section>
 
                 {/* Star Rating Section */}
-                <section className="px-6 pt-2 pb-4 bg-muted/10">
+                <section className="px-6 py-8 bg-muted/10">
                     <div className="max-w-7xl mx-auto text-center">
                         <AnimatedSection animation="fadeInUp">
-                            {/* Desktop Layout */}
-                            <div className="hidden md:flex items-center justify-center gap-4">
+                            <div className="flex items-center justify-center gap-4">
                                 <div className="flex gap-1 text-yellow-400">
                                     {[...Array(5)].map((_, i) => (
                                         <span key={i} className="text-2xl font-black">★</span>
                                     ))}
                                 </div>
-                                <p className="text-xl font-bold text-foreground leading-none">
+                                <p className="text-xl font-bold text-foreground">
                                     {t("webpages.starRating.title")}
                                 </p>
-                                <p className="text-xl text-muted-foreground font-semibold leading-none">
+                                <p className="text-lg text-muted-foreground font-semibold">
                                     {t("webpages.starRating.subtitle")}
                                 </p>
-                            </div>
-
-                            {/* Mobile Layout - Compact */}
-                            <div className="md:hidden">
-                                {/* Stars on top */}
-                                <div className="flex justify-center gap-1 text-yellow-400 mb-1">
-                                    {[...Array(5)].map((_, i) => (
-                                        <span key={i} className="text-xl font-black">★</span>
-                                    ))}
-                                </div>
-                                {/* Text below in one line - centered in their respective parts */}
-                                <div className="flex items-center justify-between text-sm font-semibold leading-none">
-                                    <div className="flex-1 text-center">
-                                        <span className="text-foreground">
-                                            {t("webpages.starRating.title")}
-                                        </span>
-                                    </div>
-                                    <div className="flex-1 text-center">
-                                        <span className="text-muted-foreground">
-                                            {t("webpages.starRating.subtitle")}
-                                        </span>
-                                    </div>
-                                </div>
                             </div>
                         </AnimatedSection>
                     </div>
                 </section>
 
-                {/* Simple Shopify Section - Left Info, Right Visuals */}
-                <section id="simple-shopify" className="px-6 py-20 bg-blue-900/5">
+                {/* Online Stores Section - Left Info, Right Visuals */}
+                <section id="simple-shopify" className="px-6 py-20 section-with-dots section-fade-top section-fade-bottom">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            <AnimatedSection animation="fadeInLeft">
-                                <div className="space-y-6">
+                            <div className="space-y-6">
+                                <StaggeredReveal animationType="title" staggerDelay={0}>
                                     <div className="space-y-4">
                                         <h2 className="text-4xl md:text-5xl font-bold text-foreground">
                                             {t("webpages.services.simpleShopify.title")}
@@ -340,13 +317,17 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                             {t("webpages.services.simpleShopify.target")}
                                         </p>
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={100}>
                                     <div className="p-4 rounded-lg bg-orange-50/50 dark:bg-orange-900/20 border border-border">
                                         <p className="text-foreground font-medium">
                                             {t("webpages.services.simpleShopify.painPoint")}
                                         </p>
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={150}>
                                     <div className="space-y-3">
                                         {(t.raw("webpages.services.simpleShopify.features") as string[]).map((feature: string, index: number) => (
                                             <div key={index} className="flex items-center gap-3">
@@ -355,7 +336,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                             </div>
                                         ))}
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={200}>
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
                                             <span className="w-2 h-2 rounded-full bg-accent"></span>
@@ -366,7 +349,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                             {t("webpages.services.simpleShopify.socialProof")}
                                         </div>
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={250}>
                                     <ContactTracker
                                         contactType="contact_section"
                                         serviceType="simple_shopify"
@@ -374,51 +359,49 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                     >
                                         <a
                                             href="#contact"
-                                            className="inline-block px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                            className="cta-button inline-block px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 shadow-lg hover:shadow-xl"
                                         >
                                             {t("webpages.services.simpleShopify.cta")}
                                         </a>
                                     </ContactTracker>
-                                </div>
-                            </AnimatedSection>
+                                </StaggeredReveal>
+                            </div>
 
-                            <AnimatedSection animation="fadeInRight">
-                                {/* <a href="https://thesamsneakers.com" target="_blank" rel="noopener noreferrer" className="block"> */}
-                                <div className="relative h-[28rem] rounded-2xl overflow-hidden border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+                            <StaggeredReveal animationType="image" staggerDelay={50}>
+                                <div className="relative h-[28rem] rounded-2xl border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 project-image-container">
                                     <Image
                                         src="/projects/shopify-mockup.jpg"
-                                        alt="Simple Shopify Shop Mockup"
+                                        alt="Online Store Mockup"
                                         fill
                                         className="object-cover"
                                     />
                                 </div>
-                                {/* </a> */}
-                            </AnimatedSection>
+                            </StaggeredReveal>
                         </div>
                     </div>
                 </section>
 
-                {/* Simple Websites Section - Right Info, Left Visuals */}
-                <section id="simple-websites" className="px-6 py-20">
+                {/* Basic Websites Section - Right Info, Left Visuals */}
+                <section id="simple-websites" className="px-6 py-20 section-clean section-fade-top section-fade-bottom">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
                             {/* Image - Hidden on mobile, shown first on desktop */}
-                            <AnimatedSection animation="fadeInLeft" className="hidden lg:block">
+                            <StaggeredReveal animationType="image" staggerDelay={0} className="hidden lg:block">
                                 <a href="https://xenovarush.com" target="_blank" rel="noopener noreferrer" className="block">
-                                    <div className="relative h-[28rem] rounded-2xl overflow-hidden border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+                                    <div className="relative h-[28rem] rounded-2xl border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 project-image-container">
                                         <Image
                                             src="/projects/xenora-rush.jpg"
-                                            alt="Simple Website Mockup"
+                                            alt="Basic Website Mockup"
                                             fill
                                             className="object-cover"
                                         />
                                     </div>
                                 </a>
-                            </AnimatedSection>
+                            </StaggeredReveal>
 
                             {/* Content - Shown first on mobile, second on desktop */}
-                            <AnimatedSection animation="fadeInRight">
-                                <div className="space-y-6">
+                            <div className="space-y-6">
+                                <StaggeredReveal animationType="title" staggerDelay={50}>
                                     <div className="space-y-4">
                                         <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                                             {t("webpages.services.simpleWebsites.title")}
@@ -435,13 +418,17 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                             {t("webpages.services.simpleWebsites.target")}
                                         </p>
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={100}>
                                     <div className="p-4 rounded-lg bg-orange-50/50 dark:bg-orange-900/20 border border-border">
                                         <p className="text-foreground font-medium">
                                             {t("webpages.services.simpleWebsites.painPoint")}
                                         </p>
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={150}>
                                     <div className="space-y-3">
                                         {(t.raw("webpages.services.simpleWebsites.features") as string[]).map((feature: string, index: number) => (
                                             <div key={index} className="flex items-center gap-3">
@@ -450,7 +437,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                             </div>
                                         ))}
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={200}>
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
                                             <span className="w-2 h-2 rounded-full bg-accent"></span>
@@ -461,7 +450,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                             {t("webpages.services.simpleWebsites.guarantee")}
                                         </div>
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={250}>
                                     <ContactTracker
                                         contactType="contact_section"
                                         serviceType="simple_website"
@@ -469,37 +460,37 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                     >
                                         <a
                                             href="#contact"
-                                            className="inline-block px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                            className="cta-button inline-block px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 shadow-lg hover:shadow-xl"
                                         >
                                             {t("webpages.services.simpleWebsites.cta")}
                                         </a>
                                     </ContactTracker>
-                                </div>
-                            </AnimatedSection>
+                                </StaggeredReveal>
+                            </div>
 
                             {/* Mobile Image - Shown only on mobile, at the bottom */}
-                            <AnimatedSection animation="fadeInUp" className="lg:hidden">
+                            <StaggeredReveal animationType="image" staggerDelay={100} className="lg:hidden">
                                 <a href="https://xenovarush.com" target="_blank" rel="noopener noreferrer" className="block">
-                                    <div className="relative h-[20rem] rounded-2xl overflow-hidden border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+                                    <div className="relative h-[20rem] rounded-2xl border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 project-image-container">
                                         <Image
                                             src="/projects/xenora-rush.jpg"
-                                            alt="Simple Website Mockup"
+                                            alt="Basic Website Mockup"
                                             fill
                                             className="object-cover"
                                         />
                                     </div>
                                 </a>
-                            </AnimatedSection>
+                            </StaggeredReveal>
                         </div>
                     </div>
                 </section>
 
-                {/* Custom Shopify Section - Left Info, Right Visuals */}
-                <section id="custom-shopify" className="px-6 py-20 bg-blue-900/5">
+                {/* Custom Websites/Apps Section - Left Info, Right Visuals */}
+                <section id="custom-shopify" className="px-6 py-20 section-with-dots section-fade-top section-fade-bottom">
                     <div className="max-w-7xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            <AnimatedSection animation="fadeInLeft">
-                                <div className="space-y-6">
+                            <div className="space-y-6">
+                                <StaggeredReveal animationType="title" staggerDelay={0}>
                                     <div className="space-y-4">
                                         <div className="flex items-center gap-3">
                                             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -515,13 +506,17 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                             {t("webpages.services.customShopify.target")}
                                         </p>
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={100}>
                                     <div className="p-4 rounded-lg bg-orange-50/50 dark:bg-orange-900/20 border border-border">
                                         <p className="text-foreground font-medium">
                                             {t("webpages.services.customShopify.painPoint")}
                                         </p>
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={150}>
                                     <div className="space-y-3">
                                         {(t.raw("webpages.services.customShopify.features") as string[]).map((feature: string, index: number) => (
                                             <div key={index} className="flex items-center gap-3">
@@ -530,7 +525,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                             </div>
                                         ))}
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={200}>
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
                                             <span className="w-2 h-2 rounded-full bg-accent"></span>
@@ -541,7 +538,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                             {t("webpages.services.customShopify.roi")}
                                         </div>
                                     </div>
+                                </StaggeredReveal>
 
+                                <StaggeredReveal animationType="content" staggerDelay={250}>
                                     <ContactTracker
                                         contactType="contact_section"
                                         serviceType="custom_shopify"
@@ -549,44 +548,44 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                     >
                                         <a
                                             href="#contact"
-                                            className="inline-block px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                            className="cta-button inline-block px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 shadow-lg hover:shadow-xl"
                                         >
                                             {t("webpages.services.customShopify.cta")}
                                         </a>
                                     </ContactTracker>
-                                </div>
-                            </AnimatedSection>
+                                </StaggeredReveal>
+                            </div>
 
-                            <AnimatedSection animation="fadeInRight">
+                            <StaggeredReveal animationType="image" staggerDelay={50}>
                                 <a href="https://taskmanagerpro-jade.vercel.app/" target="_blank" rel="noopener noreferrer" className="block">
-                                    <div className="relative h-[28rem] rounded-2xl overflow-hidden border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+                                    <div className="relative h-[28rem] rounded-2xl border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 project-image-container">
                                         <Image
                                             src="/projects/taskmanager-pro.jpg"
-                                            alt="Custom Shopify & Web App Mockup"
+                                            alt="Custom Website/App Mockup"
                                             fill
                                             className="object-cover"
                                         />
                                     </div>
                                 </a>
-                            </AnimatedSection>
+                            </StaggeredReveal>
                         </div>
                     </div>
                 </section>
 
                 {/* Why Choose Me Section */}
-                <section className="px-6 py-20">
+                <section className="px-6 py-20 section-clean section-fade-top section-fade-bottom">
                     <div className="max-w-7xl mx-auto">
-                        <AnimatedSection animation="fadeInUp" className="text-center mb-16">
+                        <StaggeredReveal animationType="title" staggerDelay={0} className="text-center mb-16">
                             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                                 {t("webpages.whyChooseMe.title")}
                             </h2>
                             <p className="text-muted-foreground text-xl">
                                 {t("webpages.whyChooseMe.subtitle")}
                             </p>
-                        </AnimatedSection>
+                        </StaggeredReveal>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <AnimatedSection animation="fadeInUp" delay={100}>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                            <StaggeredReveal animationType="content" staggerDelay={50}>
                                 <div className="p-6 rounded-2xl border border-border bg-card/95 hover:border-accent/50 transition-all duration-300 text-center shadow-lg">
                                     <div className="text-4xl mb-4">🎯</div>
                                     <h3 className="text-xl font-semibold text-foreground mb-2">
@@ -596,33 +595,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                         {t("webpages.whyChooseMe.points.experience.description")}
                                     </p>
                                 </div>
-                            </AnimatedSection>
+                            </StaggeredReveal>
 
-                            <AnimatedSection animation="fadeInUp" delay={200}>
-                                <div className="p-6 rounded-2xl border border-border bg-card/95 hover:border-accent/50 transition-all duration-300 text-center shadow-lg">
-                                    <div className="text-4xl mb-4">⚙️</div>
-                                    <h3 className="text-xl font-semibold text-foreground mb-2">
-                                        {t("webpages.whyChooseMe.points.education.title")}
-                                    </h3>
-                                    <p className="text-muted-foreground">
-                                        {t("webpages.whyChooseMe.points.education.description")}
-                                    </p>
-                                </div>
-                            </AnimatedSection>
-
-                            <AnimatedSection animation="fadeInUp" delay={300}>
-                                <div className="p-6 rounded-2xl border border-border bg-card/95 hover:border-accent/50 transition-all duration-300 text-center shadow-lg">
-                                    <div className="text-4xl mb-4">🌍</div>
-                                    <h3 className="text-xl font-semibold text-foreground mb-2">
-                                        {t("webpages.whyChooseMe.points.languages.title")}
-                                    </h3>
-                                    <p className="text-muted-foreground">
-                                        {t("webpages.whyChooseMe.points.languages.description")}
-                                    </p>
-                                </div>
-                            </AnimatedSection>
-
-                            <AnimatedSection animation="fadeInUp" delay={400}>
+                            <StaggeredReveal animationType="content" staggerDelay={100}>
                                 <div className="p-6 rounded-2xl border border-border bg-card/95 hover:border-accent/50 transition-all duration-300 text-center shadow-lg">
                                     <div className="text-4xl mb-4">⚡</div>
                                     <h3 className="text-xl font-semibold text-foreground mb-2">
@@ -632,9 +607,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                         {t("webpages.whyChooseMe.points.speed.description")}
                                     </p>
                                 </div>
-                            </AnimatedSection>
+                            </StaggeredReveal>
 
-                            <AnimatedSection animation="fadeInUp" delay={500}>
+                            <StaggeredReveal animationType="content" staggerDelay={150}>
                                 <div className="p-6 rounded-2xl border border-border bg-card/95 hover:border-accent/50 transition-all duration-300 text-center shadow-lg">
                                     <div className="text-4xl mb-4">🤝</div>
                                     <h3 className="text-xl font-semibold text-foreground mb-2">
@@ -644,13 +619,12 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                         {t("webpages.whyChooseMe.points.support.description")}
                                     </p>
                                 </div>
-                            </AnimatedSection>
+                            </StaggeredReveal>
                         </div>
                     </div>
                 </section>
 
-                {/* Testimonials Section */}
-                <section className="px-6 pt-20 pb-12 bg-blue-900/10">
+                {/* <section className="px-6 pt-20 pb-12 section-with-dots-dark section-fade-top section-fade-bottom">
                     <div className="max-w-7xl mx-auto">
                         <AnimatedSection animation="fadeInUp" className="text-center mb-16">
                             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -661,7 +635,6 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                             </p>
                         </AnimatedSection>
 
-                        {/* All Screen Sizes Carousel */}
                         <div className="hidden">
                             <AnimatedSection animation="fadeInUp" delay={100}>
                                 <div className="p-6 rounded-2xl border border-border bg-card/95 text-center shadow-lg">
@@ -756,13 +729,13 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                             </AnimatedSection>
                         </div>
 
-                        {/* Responsive Carousel */}
-                        <TestimonialsCarousel />
                     </div>
-                </section>
+
+                    <TestimonialsCarousel />
+                </section> */}
 
                 {/* FAQ Section */}
-                <section className="px-6 py-20 bg-blue-900/10">
+                <section className="px-6 py-20 section-with-dots-dark section-fade-top section-fade-bottom">
                     <div className="max-w-7xl mx-auto">
                         <AnimatedSection animation="fadeInUp" className="text-center mb-12">
                             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -788,80 +761,120 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
 
                 {/* Contact Section */}
                 <section id="contact" className="px-6 py-20 bg-muted/20">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <AnimatedSection animation="fadeInUp">
-                            <div className="space-y-8">
-                                <div className="space-y-4">
-                                    <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-                                        {t("webpages.contact.title")}
-                                    </h2>
-                                    <p className="text-xl text-muted-foreground">
-                                        {t("webpages.contact.subtitle")}
-                                    </p>
-                                </div>
+                    <div className="max-w-7xl mx-auto">
+                        {/* Main Title - Centered */}
+                        <div className="text-center mb-16">
+                            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+                                {t("webpages.contact.title")}
+                            </h2>
+                            <p className="text-xl text-muted-foreground">
+                                {t("webpages.contact.subtitle")}
+                            </p>
+                        </div>
 
-                                <div className="flex flex-col lg:flex-row items-center justify-center gap-6 text-base text-muted-foreground max-w-5xl mx-auto font-semibold">
-                                    <span className="flex items-center gap-3">
-                                        <span className="w-3 h-3 rounded-full bg-secondary"></span>
-                                        {t("webpages.contact.freeConsultation")}
-                                    </span>
-                                    <span className="flex items-center gap-3">
-                                        <span className="w-3 h-3 rounded-full bg-accent"></span>
-                                        {t("webpages.contact.urgency")}
-                                    </span>
-                                    <span className="flex items-center gap-3">
-                                        <span className="w-3 h-3 rounded-full bg-primary"></span>
-                                        {t("webpages.contact.guarantee")}
-                                    </span>
-                                </div>
-
-                                <div className="space-y-6">
-                                    <div className="space-y-2">
-                                        <div className="flex items-center justify-center gap-4">
-                                            <span className="text-3xl">📞</span>
-                                            <ContactTracker contactType="phone">
-                                                <a
-                                                    href={`tel:${t("webpages.contact.phone")}`}
-                                                    className="px-8 py-4 rounded-lg bg-accent text-white font-bold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl text-xl drop-shadow-md"
-                                                >
-                                                    {t("webpages.contact.phone")}
-                                                </a>
-                                            </ContactTracker>
-                                        </div>
-                                        <p className="text-base text-muted-foreground">
-                                            {t("webpages.contact.phoneCta")}
+                        <div className="grid lg:grid-cols-2 gap-12 items-start">
+                            {/* Left Side - Direct Contact Info */}
+                            <AnimatedSection animation="fadeInLeft">
+                                <div className="space-y-8 text-center lg:text-center">
+                                    <div className="space-y-4">
+                                        <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                                            {t("webpages.contact.directContactTitle")}
+                                        </h3>
+                                        <p className="text-lg text-muted-foreground">
+                                            {t("webpages.contact.directContactSubtitle")}
                                         </p>
                                     </div>
 
-                                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                                        <ContactTracker contactType="whatsapp">
-                                            <a
-                                                href={`https://wa.me/${t("webpages.contact.phone").replace(/\s/g, '')}`}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-green-500 hover:bg-green-600 text-white transition-all duration-200 font-semibold">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
-                                                </svg>
-                                                {t("webpages.contact.phone")}
-                                            </a>
-                                        </ContactTracker>
-                                        <ContactTracker contactType="email">
-                                            <a
-                                                href={`mailto:ewejose@gmail.com`}
-                                                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold"
-                                            >
-                                                <span className="text-lg">✉️</span>
-                                                ewejose@gmail.com
-                                            </a>
-                                        </ContactTracker>
+                                    <div className="space-y-6">
+                                        <div className="space-y-2">
+                                            <div className="flex items-center justify-center gap-4">
+                                                <span className="text-3xl">📞</span>
+                                                <ContactTracker contactType="phone">
+                                                    <a
+                                                        href={`tel:${t("webpages.contact.phone")}`}
+                                                        className="phone-button px-8 py-4 rounded-lg bg-accent text-white font-bold hover:bg-accent/90 text-xl drop-shadow-md"
+                                                    >
+                                                        {t("webpages.contact.phone")}
+                                                    </a>
+                                                </ContactTracker>
+                                            </div>
+                                            <p className="text-base text-muted-foreground">
+                                                {t("webpages.contact.phoneCta")}
+                                            </p>
+                                        </div>
+
+                                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                                            <ContactTracker contactType="whatsapp">
+                                                <a
+                                                    href={`https://wa.me/${t("webpages.contact.phone").replace(/\s/g, '')}`}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="whatsapp-button inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-green-500 hover:bg-green-600 text-white font-semibold">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+                                                    </svg>
+                                                    {t("webpages.contact.phone")}
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" className="opacity-70">
+                                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                                                    </svg>
+                                                </a>
+                                            </ContactTracker>
+                                            <ContactTracker contactType="email">
+                                                <a
+                                                    href={`mailto:ewejose@gmail.com`}
+                                                    className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold"
+                                                >
+                                                    <span className="text-lg">✉️</span>
+                                                    {t("webpages.contact.email")}
+                                                </a>
+                                            </ContactTracker>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex flex-col gap-4 text-base text-muted-foreground font-semibold">
+                                        <span className="flex items-center justify-center gap-3">
+                                            <span className="w-3 h-3 rounded-full bg-secondary"></span>
+                                            {t("webpages.contact.freeConsultation")}
+                                        </span>
+                                        <span className="flex items-center justify-center gap-3">
+                                            <span className="w-3 h-3 rounded-full bg-accent"></span>
+                                            {t("webpages.contact.urgency")}
+                                        </span>
+                                        <span className="flex items-center justify-center gap-3">
+                                            <span className="w-3 h-3 rounded-full bg-primary"></span>
+                                            {t("webpages.contact.guarantee")}
+                                        </span>
                                     </div>
                                 </div>
-                            </div>
-                        </AnimatedSection>
+                            </AnimatedSection>
+
+                            {/* Right Side - Compact Contact Form */}
+                            <AnimatedSection animation="fadeInRight">
+                                <div className="sticky top-8">
+                                    <CompactContactForm />
+                                </div>
+                            </AnimatedSection>
+                        </div>
                     </div>
                 </section>
             </main>
+
+            {/* Footer */}
+            <footer className="bg-background border-t border-border py-4">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="text-center">
+                        <p className="text-muted-foreground text-xs">
+                            © 2025 Ewe José Omusi Sáez. All rights reserved. •
+                            <a
+                                href={`/${locale}/privacy`}
+                                className="hover:text-foreground transition-colors duration-200 ml-1"
+                            >
+                                Privacy Policy
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </>
     )
 }
