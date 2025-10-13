@@ -778,7 +778,7 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                             <AnimatedSection animation="fadeInLeft">
                                 <div className="space-y-8 text-center lg:text-center">
                                     <div className="space-y-4">
-                                        <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                                        <h3 className="text-3xl md:text-2xl font-bold text-foreground">
                                             {t("webpages.contact.directContactTitle")}
                                         </h3>
                                         <p className="text-lg text-muted-foreground">

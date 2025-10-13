@@ -116,6 +116,7 @@
   },
   "referrer": {
     "nav": "Referral Program",
+    "title": "Telematics Engineer",
     "hero": {
       "title": "Earn Extra Money Just by Connecting People",
       "subtitle": "Do you know someone who needs a website? Receive €50-€200+ for each successful referral",
@@ -396,8 +397,8 @@
     "contact": {
       "title": "Ready to Stop Losing Business Opportunities?",
       "subtitle": "Let's talk 15 minutes without commitment about how a website can transform your business",
-      "directContactTitle": "Direct Contact",
-      "directContactSubtitle": "Prefer to talk directly? Contact me through your preferred method: call, WhatsApp or email.",
+      "directContactTitle": "Do you prefer to contact me directly?",
+      "directContactSubtitle": "Ewe Jose Omusi Saez | Telecommunications Engineer",
       "phoneCta": "Call me right now - it's free!",
       "phone": "+34 624 981 668",
       "whatsapp": "WhatsApp",
@@ -406,7 +407,7 @@
       "urgency": "Attention! Only 3 slots available this month for custom projects",
       "guarantee": "Satisfaction guarantee: if you're not happy, we'll redo until you are",
       "form": {
-        "title": "Prefer me to call you?",
+        "title": "Do you prefer me to call you?",
         "subtitle": "Leave me your message and I'll contact you in less than 1 hour",
         "name": "Name",
         "email": "Email",

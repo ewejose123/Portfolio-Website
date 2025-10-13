@@ -498,6 +498,11 @@ export default async function ReferrerPage({ params }: { params: Promise<{ local
                                             ¿Conoces a alguien que necesite una página web? Contáctame por el medio que prefieras: llamada, WhatsApp, email o formulario.
                                         </p>
 
+                                        {/* Name and Title Header */}
+                                        <div className="mb-6">
+                                            <h4 className="text-2xl font-bold text-foreground">{t("hero.name")} | {t("referrer.title")}</h4>
+                                        </div>
+
                                         <div className="space-y-4">
                                             {/* Contact Details */}
                                             <div className="space-y-2">

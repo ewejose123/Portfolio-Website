@@ -116,6 +116,7 @@
   },
   "referrer": {
     "nav": "Programa de Referidos",
+    "title": "Ingeniero Telemático",
     "hero": {
       "title": "Gana Dinero Extra Solo por Conectar Personas",
       "subtitle": "¿Conoces a alguien que necesite una página web? Recibe €50-€200+ por cada referencia exitosa",
@@ -396,8 +397,8 @@
     "contact": {
       "title": "¿Preparado para Dejar de Perder Oportunidades de Negocio?",
       "subtitle": "Hablemos 15 minutos sin compromiso sobre cómo una página web puede transformar tu negocio",
-      "directContactTitle": "Contacto Directo",
-      "directContactSubtitle": "¿Prefieres hablar directamente? Contáctame por el medio que prefieras: llamada, WhatsApp o email.",
+      "directContactTitle": "Prefieres contactarme directamente?",
+      "directContactSubtitle": "Ewe Jose Omusi Saez | Ingeniero Telemático",
       "phoneCta": "¡Llámame ahora mismo - es gratis!",
       "phone": "+34 624 981 668",
       "whatsapp": "WhatsApp",
