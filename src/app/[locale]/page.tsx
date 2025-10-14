@@ -235,16 +235,16 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                         />
                         <div className="absolute inset-0 bg-black/70"></div>
                     </div>
-                    <div className="max-w-6xl mx-auto text-center relative z-10">
+                    <div className="max-w-6xl mx-auto text-center relative z-10 -mt-6 md:-mt-10">
                         <AnimatedSection animation="fadeInUp" immediate={true}>
                             <div className="space-y-8">
                                 <div className="space-y-4">
                                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
                                         {t("webpages.hero.title")}
                                     </h1>
-                                    <p className="text-xl md:text-2xl lg:text-3xl text-white/90 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
+                                    {/* <p className="text-xl md:text-2xl lg:text-3xl text-white/90 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
                                         {t("webpages.hero.subtitle")}
-                                    </p>
+                                    </p> */}
                                 </div>
 
                                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-base text-white/80 font-semibold">
@@ -263,7 +263,9 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                                 </div>
 
                                 <div className="space-y-4">
-                                    <p className="text-base text-white/80 font-semibold">{t("webpages.hero.tagline")}</p>
+                                    <p className="text-2xl md:text-2xl font-bold text-white drop-shadow-xl tracking-tight">
+                                        {t("webpages.hero.tagline")}
+                                    </p>
                                     <ContactTracker contactType="contact_section">
                                         <a
                                             href="#contact"
@@ -279,7 +281,7 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                 </section>
 
                 {/* Star Rating Section */}
-                <section className="px-6 py-8 bg-muted/10">
+                {/* <section className="px-6 py-8 bg-muted/10">
                     <div className="max-w-7xl mx-auto text-center">
                         <AnimatedSection animation="fadeInUp">
                             <div className="flex items-center justify-center gap-4">
@@ -297,7 +299,7 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                             </div>
                         </AnimatedSection>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Online Stores Section - Left Info, Right Visuals */}
                 <section id="simple-shopify" className="px-6 py-20 section-with-dots section-fade-top section-fade-bottom">
