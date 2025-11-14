@@ -140,12 +140,12 @@ export const seoConfig = {
     sitemapPriority: {
       main: 1.0,
       referrer: 0.8,
-      portfolio: 0.6
+      webs: 0.6
     },
     changeFrequency: {
       main: "weekly",
       referrer: "monthly", 
-      portfolio: "monthly"
+      webs: "monthly"
     }
   },
 

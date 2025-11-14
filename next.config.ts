@@ -11,7 +11,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/portfolio",
-        destination: "/es/portfolio",
+        destination: "/es",
+        permanent: true,
+      },
+      {
+        source: "/webs",
+        destination: "/es/webs",
         permanent: true,
       },
     ];
