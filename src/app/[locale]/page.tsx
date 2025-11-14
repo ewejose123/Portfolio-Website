@@ -83,6 +83,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                                                 {t("hero.ctaContact")}
                                             </a>
                                         </div>
+
+                                        {/* Work Status */}
+                                        <p className="text-accent font-semibold text-center xl:text-left text-sm sm:text-base mt-4">{t("hero.workStatus")}</p>
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +218,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                         </AnimatedSection>
                         <AnimatedSection animation="fadeInUp" delay={400}>
                             <a
-                                href="https://github.com/ewejose123/Portfolio-Website"
+                                href="https://otakucollector.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="block"
@@ -223,17 +226,17 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                                 <div className="p-6 pb-6 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full flex flex-col">
                                     <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
                                         <Image
-                                            src="/projects/portfolio-website.jpg"
-                                            alt="Portfolio Website - Modern Next.js Portfolio"
+                                            src="/projects/otakucollector.jpg"
+                                            alt="OtakuCollector - Professional Anime Products E-commerce"
                                             fill
                                             className="object-cover transition-transform duration-300 hover:scale-105"
                                             sizes="(max-width: 768px) 100vw, 50vw"
                                         />
                                     </div>
-                                    <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.portfolio-site.title")}</h3>
-                                    <p className="text-muted-foreground mb-4 flex-1">{t("projects.items.portfolio-site.summary")}</p>
+                                    <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.otaku-collector.title")}</h3>
+                                    <p className="text-muted-foreground mb-4 flex-1">{t("projects.items.otaku-collector.summary")}</p>
                                     <div className="flex flex-wrap gap-2 mt-auto">
-                                        {(t.raw("projects.items.portfolio-site.technologies") as string[]).map((tech: string, index: number) => (
+                                        {(t.raw("projects.items.otaku-collector.technologies") as string[]).map((tech: string, index: number) => (
                                             <TechnologyIcon key={index} technology={tech} />
                                         ))}
                                     </div>
@@ -289,13 +292,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                                 fill
                                 className="object-cover"
                             />
-                            {/* Fallback for missing image */}
-                            {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🚀</div>
-                  <p className="text-muted-foreground">Add working photo to /public/profile-about.jpg</p>
-                </div>
-              </div> */}
                         </div>
                     </AnimatedSection>
                 </div>

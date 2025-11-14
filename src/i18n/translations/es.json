@@ -22,6 +22,7 @@
       "spanish": "Español (Nativo)",
       "english": "Inglés (Profesional)"
     },
+    "workStatus": "Autónomo español – B2B – no se requiere visa",
     "skillsPreview": "Habilidades",
     "skills": {
       "title": "Habilidades Principales Destacadas",
@@ -61,10 +62,10 @@
         "summary": "Juego móvil autobattler con mecánicas de juego estratégicas y combate automatizado. Trabajé como co-creador y desarrollador senior, brindando orientación técnica y mentoría en arquitectura de código al equipo de desarrollo.",
         "technologies": ["Unity", "C#", "Mobile", "Diseño de Juegos", "Mentoría"]
       },
-      "portfolio-site": {
-        "title": "Sitio Web Portfolio",
-        "summary": "Portfolio moderno y responsivo que muestra trabajo profesional. Construido con Next.js 15 App Router, con internacionalización, temas oscuros/claros y animaciones suaves.",
-        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "next-intl", "Vercel"]
+      "otaku-collector": {
+        "title": "OtakuCollector",
+        "summary": "Plataforma de e-commerce profesional especializada en productos de anime. Construida con Shopify usando un tema completamente personalizado y lógica avanzada para gestión de productos, seguimiento de inventario y optimización de experiencia del cliente.",
+        "technologies": ["Shopify", "Liquid", "JavaScript", "CSS/SCSS", "Desarrollo de Temas Personalizados", "E-commerce"]
       }
     }
   },

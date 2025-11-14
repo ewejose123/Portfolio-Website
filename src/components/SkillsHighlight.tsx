@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { useMemo, memo } from 'react'
 
 interface Skill {
   name: string
@@ -50,34 +51,26 @@ const skills: Skill[] = [
   { name: 'Teaching/Mentoring', level: 3, category: 'soft' },
 ]
 
-export default function SkillsHighlight() {
-  const t = useTranslations('hero.skills')
-
-  const categories = [
-    { key: 'backend', icon: '🛠️', skills: skills.filter(s => s.category === 'backend') },
-    { key: 'frontend', icon: '🎨', skills: skills.filter(s => s.category === 'frontend') },
-    { key: 'tools', icon: '💻', skills: skills.filter(s => s.category === 'tools') },
-    { key: 'soft', icon: '🏆', skills: skills.filter(s => s.category === 'soft') },
-  ]
-
-  const renderSkillDots = (level: number) => {
+// Pre-computed dot components by level to avoid recreating on every render
+const SkillDots = memo(({ level }: { level: number }) => {
+  const dots = useMemo(() => {
     return Array.from({ length: 4 }, (_, i) => {
       let dotColor = 'bg-muted-foreground/20' // Default for unfilled dots
 
       if (i < level) {
-        // Dynamic color based on skill level
+        // Use simpler solid colors instead of gradients for better performance
         switch (level) {
-          case 4: // Expert - Brightest blue
-            dotColor = 'bg-gradient-to-r from-blue-500 to-blue-800'
+          case 4: // Expert
+            dotColor = 'bg-blue-600'
             break
-          case 3: // Professional - Medium-bright blue
-            dotColor = 'bg-gradient-to-r from-blue-400 to-blue-500'
+          case 3: // Professional
+            dotColor = 'bg-blue-500'
             break
-          case 2: // Intermediate - Medium blue
-            dotColor = 'bg-gradient-to-r from-blue-300 to-blue-400'
+          case 2: // Intermediate
+            dotColor = 'bg-blue-400'
             break
-          case 1: // Learning - Darker blue
-            dotColor = 'bg-gradient-to-r from-blue-200 to-blue-300'
+          case 1: // Learning
+            dotColor = 'bg-blue-300'
             break
         }
       }
@@ -85,43 +78,70 @@ export default function SkillsHighlight() {
       return (
         <div
           key={i}
-          className={`w-3 h-3 rounded-full transition-all duration-300 ${dotColor}`}
+          className={`w-3 h-3 rounded-full ${dotColor}`}
         />
       )
     })
-  }
+  }, [level])
+
+  return <div className="flex gap-1">{dots}</div>
+})
+
+SkillDots.displayName = 'SkillDots'
+
+const SkillItem = memo(({ skill }: { skill: Skill }) => {
+  return (
+    <div className="flex items-center justify-between p-3 rounded-lg bg-card border border-border hover:border-accent/50 transition-colors duration-200">
+      <span className="text-sm font-medium text-foreground">{skill.name}</span>
+      <SkillDots level={skill.level} />
+    </div>
+  )
+})
+
+SkillItem.displayName = 'SkillItem'
+
+export default function SkillsHighlight() {
+  const t = useTranslations('hero.skills')
+
+  // Memoize categories to avoid recalculating on every render
+  const categories = useMemo(() => [
+    { key: 'backend', icon: '🛠️', skills: skills.filter(s => s.category === 'backend') },
+    { key: 'frontend', icon: '🎨', skills: skills.filter(s => s.category === 'frontend') },
+    { key: 'tools', icon: '💻', skills: skills.filter(s => s.category === 'tools') },
+    { key: 'soft', icon: '🏆', skills: skills.filter(s => s.category === 'soft') },
+  ], [])
 
   return (
-    <div className="w-full animate-fade-in-right">
+    <div className="w-full">
       <div className="mb-6">
         {/* Legend */}
         <div className="flex flex-wrap items-center justify-center gap-4 p-3 rounded-lg bg-card border border-border text-sm mb-4">
           <span className="font-medium text-muted-foreground">{t('proficiency.label')}</span>
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-200 to-blue-300"></div>
+            <div className="w-3 h-3 rounded-full bg-blue-300"></div>
             <span className="text-muted-foreground">{t('proficiency.learning')}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex gap-1">
-              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-300 to-blue-400"></div>
-              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-300 to-blue-400"></div>
+              <div className="w-3 h-3 rounded-full bg-blue-400"></div>
+              <div className="w-3 h-3 rounded-full bg-blue-400"></div>
             </div>
             <span className="text-muted-foreground">{t('proficiency.intermediate')}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex gap-1">
-              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500"></div>
-              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500"></div>
-              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500"></div>
+              <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+              <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+              <div className="w-3 h-3 rounded-full bg-blue-500"></div>
             </div>
             <span className="text-muted-foreground">{t('proficiency.professional')}</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex gap-1">
-              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
-              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
-              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
-              <div className="w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
+              <div className="w-3 h-3 rounded-full bg-blue-600"></div>
+              <div className="w-3 h-3 rounded-full bg-blue-600"></div>
+              <div className="w-3 h-3 rounded-full bg-blue-600"></div>
+              <div className="w-3 h-3 rounded-full bg-blue-600"></div>
             </div>
             <span className="text-muted-foreground">{t('proficiency.expert')}</span>
           </div>
@@ -130,24 +150,15 @@ export default function SkillsHighlight() {
 
       {/* Skills Categories in Columns */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {categories.map((category, index) => (
-          <div key={category.key} className="space-y-4" style={{ animationDelay: `${index * 0.1}s` }}>
+        {categories.map((category) => (
+          <div key={category.key} className="space-y-4">
             <h4 className="text-lg font-semibold text-foreground text-center capitalize border-b border-border pb-2 flex items-center justify-center gap-2">
               <span className="text-2xl">{category.icon}</span>
               {t(category.key as 'backend' | 'frontend' | 'tools' | 'soft')}
             </h4>
             <div className="space-y-3">
-              {category.skills.map((skill, skillIndex) => (
-                <div
-                  key={skill.name}
-                  className="flex items-center justify-between p-3 rounded-lg bg-card border border-border hover:border-accent/50 transition-all duration-200"
-                  style={{ animationDelay: `${(index * 0.1) + (skillIndex * 0.05)}s` }}
-                >
-                  <span className="text-sm font-medium text-foreground">{skill.name}</span>
-                  <div className="flex gap-1">
-                    {renderSkillDots(skill.level)}
-                  </div>
-                </div>
+              {category.skills.map((skill) => (
+                <SkillItem key={skill.name} skill={skill} />
               ))}
             </div>
           </div>

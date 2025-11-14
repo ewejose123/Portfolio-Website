@@ -3,20 +3,31 @@
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import ThemeToggle from './ThemeToggle'
 import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Navbar() {
   const t = useTranslations()
   const pathname = usePathname()
-  const locale = pathname.split('/')[1] || 'en'
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
 
-  // Determine if we're on portfolio page (root) or webs page
-  const isPortfolioPage = pathname === `/${locale}` || pathname === '/'
-  const isWebsPage = pathname?.includes('/webs')
+  // Extract locale and determine page type with useMemo for stability
+  const { locale, isPortfolioPage, isWebsPage } = useMemo(() => {
+    const extractedLocale = pathname.split('/')[1] || 'en'
+    // Normalize pathname to handle trailing slashes and empty paths
+    const normalizedPath = pathname.replace(/\/$/, '') || '/'
+    // Check if we're on the root page for the current locale
+    const isPortfolio = normalizedPath === `/${extractedLocale}` || normalizedPath === '/' || normalizedPath === ''
+    const isWebs = normalizedPath.includes('/webs')
+    
+    return {
+      locale: extractedLocale,
+      isPortfolioPage: isPortfolio,
+      isWebsPage: isWebs
+    }
+  }, [pathname])
 
   useEffect(() => {
     const handleScroll = () => {

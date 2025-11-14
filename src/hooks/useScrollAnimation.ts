@@ -6,12 +6,17 @@ export function useScrollAnimation() {
   const [isVisible, setIsVisible] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
   const observerRef = useRef<IntersectionObserver | null>(null)
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const handleIntersection = useCallback((entries: IntersectionObserverEntry[]) => {
     const [entry] = entries
     if (entry.isIntersecting && !isVisible) {
+      // Clear any existing timeout
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
       // Add a small delay to ensure element is fully rendered
-      setTimeout(() => {
+      timeoutRef.current = setTimeout(() => {
         setIsVisible(true)
       }, 50)
     }
@@ -35,6 +40,10 @@ export function useScrollAnimation() {
       if (observerRef.current) {
         observerRef.current.disconnect()
         observerRef.current = null
+      }
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+        timeoutRef.current = null
       }
     }
   }, [handleIntersection, isVisible])
