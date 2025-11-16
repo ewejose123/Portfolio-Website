@@ -34,9 +34,10 @@ const skills: Skill[] = [
   // Tools (ordered by proficiency: 4→3→2→1)
   { name: 'Git', level: 4, category: 'tools' },
   { name: 'Unity', level: 4, category: 'tools' },
+  { name: 'Cursor', level: 4, category: 'tools' },
   { name: 'CI/CD', level: 3, category: 'tools' },
+  { name: 'Figma', level: 3, category: 'tools' },
   { name: 'Docker', level: 2, category: 'tools' },
-  { name: 'Figma', level: 2, category: 'tools' },
   { name: 'Vercel', level: 2, category: 'tools' },
   { name: 'Jenkins', level: 1, category: 'tools' },
   { name: 'C++', level: 1, category: 'tools' },
