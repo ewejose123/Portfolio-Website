@@ -3,24 +3,24 @@ export const seoConfig = {
   // Main Website SEO
   mainPage: {
     en: {
-      title: "Professional Websites from €300 | Fast Web Development",
-      description: "Get your professional website in 3-7 days. From €300 for small businesses. Telematic Engineer with 5+ years experience. Responsive design, SEO optimized, 30-day support.",
+      title: "Ewe José Portfolio | Full Stack Developer & Game Creator", // English-first messaging for recruiters
+      description: "Full stack engineer and game creator showcasing production web platforms, automation tooling, and playable prototypes built for hiring teams.",
       keywords: [
-        "website development",
-        "web design",
-        "cheap websites", 
-        "professional web design",
-        "business websites",
-        "web development Spain",
-        "responsive websites",
-        "SEO websites",
-        "online stores",
-        "Shopify Spain",
-        "small business websites",
-        "fast web development",
-        "web developer Spain",
-        "custom websites",
-        "e-commerce development"
+        "full stack developer portfolio",
+        "game creator portfolio", 
+        "nextjs developer",
+        "react full stack engineer",
+        "typescript portfolio",
+        "company ready developer",
+        "technical art prototypes",
+        "web systems engineer",
+        "automation tooling",
+        "product engineer portfolio",
+        "ux focused developer",
+        "hire full stack developer",
+        "game prototyping",
+        "interactive experiences",
+        "engineering portfolio"
       ],
       targetAudience: [
         "small business owners",
@@ -34,24 +34,24 @@ export const seoConfig = {
       ]
     },
     es: {
-      title: "Páginas Web Profesionales desde €300 | Desarrollo Web Rápido",
-      description: "Crea tu página web profesional en 3-7 días. Desde €300 para pequeñas empresas. Telemático con 5+ años de experiencia. Diseño responsive, SEO optimizado, soporte 30 días.",
+      title: "Ewe José Portfolio | Full Stack Developer & Game Creator", // Spanish locale now mirrors English hiring pitch
+      description: "Full stack engineer and game creator focused on partnering with companies to deliver performant platforms, internal tools, and experimental games.",
       keywords: [
-        "páginas web",
-        "desarrollo web",
-        "páginas web baratas",
-        "diseño web profesional", 
-        "páginas web para empresas",
-        "desarrollo web España",
-        "páginas web responsive",
-        "SEO web",
-        "tiendas online",
-        "Shopify España",
-        "páginas web pequeñas empresas",
-        "desarrollo web rápido",
-        "desarrollador web España",
-        "páginas web personalizadas",
-        "desarrollo e-commerce"
+        "full stack developer portfolio",
+        "game creator portfolio",
+        "desarrollador Next.js",
+        "ingeniero React",
+        "portfolio TypeScript", 
+        "desarrollador para empresas",
+        "prototipos de juego",
+        "sistemas web personalizados",
+        "automatización para equipos",
+        "ingeniería de producto",
+        "desarrollador UX",
+        "contratar full stack developer",
+        "experimentos interactivos",
+        "experiencias jugables",
+        "portfolio ingeniería"
       ],
       targetAudience: [
         "pequeños empresarios",

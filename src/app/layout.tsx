@@ -20,9 +20,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ewe José - Desarrollo Web Profesional | Páginas Web desde €300",
-  description: "Desarrollador web profesional con 5+ años de experiencia. Páginas web desde €300, tiendas online, aplicaciones personalizadas. Entrega en 3-7 días.",
-  keywords: "desarrollo web, páginas web, diseño web profesional, páginas web baratas, desarrollo web España, páginas web responsive, SEO web, tiendas online, Shopify España",
+  title: "Ewe José Portfolio | Full Stack Developer & Game Creator", // Clear English title for hiring managers
+  description: "I’m Ewe José, a full stack engineer and game creator who ships performant web platforms, internal tools, and playable experiences for product-driven teams.", // Emphasizes capabilities relevant to company recruiters
+  keywords: "full stack developer portfolio, game creator, product engineer, Next.js expert, React engineer, hiring-ready developer, technical portfolio",
   authors: [{ name: "Ewe José Omusi Sáez" }],
   creator: "Ewe José Omusi Sáez",
   publisher: "Ewe José Omusi Sáez",
@@ -39,11 +39,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'es_ES',
+    locale: 'en_US',
     url: 'https://ewejose.com',
-    title: "Ewe José - Desarrollo Web Profesional | Páginas Web desde €300",
-    description: "Desarrollador web profesional con 5+ años de experiencia. Páginas web desde €300, tiendas online, aplicaciones personalizadas.",
-    siteName: "Ewe José - Desarrollo Web",
+    title: "Ewe José Portfolio | Full Stack Developer & Game Creator", // OG headline tailored for recruiters
+    description: "Full stack development, gameplay prototypes, and production-ready systems built to help teams ship faster.",
+    siteName: "Ewe José Portfolio",
     images: [
       {
         url: 'https://ewejose.com/og-image-es.jpg',
@@ -55,15 +55,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Ewe José - Desarrollo Web Profesional",
-    description: "Desarrollador web profesional con 5+ años de experiencia. Páginas web desde €300.",
+    title: "Ewe José | Full Stack & Game Creator",
+    description: "Selected work across web platforms, tools, and games for ambitious companies.",
     images: ['https://ewejose.com/og-image-es.jpg'],
   },
   alternates: {
     canonical: 'https://ewejose.com',
     languages: {
-      'es': 'https://ewejose.com',
-      'en': 'https://ewejose.com/en',
+      'es': 'https://ewejose.com/es',
+      'en': 'https://ewejose.com',
     },
   },
   verification: {
