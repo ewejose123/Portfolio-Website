@@ -243,6 +243,34 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                                 </div>
                             </a>
                         </AnimatedSection>
+                        <AnimatedSection animation="fadeInUp" delay={500}>
+                            {/* Peluquería Booking Platform project card */}
+                            <a
+                                href="https://github.com/ewejose/peluqueria-booking-platform"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block"
+                            >
+                                <div className="p-6 pb-6 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full flex flex-col">
+                                    <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
+                                        <Image
+                                            src="/projects/peluqueria.png"
+                                            alt="Peluquería Booking Platform - Multi-salon booking system"
+                                            fill
+                                            className="object-cover transition-transform duration-300 hover:scale-105"
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                        />
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.peluqueria-booking.title")}</h3>
+                                    <p className="text-muted-foreground mb-4 flex-1">{t("projects.items.peluqueria-booking.summary")}</p>
+                                    <div className="flex flex-wrap gap-2 mt-auto">
+                                        {(t.raw("projects.items.peluqueria-booking.technologies") as string[]).map((tech: string, index: number) => (
+                                            <TechnologyIcon key={index} technology={tech} />
+                                        ))}
+                                    </div>
+                                </div>
+                            </a>
+                        </AnimatedSection>
                     </div>
                 </div>
             </section>

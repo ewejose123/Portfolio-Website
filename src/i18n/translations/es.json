@@ -66,6 +66,11 @@
         "title": "OtakuCollector",
         "summary": "Plataforma de e-commerce profesional especializada en productos de anime. Construida con Shopify usando un tema completamente personalizado y lógica avanzada para gestión de productos, seguimiento de inventario y optimización de experiencia del cliente.",
         "technologies": ["Shopify", "Liquid", "JavaScript", "CSS/SCSS", "Desarrollo de Temas Personalizados", "E-commerce"]
+      },
+      "peluqueria-booking": {
+        "title": "Plataforma de Reservas para Peluquerías",
+        "summary": "Ecosistema de reservas multi-sucursal que combina landing enfocada en conversión con un flujo de tres pasos y un panel admin en tiempo real para servicios, profesionales, horarios y políticas respaldado por Prisma + PostgreSQL.",
+        "technologies": ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS 4", "Framer Motion", "FullCalendar", "Prisma", "PostgreSQL", "Supabase", "Resend", "Jest"]
       }
     }
   },
