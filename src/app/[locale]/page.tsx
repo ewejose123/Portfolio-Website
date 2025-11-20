@@ -246,7 +246,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                         <AnimatedSection animation="fadeInUp" delay={500}>
                             {/* Peluquería Booking Platform project card */}
                             <a
-                                href="https://github.com/ewejose/peluqueria-booking-platform"
+                                href="https://peluqueria-example.vercel.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="block"
