@@ -12,17 +12,17 @@
   },
   "hero": {
     "name": "Ewe José Omusi Sáez",
-    "title": "Full Stack Developer and Game Creator",
+    "title": "Full Stack Engineer & Cloud Developer",
     "age": "27 years old",
-    "location": "Spain / US",
-    "tagline": "Building smooth web applications and competitive multiplayer games.",
+    "location": "Madrid, Spain",
+    "tagline": "Building reliable web applications and scalable backend systems.",
     "ctaProjects": "View Projects",
     "ctaContact": "Contact",
     "languages": {
       "spanish": "Spanish (Native)",
       "english": "English (Professional)"
     },
-    "workStatus": "Spanish autonomo – B2B – no visa needed",
+    "workStatus": "Spanish Contractor - Freelance or Standard Employment",
     "skillsPreview": "Skills",
     "skills": {
       "title": "Main Highlighted Skills",
@@ -49,8 +49,8 @@
     "items": {
       "xenora-rush": {
         "title": "Xenova Rush",
-        "summary": "Competitive multiplayer game with fast-paced mobility and combat with 120Hz authoritative physics fully synchronized with local prediction and other advanced networking techniques.",
-        "technologies": ["Unity", "C#", ".NET", "PostgreSQL", "Redis", "AWS", "Next.js", "PostHog", "Blender", "Substance Painter", "Photoshop", "Visual Studio"]
+        "summary": "High-performance distributed system with AWS cloud architecture. Built serverless backend with Lambda and API Gateway, scaled game servers with Amazon GameLift, implemented CI/CD pipelines with GitHub Actions, and managed infrastructure as code with Terraform.",
+        "technologies": ["AWS", "Lambda", "GameLift", "DynamoDB", "Terraform", "CI/CD", "Node.js", "C#", "Unity", "PostgreSQL", "Next.js"]
       },
       "taskmanager-pro": {
         "title": "TaskManager Pro",
@@ -71,6 +71,11 @@
         "title": "Peluquería Booking Platform",
         "summary": "Multi-business salon booking stack pairing a conversion-focused landing with a three-step wizard and a realtime admin workspace for services, staff, schedules, and policies backed by Prisma + PostgreSQL.",
         "technologies": ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS 4", "Framer Motion", "FullCalendar", "Prisma", "PostgreSQL", "Supabase", "Resend", "Jest"]
+      },
+      "voice-to-text": {
+        "title": "Voice-to-Text Application",
+        "summary": "Hotkey-driven Faster-Whisper companion that types real-time transcripts anywhere on Windows. Privacy-focused offline local inference for instant transcription without external API dependencies.",
+        "technologies": ["Python", "Faster-Whisper", "Windows", "Real-time Processing", "Local Inference"]
       }
     }
   },
@@ -105,13 +110,13 @@
   },
   "about": {
     "title": "About Me",
-    "bio": "I currently live in Spain and am looking for remote work opportunities. I am available and have a very flexible schedule, ready to adapt to different time zones and project needs.",
+    "bio": "I currently live in Spain and am looking for remote work opportunities. I am available for both freelance contracting and standard employment, with a very flexible schedule ready to adapt to different time zones and project needs.",
     "resumeText": "Download CV",
     "personalLife": {
       "title": "When I'm not programming",
       "intro": "I believe in maintaining a healthy work-life balance:",
       "item1": "📺 Watching series",
-      "item2": "⚽ Practicing sports and staying active",
+      "item2": "👥 Chilling with friends",
       "item3": "🎮 Creating video games and exploring new game mechanics"
     }
   },
@@ -119,7 +124,9 @@
     "cta": "Contact me!",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "email": "Email"
+    "email": "Email",
+    "phone": "+34 632423950",
+    "phoneLabel": "Phone"
   },
   "referrer": {
     "nav": "Referral Program",

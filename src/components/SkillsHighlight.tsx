@@ -14,12 +14,12 @@ const skills: Skill[] = [
   { name: 'C#', level: 4, category: 'backend' },
   { name: 'Node.js', level: 3, category: 'backend' },
   { name: 'TypeScript/JavaScript', level: 3, category: 'backend' },
-  { name: 'Python', level: 3, category: 'backend' },
   { name: 'Java', level: 3, category: 'backend' },
-  { name: 'PostgreSQL', level: 3, category: 'backend' },
-  { name: 'SQL', level: 3, category: 'backend' },
+  { name: 'Python', level: 2, category: 'backend' },
+  { name: 'PostgreSQL', level: 2, category: 'backend' },
+  { name: 'SQL', level: 2, category: 'backend' },
   { name: 'Express', level: 3, category: 'backend' },
-  { name: 'AWS', level: 3, category: 'backend' },
+  { name: 'AWS (Lambda, EC2, S3, DynamoDB, Cognito)', level: 2, category: 'backend' },
   { name: 'MongoDB', level: 2, category: 'backend' },
 
   // Frontend (ordered by proficiency: 4→3→2→1)
@@ -33,15 +33,18 @@ const skills: Skill[] = [
 
   // Tools (ordered by proficiency: 4→3→2→1)
   { name: 'Git', level: 4, category: 'tools' },
-  { name: 'Unity', level: 4, category: 'tools' },
   { name: 'Cursor', level: 4, category: 'tools' },
   { name: 'CI/CD', level: 3, category: 'tools' },
   { name: 'Figma', level: 3, category: 'tools' },
+  { name: 'Unity', level: 4, category: 'tools' },
   { name: 'Docker', level: 2, category: 'tools' },
   { name: 'Vercel', level: 2, category: 'tools' },
+  { name: 'Cloudflare', level: 2, category: 'tools' },
+  { name: 'GitHub Actions', level: 2, category: 'tools' },
   { name: 'Jenkins', level: 1, category: 'tools' },
   { name: 'C++', level: 1, category: 'tools' },
   { name: 'Prisma', level: 1, category: 'tools' },
+  { name: 'Terraform', level: 1, category: 'tools' },
 
   // Soft Skills (ordered by proficiency: 4→3→2→1)
   { name: 'Problem Solving', level: 4, category: 'soft' },

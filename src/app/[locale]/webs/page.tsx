@@ -371,14 +371,16 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                             </div>
 
                             <StaggeredReveal animationType="image" staggerDelay={50}>
-                                <div className="relative h-[28rem] rounded-2xl border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 project-image-container">
-                                    <Image
-                                        src="/projects/shopify-mockup.jpg"
-                                        alt="Online Store Mockup"
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </div>
+                                <a href="https://otakucollector.com" target="_blank" rel="noopener noreferrer" className="block">
+                                    <div className="relative h-[28rem] rounded-2xl border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 project-image-container">
+                                        <Image
+                                            src="/projects/otakucollector.jpg"
+                                            alt="OtakuCollector - Professional Anime Products E-commerce"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                </a>
                             </StaggeredReveal>
                         </div>
                     </div>
@@ -390,11 +392,11 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
                             {/* Image - Hidden on mobile, shown first on desktop */}
                             <StaggeredReveal animationType="image" staggerDelay={0} className="hidden lg:block">
-                                <a href="https://xenovarush.com" target="_blank" rel="noopener noreferrer" className="block">
+                                <a href="https://peluqueria-example.vercel.app/" target="_blank" rel="noopener noreferrer" className="block">
                                     <div className="relative h-[28rem] rounded-2xl border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 project-image-container">
                                         <Image
-                                            src="/projects/xenora-rush.jpg"
-                                            alt="Basic Website Mockup"
+                                            src="/projects/peluqueria.png"
+                                            alt="Peluquería Booking Platform - Multi-salon booking system"
                                             fill
                                             className="object-cover"
                                         />
@@ -473,11 +475,11 @@ export default async function WebpagesPage({ params }: { params: Promise<{ local
 
                             {/* Mobile Image - Shown only on mobile, at the bottom */}
                             <StaggeredReveal animationType="image" staggerDelay={100} className="lg:hidden">
-                                <a href="https://xenovarush.com" target="_blank" rel="noopener noreferrer" className="block">
+                                <a href="https://peluqueria-example.vercel.app/" target="_blank" rel="noopener noreferrer" className="block">
                                     <div className="relative h-[20rem] rounded-2xl border border-border shadow-2xl hover:shadow-3xl transition-all duration-300 project-image-container">
                                         <Image
-                                            src="/projects/xenora-rush.jpg"
-                                            alt="Basic Website Mockup"
+                                            src="/projects/peluqueria.png"
+                                            alt="Peluquería Booking Platform - Multi-salon booking system"
                                             fill
                                             className="object-cover"
                                         />

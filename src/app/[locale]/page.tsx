@@ -271,6 +271,31 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                                 </div>
                             </a>
                         </AnimatedSection>
+                        <AnimatedSection animation="fadeInUp" delay={600}>
+                            {/* Voice-to-Text Application project card */}
+                            <a
+                                href="https://github.com/ewejose123/VoiceToTextApp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block"
+                            >
+                                <div className="p-6 pb-6 rounded-2xl border border-border bg-card hover:border-accent/50 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl h-full flex flex-col">
+                                    <div className="h-48 rounded-xl overflow-hidden mb-4 relative">
+                                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 via-purple-500/30 to-pink-500/30 backdrop-blur-md"></div>
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <div className="text-6xl">🎤</div>
+                                        </div>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-foreground mb-2">{t("projects.items.voice-to-text.title")}</h3>
+                                    <p className="text-muted-foreground mb-4 flex-1">{t("projects.items.voice-to-text.summary")}</p>
+                                    <div className="flex flex-wrap gap-2 mt-auto">
+                                        {(t.raw("projects.items.voice-to-text.technologies") as string[]).map((tech: string, index: number) => (
+                                            <TechnologyIcon key={index} technology={tech} />
+                                        ))}
+                                    </div>
+                                </div>
+                            </a>
+                        </AnimatedSection>
                     </div>
                 </div>
             </section>
@@ -353,6 +378,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                                 className="px-4 sm:px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm sm:text-base"
                             >
                                 {t("contact.email")}
+                            </a>
+                            <a
+                                href={`tel:${t("contact.phone")}`}
+                                className="px-4 sm:px-6 py-3 rounded-lg border border-border hover:border-accent hover:bg-card transition-all duration-200 font-semibold text-foreground transform hover:scale-105 text-sm sm:text-base"
+                            >
+                                {t("contact.phoneLabel")}
                             </a>
                         </div>
                     </AnimatedSection>

@@ -12,17 +12,17 @@
   },
   "hero": {
     "name": "Ewe José Omusi Sáez",
-    "title": "Desarrollador Full Stack y Creador de Juegos",
+    "title": "Ingeniero Full Stack y Desarrollador Cloud",
     "age": "27 años",
-    "location": "España / US",
-    "tagline": "Construyendo aplicaciones web fluidas y juegos multijugador competitivos.",
+    "location": "Madrid, España",
+    "tagline": "Construyendo aplicaciones web confiables y sistemas backend escalables.",
     "ctaProjects": "Ver Proyectos",
     "ctaContact": "Contacto",
     "languages": {
       "spanish": "Español (Nativo)",
       "english": "Inglés (Profesional)"
     },
-    "workStatus": "Autónomo español – B2B – no se requiere visa",
+    "workStatus": "Contratista Español - Freelance o Empleo Estándar",
     "skillsPreview": "Habilidades",
     "skills": {
       "title": "Habilidades Principales Destacadas",
@@ -49,8 +49,8 @@
     "items": {
       "xenora-rush": {
         "title": "Xenova Rush",
-        "summary": "Juego multijugador competitivo con movilidad y combate de ritmo rápido con físicas autoritativas de 120Hz completamente sincronizadas con predicción local y otras técnicas avanzadas de red.",
-        "technologies": ["Unity", "C#", ".NET", "PostgreSQL", "Redis", "AWS", "Next.js", "PostHog", "Blender", "Substance Painter", "Photoshop", "Visual Studio"]
+        "summary": "Sistema distribuido de alto rendimiento con arquitectura cloud en AWS. Construí backend serverless con Lambda y API Gateway, escalé servidores de juego con Amazon GameLift, implementé pipelines CI/CD con GitHub Actions, y gestioné infraestructura como código con Terraform.",
+        "technologies": ["AWS", "Lambda", "GameLift", "DynamoDB", "Terraform", "CI/CD", "Node.js", "C#", "Unity", "PostgreSQL", "Next.js"]
       },
       "taskmanager-pro": {
         "title": "TaskManager Pro",
@@ -71,6 +71,11 @@
         "title": "Plataforma de Reservas para Peluquerías",
         "summary": "Ecosistema de reservas multi-sucursal que combina landing enfocada en conversión con un flujo de tres pasos y un panel admin en tiempo real para servicios, profesionales, horarios y políticas respaldado por Prisma + PostgreSQL.",
         "technologies": ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS 4", "Framer Motion", "FullCalendar", "Prisma", "PostgreSQL", "Supabase", "Resend", "Jest"]
+      },
+      "voice-to-text": {
+        "title": "Aplicación de Voz a Texto",
+        "summary": "Compañero Faster-Whisper controlado por atajos de teclado que escribe transcripciones en tiempo real en cualquier lugar de Windows. Inferencia local offline centrada en privacidad para transcripción instantánea sin dependencias de API externas.",
+        "technologies": ["Python", "Faster-Whisper", "Windows", "Procesamiento en Tiempo Real", "Inferencia Local"]
       }
     }
   },
@@ -105,13 +110,13 @@
   },
   "about": {
     "title": "Sobre Mí",
-    "bio": "Actualmente vivo en España y busco oportunidades de trabajo remoto. Estoy disponible y tengo un horario muy flexible, listo para adaptarme a diferentes zonas horarias y necesidades del proyecto.",
+    "bio": "Actualmente vivo en España y busco oportunidades de trabajo remoto. Estoy disponible tanto para contratación freelance como para empleo estándar, con un horario muy flexible listo para adaptarme a diferentes zonas horarias y necesidades del proyecto.",
     "resumeText": "Descargar CV",
     "personalLife": {
       "title": "Cuando no estoy programando",
       "intro": "Creo en mantener un equilibrio saludable entre trabajo y vida personal:",
       "item1": "📺 Viendo series",
-      "item2": "⚽ Practicando deportes y manteniéndome activo",
+      "item2": "👥 Pasando tiempo con amigos",
       "item3": "🎮 Creando videojuegos y explorando nuevas mecánicas de juego"
     }
   },
@@ -119,7 +124,9 @@
     "cta": "Contáctame!",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "email": "Email"
+    "email": "Email",
+    "phone": "+34 632423950",
+    "phoneLabel": "Teléfono"
   },
   "referrer": {
     "nav": "Programa de Referidos",
