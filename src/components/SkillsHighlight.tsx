@@ -15,7 +15,7 @@ const skills: Skill[] = [
   { name: 'Node.js', level: 3, category: 'backend' },
   { name: 'TypeScript/JavaScript', level: 3, category: 'backend' },
   { name: 'Java', level: 3, category: 'backend' },
-  { name: 'Python', level: 2, category: 'backend' },
+  { name: 'Python', level: 3, category: 'backend' },
   { name: 'PostgreSQL', level: 2, category: 'backend' },
   { name: 'SQL', level: 2, category: 'backend' },
   { name: 'Express', level: 3, category: 'backend' },
