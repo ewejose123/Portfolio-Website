@@ -34,7 +34,7 @@ const skills: Skill[] = [
   // Tools (ordered by proficiency: 4→3→2→1)
   { name: 'Git', level: 4, category: 'tools' },
   { name: 'Cursor', level: 4, category: 'tools' },
-  { name: 'CI/CD', level: 3, category: 'tools' },
+  { name: 'CI/CD', level: 2, category: 'tools' },
   { name: 'Figma', level: 3, category: 'tools' },
   { name: 'Unity', level: 4, category: 'tools' },
   { name: 'Docker', level: 2, category: 'tools' },
@@ -51,8 +51,8 @@ const skills: Skill[] = [
   { name: 'Fast Learning', level: 4, category: 'soft' },
   { name: 'Adaptability', level: 4, category: 'soft' },
   { name: 'Team Collaboration', level: 4, category: 'soft' },
-  { name: 'Team Leadership', level: 3, category: 'soft' },
-  { name: 'Teaching/Mentoring', level: 3, category: 'soft' },
+  { name: 'Team Leadership', level: 2, category: 'soft' },
+  { name: 'Teaching/Mentoring', level: 2, category: 'soft' },
 ]
 
 // Pre-computed dot components by level to avoid recreating on every render
