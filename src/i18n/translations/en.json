@@ -33,7 +33,7 @@
       "proficiency": {
         "label": "Proficiency:",
         "learning": "Learning",
-        "intermediate": "Good Understanding (1+ years)",
+        "intermediate": "Good Understanding (1-2+ years)",
         "professional": "Professional (3+ years)",
         "expert": "Expert (5+ years)"
       }
