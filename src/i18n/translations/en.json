@@ -22,13 +22,13 @@
       "spanish": "Spanish (Native)",
       "english": "English (Professional)"
     },
-    "workStatus": "Spanish Contractor - Freelance or Standard Employment",
+    "workStatus": "Actively looking for work opportunities",
     "skillsPreview": "Skills",
     "skills": {
       "title": "Main Highlighted Skills",
       "backend": "Backend",
       "frontend": "Frontend",
-      "tools": "Tools", 
+      "others": "Others", 
       "soft": "Soft Skills",
       "proficiency": {
         "label": "Proficiency:",

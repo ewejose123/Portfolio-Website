@@ -6,7 +6,7 @@ import { useMemo, memo } from 'react'
 interface Skill {
   name: string
   level: number // 1-4: 1=Learning, 2=Good Understanding (1+ years), 3=Professional (3+ years), 4=Expert (5+ years)
-  category: 'backend' | 'frontend' | 'tools' | 'soft'
+  category: 'backend' | 'frontend' | 'others' | 'soft'
 }
 
 const skills: Skill[] = [
@@ -31,20 +31,22 @@ const skills: Skill[] = [
   { name: 'Angular', level: 1, category: 'frontend' },
   { name: 'Vite', level: 1, category: 'frontend' },
 
-  // Tools (ordered by proficiency: 4→3→2→1)
-  { name: 'Git', level: 4, category: 'tools' },
-  { name: 'Cursor', level: 4, category: 'tools' },
-  { name: 'CI/CD', level: 2, category: 'tools' },
-  { name: 'Figma', level: 3, category: 'tools' },
-  { name: 'Unity', level: 4, category: 'tools' },
-  { name: 'Docker', level: 2, category: 'tools' },
-  { name: 'Vercel', level: 2, category: 'tools' },
-  { name: 'Cloudflare', level: 2, category: 'tools' },
-  { name: 'GitHub Actions', level: 2, category: 'tools' },
-  { name: 'Jenkins', level: 1, category: 'tools' },
-  { name: 'C++', level: 1, category: 'tools' },
-  { name: 'Prisma', level: 1, category: 'tools' },
-  { name: 'Terraform', level: 1, category: 'tools' },
+  // others (ordered by proficiency: 4→3→2→1)
+  { name: 'Git', level: 4, category: 'others' },
+  { name: 'Cursor', level: 4, category: 'others' },
+  { name: 'Unity', level: 4, category: 'others' },
+  { name: 'Python', level: 3, category: 'others' },
+  { name: 'Figma', level: 3, category: 'others' },
+  { name: 'CI/CD', level: 2, category: 'others' },
+  { name: 'C++', level: 2, category: 'others' },
+  { name: 'Docker', level: 2, category: 'others' },
+  { name: 'Vercel', level: 2, category: 'others' },
+  { name: 'Cloudflare', level: 2, category: 'others' },
+  { name: 'GitHub Actions', level: 2, category: 'others' },
+  { name: 'Jenkins', level: 1, category: 'others' },
+  { name: 'Prisma', level: 1, category: 'others' },
+  { name: 'Terraform', level: 1, category: 'others' },
+  { name: 'DOORs', level: 1, category: 'others' },
 
   // Soft Skills (ordered by proficiency: 4→3→2→1)
   { name: 'Problem Solving', level: 4, category: 'soft' },
@@ -111,7 +113,7 @@ export default function SkillsHighlight() {
   const categories = useMemo(() => [
     { key: 'backend', icon: '🛠️', skills: skills.filter(s => s.category === 'backend') },
     { key: 'frontend', icon: '🎨', skills: skills.filter(s => s.category === 'frontend') },
-    { key: 'tools', icon: '💻', skills: skills.filter(s => s.category === 'tools') },
+    { key: 'others', icon: '💻', skills: skills.filter(s => s.category === 'others') },
     { key: 'soft', icon: '🏆', skills: skills.filter(s => s.category === 'soft') },
   ], [])
 
@@ -158,7 +160,7 @@ export default function SkillsHighlight() {
           <div key={category.key} className="space-y-4">
             <h4 className="text-lg font-semibold text-foreground text-center capitalize border-b border-border pb-2 flex items-center justify-center gap-2">
               <span className="text-2xl">{category.icon}</span>
-              {t(category.key as 'backend' | 'frontend' | 'tools' | 'soft')}
+              {t(category.key as 'backend' | 'frontend' | 'others' | 'soft')}
             </h4>
             <div className="space-y-3">
               {category.skills.map((skill) => (

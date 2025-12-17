@@ -22,13 +22,13 @@
       "spanish": "Español (Nativo)",
       "english": "Inglés (Profesional)"
     },
-    "workStatus": "Contratista Español - Freelance o Empleo Estándar",
+    "workStatus": "Buscando oportunidades de trabajo remoto",
     "skillsPreview": "Habilidades",
     "skills": {
       "title": "Habilidades Principales Destacadas",
       "backend": "Backend",
       "frontend": "Frontend",
-      "tools": "Herramientas", 
+      "others": "Otros", 
       "soft": "Habilidades Blandas",
       "proficiency": {
         "label": "Competencia:",
