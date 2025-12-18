@@ -12,10 +12,10 @@
   },
   "hero": {
     "name": "Ewe José Omusi Sáez",
-    "title": "Full Stack Engineer & Cloud Developer",
+    "title": "Software Engineer",
     "age": "27 years old",
     "location": "Madrid, Spain",
-    "tagline": "Building reliable web applications and scalable backend systems.",
+    "tagline": "Building scalable software, analyzing data and deploying infrastructure",
     "ctaProjects": "View Projects",
     "ctaContact": "Contact",
     "languages": {
@@ -110,7 +110,7 @@
   },
   "about": {
     "title": "About Me",
-    "bio": "I currently live in Spain and am looking for remote work opportunities. I am available for both freelance contracting and standard employment, with a very flexible schedule ready to adapt to different time zones and project needs.",
+    "bio": "I currently live in Spain and am looking for work opportunities. I am available for both freelance contracting and standard employment, with a very flexible schedule ready to adapt to different time zones and project needs.",
     "resumeText": "Download CV",
     "personalLife": {
       "title": "When I'm not programming",

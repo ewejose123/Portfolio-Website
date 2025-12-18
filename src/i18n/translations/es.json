@@ -12,10 +12,10 @@
   },
   "hero": {
     "name": "Ewe José Omusi Sáez",
-    "title": "Ingeniero Full Stack y Desarrollador Cloud",
+    "title": "Ingeniero de Software",
     "age": "27 años",
     "location": "Madrid, España",
-    "tagline": "Construyendo aplicaciones web confiables y sistemas backend escalables.",
+    "tagline": "Construyendo software escalable, analizando datos y desplegando infraestructuras ",
     "ctaProjects": "Ver Proyectos",
     "ctaContact": "Contacto",
     "languages": {
@@ -110,7 +110,7 @@
   },
   "about": {
     "title": "Sobre Mí",
-    "bio": "Actualmente vivo en España y busco oportunidades de trabajo remoto. Estoy disponible tanto para contratación freelance como para empleo estándar, con un horario muy flexible listo para adaptarme a diferentes zonas horarias y necesidades del proyecto.",
+    "bio": "Actualmente vivo en España y busco oportunidades de trabajo. Estoy disponible tanto para contratación freelance como para empleo estándar, con un horario muy flexible listo para adaptarme a diferentes zonas horarias y necesidades del proyecto.",
     "resumeText": "Descargar CV",
     "personalLife": {
       "title": "Cuando no estoy programando",
