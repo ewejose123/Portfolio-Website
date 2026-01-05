@@ -311,7 +311,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                         {/* Resume Download Button */}
                         <div className="mb-8">
                             <a
-                                href="/resume.pdf"
+                                href={locale === 'es' ? '/Ewe Jose - Español - CV.pdf' : '/Ewe Jose - English- CV.pdf'}
                                 download
                                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent text-accent-foreground font-semibold hover:bg-accent/90 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
                             >
