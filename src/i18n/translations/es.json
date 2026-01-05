@@ -26,13 +26,13 @@
     "skillsPreview": "Habilidades",
     "skills": {
       "title": "Habilidades Principales Destacadas",
-      "backend": "Backend",
-      "frontend": "Frontend",
-      "others": "Otros", 
-      "soft": "Habilidades Blandas",
+      "backend": "Backend & Arquitectura de Sistemas",
+      "frontend": "Frontend, Observabilidad & Herramientas",
+      "devops": "Infraestructura Cloud & DevOps (IaC)",
+      "bigdata": "Big Data & Pipelines de Análisis (ETL)",
       "proficiency": {
         "label": "Competencia:",
-        "learning": "Aprendiendo",
+        "learning": "Conocimiento Práctico",
         "intermediate": "Buen Entendimiento (1-2+ años)",
         "professional": "Profesional (3+ años)",
         "expert": "Experto (5+ años)"
@@ -49,8 +49,8 @@
     "items": {
       "xenora-rush": {
         "title": "Xenova Rush",
-        "summary": "Sistema distribuido de alto rendimiento con arquitectura cloud en AWS. Construí backend serverless con Lambda y API Gateway, escalé servidores de juego con Amazon GameLift, implementé pipelines CI/CD con GitHub Actions, y gestioné infraestructura como código con Terraform.",
-        "technologies": ["AWS", "Lambda", "GameLift", "DynamoDB", "Terraform", "CI/CD", "Node.js", "C#", "Unity", "PostgreSQL", "Next.js"]
+        "summary": "Sistema distribuido de alto rendimiento con arquitectura cloud en AWS. Construí backend serverless con Lambda y API Gateway, escalé servidores de juego con Amazon GameLift y gestioné infraestructura como código con Terraform. Desarrollé dashboards de observabilidad con Grafana, implementé trazabilidad distribuida con OpenTelemetry y AWS X-Ray, y creé pipelines ETL para análisis de juego y monitoreo de rendimiento.",
+        "technologies": ["AWS", "Lambda", "GameLift", "DynamoDB", "Terraform", "CI/CD", "Node.js", "C#", "Unity", "PostgreSQL", "Next.js", "Grafana", "OpenTelemetry", "CloudWatch", "AWS X-Ray", "Análisis de Datos", "ETL"]
       },
       "taskmanager-pro": {
         "title": "TaskManager Pro",

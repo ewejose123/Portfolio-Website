@@ -6,55 +6,63 @@ import { useMemo, memo } from 'react'
 interface Skill {
   name: string
   level: number // 1-4: 1=Learning, 2=Good Understanding (1+ years), 3=Professional (3+ years), 4=Expert (5+ years)
-  category: 'backend' | 'frontend' | 'others' | 'soft'
+  category: 'backend' | 'frontend' | 'devops' | 'bigdata'
 }
 
 const skills: Skill[] = [
-  // Backend (ordered by proficiency: 4→3→2→1)
+  // Backend & System Architecture (ordered by proficiency: 4→3→2→1)
   { name: 'C#', level: 4, category: 'backend' },
   { name: 'Node.js', level: 3, category: 'backend' },
   { name: 'TypeScript/JavaScript', level: 3, category: 'backend' },
+  { name: 'RESTful APIs', level: 3, category: 'backend' },
+  { name: 'Microservices', level: 2, category: 'backend' },
+  { name: 'Express', level: 2, category: 'backend' },
   { name: 'Java', level: 2, category: 'backend' },
   { name: 'Python', level: 2, category: 'backend' },
-  { name: 'AWS (Lambda, EC2, S3, DynamoDB, Cognito)', level: 2, category: 'backend' },
-  { name: 'Express', level: 2, category: 'backend' },
   { name: 'SQL', level: 2, category: 'backend' },
   { name: 'PostgreSQL', level: 2, category: 'backend' },
   { name: 'MongoDB', level: 2, category: 'backend' },
+  { name: 'C++', level: 1, category: 'backend' },
 
-  // Frontend (ordered by proficiency: 4→3→2→1)
+  // Frontend, Observability & Tools (ordered by proficiency: 4→3→2→1)
   { name: 'React', level: 3, category: 'frontend' },
   { name: 'Next.js', level: 3, category: 'frontend' },
   { name: 'HTML/CSS', level: 3, category: 'frontend' },
   { name: 'Tailwind CSS', level: 3, category: 'frontend' },
+  { name: 'ES6+', level: 2, category: 'frontend' },
   { name: 'Vite', level: 3, category: 'frontend' },
+  { name: 'Jest', level: 2, category: 'frontend' },
+  { name: 'TDD', level: 2, category: 'frontend' },
   { name: 'PostHog', level: 2, category: 'frontend' },
+  { name: 'Grafana', level: 1, category: 'frontend' },
+  { name: 'OpenTelemetry', level: 1, category: 'frontend' },
+  { name: 'AWS X-Ray', level: 1, category: 'frontend' },
+  { name: 'CloudWatch', level: 1, category: 'frontend' },
   { name: 'Angular', level: 1, category: 'frontend' },
 
-  // others (ordered by proficiency: 4→3→2→1)
-  { name: 'Git', level: 4, category: 'others' },
-  { name: 'Unity', level: 4, category: 'others' },
-  { name: 'Python', level: 3, category: 'others' },
-  { name: 'Cursor', level: 3, category: 'others' },
-  { name: 'Figma', level: 3, category: 'others' },
-  { name: 'CI/CD', level: 2, category: 'others' },
-  { name: 'C++', level: 2, category: 'others' },
-  { name: 'Docker', level: 2, category: 'others' },
-  { name: 'Vercel', level: 2, category: 'others' },
-  { name: 'Cloudflare', level: 2, category: 'others' },
-  { name: 'GitHub Actions', level: 2, category: 'others' },
-  { name: 'Jenkins', level: 1, category: 'others' },
-  { name: 'Prisma', level: 1, category: 'others' },
-  { name: 'Terraform', level: 1, category: 'others' },
-  { name: 'DOORs', level: 1, category: 'others' },
+  // Cloud Infrastructure & DevOps (IaC) (ordered by proficiency: 4→3→2→1)
+  { name: 'Git', level: 4, category: 'devops' },
+  { name: 'AWS (API Gateway, Lambda, GameLift, DynamoDB, S3, EC2, Cognito...)', level: 2, category: 'devops' },
+  { name: 'CI/CD', level: 2, category: 'devops' },
+  { name: 'Docker', level: 2, category: 'devops' },
+  { name: 'GitHub Actions', level: 2, category: 'devops' },
+  { name: 'Vercel', level: 2, category: 'devops' },
+  { name: 'Cloudflare', level: 2, category: 'devops' },
+  { name: 'Networking (TCP/IP, UDP, WebSocket...)', level: 2, category: 'devops' },
+  { name: 'Linux Admin', level: 2, category: 'devops' },
+  { name: 'Terraform', level: 1, category: 'devops' },
+  { name: 'Terragrunt', level: 1, category: 'devops' },
+  { name: 'Jenkins', level: 1, category: 'devops' },
+  { name: 'Prisma', level: 1, category: 'devops' },
 
-  // Soft Skills (ordered by proficiency: 4→3→2→1)
-  { name: 'Problem Solving', level: 4, category: 'soft' },
-  { name: 'Fast Learning', level: 4, category: 'soft' },
-  { name: 'Adaptability', level: 4, category: 'soft' },
-  { name: 'Team Collaboration', level: 3, category: 'soft' },
-  { name: 'Team Leadership', level: 2, category: 'soft' },
-  { name: 'Teaching/Mentoring', level: 2, category: 'soft' },
+  // Big Data & Analytics Pipelines (ETL) (ordered by proficiency: 4→3→2→1)
+  { name: 'Python', level: 2, category: 'bigdata' },
+  { name: 'PySpark', level: 1, category: 'bigdata' },
+  { name: 'AWS Glue', level: 1, category: 'bigdata' },
+  { name: 'Amazon Athena', level: 1, category: 'bigdata' },
+  { name: 'Parquet', level: 1, category: 'bigdata' },
+  { name: 'Snappy', level: 1, category: 'bigdata' },
+  { name: 'Redis', level: 1, category: 'bigdata' },
 ]
 
 // Pre-computed dot components by level to avoid recreating on every render
@@ -113,8 +121,8 @@ export default function SkillsHighlight() {
   const categories = useMemo(() => [
     { key: 'backend', icon: '🛠️', skills: skills.filter(s => s.category === 'backend') },
     { key: 'frontend', icon: '🎨', skills: skills.filter(s => s.category === 'frontend') },
-    { key: 'others', icon: '💻', skills: skills.filter(s => s.category === 'others') },
-    { key: 'soft', icon: '🏆', skills: skills.filter(s => s.category === 'soft') },
+    { key: 'devops', icon: '☁️', skills: skills.filter(s => s.category === 'devops') },
+    { key: 'bigdata', icon: '📊', skills: skills.filter(s => s.category === 'bigdata') },
   ], [])
 
   return (
@@ -160,7 +168,7 @@ export default function SkillsHighlight() {
           <div key={category.key} className="space-y-4">
             <h4 className="text-lg font-semibold text-foreground text-center capitalize border-b border-border pb-2 flex items-center justify-center gap-2">
               <span className="text-2xl">{category.icon}</span>
-              {t(category.key as 'backend' | 'frontend' | 'others' | 'soft')}
+              {t(category.key as 'backend' | 'frontend' | 'devops' | 'bigdata')}
             </h4>
             <div className="space-y-3">
               {category.skills.map((skill) => (
