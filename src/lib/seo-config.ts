@@ -3,24 +3,17 @@ export const seoConfig = {
   // Main Website SEO
   mainPage: {
     en: {
-      title: "Ewe José Portfolio | Full Stack Developer & Game Creator", // English-first messaging for recruiters
-      description: "Full stack engineer and game creator showcasing production web platforms, automation tooling, and playable prototypes built for hiring teams.",
+      title: "Ewe José Portfolio | Software Engineer | Backend & Data", // English-first messaging for recruiters
+      description: "Software engineer showcasing production web platforms, automation tooling, and playable prototypes built for hiring teams.",
       keywords: [
-        "full stack developer portfolio",
-        "game creator portfolio", 
-        "nextjs developer",
-        "react full stack engineer",
-        "typescript portfolio",
-        "company ready developer",
-        "technical art prototypes",
-        "web systems engineer",
-        "automation tooling",
-        "product engineer portfolio",
-        "ux focused developer",
-        "hire full stack developer",
-        "game prototyping",
-        "interactive experiences",
-        "engineering portfolio"
+        "software engineer portfolio",
+        "backend developer portfolio",
+        "data engineer portfolio",
+        "Next.js expert",
+        "React engineer",
+        "hiring-ready developer",
+        "technical portfolio",
+        "observability engineer",
       ],
       targetAudience: [
         "small business owners",
@@ -34,24 +27,17 @@ export const seoConfig = {
       ]
     },
     es: {
-      title: "Ewe José Portfolio | Full Stack Developer & Game Creator", // Spanish locale now mirrors English hiring pitch
-      description: "Full stack engineer and game creator focused on partnering with companies to deliver performant platforms, internal tools, and experimental games.",
+      title: "Ewe José Portfolio | Software Engineer | Backend & Data", // Spanish locale now mirrors English hiring pitch
+      description: "Software engineer showcasing production web platforms, automation tooling, and playable experiences for product-driven teams.",
       keywords: [
-        "full stack developer portfolio",
-        "game creator portfolio",
-        "desarrollador Next.js",
-        "ingeniero React",
-        "portfolio TypeScript", 
-        "desarrollador para empresas",
-        "prototipos de juego",
-        "sistemas web personalizados",
-        "automatización para equipos",
-        "ingeniería de producto",
-        "desarrollador UX",
-        "contratar full stack developer",
-        "experimentos interactivos",
-        "experiencias jugables",
-        "portfolio ingeniería"
+        "software engineer portfolio",
+        "backend developer portfolio",
+        "data engineer portfolio",
+        "Next.js expert",
+        "React engineer",
+        "hiring-ready developer",
+        "technical portfolio",
+        "observability engineer",
       ],
       targetAudience: [
         "pequeños empresarios",

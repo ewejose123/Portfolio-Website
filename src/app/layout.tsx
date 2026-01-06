@@ -20,9 +20,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ewe José Portfolio | Full Stack Developer & Game Creator", // Clear English title for hiring managers
-  description: "I’m Ewe José, a full stack engineer and game creator who ships performant web platforms, internal tools, and playable experiences for product-driven teams.", // Emphasizes capabilities relevant to company recruiters
-  keywords: "full stack developer portfolio, game creator, product engineer, Next.js expert, React engineer, hiring-ready developer, technical portfolio",
+  title: "Ewe José Portfolio | Software Engineer | Backend & Data", // Clear English title for hiring managers
+  description: "I’m Ewe José, a software engineer who ships performant web platforms, internal tools, and playable experiences for product-driven teams.", // Emphasizes capabilities relevant to company recruiters
+  keywords: "software engineer portfolio, backend developer, data engineer, Next.js expert, React engineer, hiring-ready developer, technical portfolio",
   authors: [{ name: "Ewe José Omusi Sáez" }],
   creator: "Ewe José Omusi Sáez",
   publisher: "Ewe José Omusi Sáez",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://ewejose.com',
-    title: "Ewe José Portfolio | Full Stack Developer & Game Creator", // OG headline tailored for recruiters
+    title: "Ewe José Portfolio | Software Engineer | Backend & Data", // OG headline tailored for recruiters
     description: "Full stack development, gameplay prototypes, and production-ready systems built to help teams ship faster.",
     siteName: "Ewe José Portfolio",
     images: [
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Ewe José | Full Stack & Game Creator",
+    title: "Ewe José | Software Engineer | Backend & Data",
     description: "Selected work across web platforms, tools, and games for ambitious companies.",
     images: ['https://ewejose.com/og-image-es.jpg'],
   },
