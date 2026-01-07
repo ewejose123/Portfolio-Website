@@ -12,13 +12,13 @@ interface Skill {
 const skills: Skill[] = [
   // Backend & System Architecture (ordered by proficiency: 4→3→2→1)
   { name: 'C#', level: 4, category: 'backend' },
-  { name: 'Node.js', level: 3, category: 'backend' },
+  { name: 'Python', level: 3, category: 'backend' },
   { name: 'TypeScript/JavaScript', level: 3, category: 'backend' },
+  { name: 'Node.js', level: 3, category: 'backend' },
   { name: 'RESTful APIs', level: 3, category: 'backend' },
   { name: 'Microservices', level: 2, category: 'backend' },
   { name: 'Express', level: 2, category: 'backend' },
   { name: 'Java', level: 2, category: 'backend' },
-  { name: 'Python', level: 2, category: 'backend' },
   { name: 'SQL', level: 2, category: 'backend' },
   { name: 'PostgreSQL', level: 2, category: 'backend' },
   { name: 'MongoDB', level: 2, category: 'backend' },
@@ -56,7 +56,7 @@ const skills: Skill[] = [
   { name: 'Prisma', level: 1, category: 'devops' },
 
   // Big Data & Analytics Pipelines (ETL) (ordered by proficiency: 4→3→2→1)
-  { name: 'Python', level: 2, category: 'bigdata' },
+  { name: 'Python', level: 3, category: 'bigdata' },
   { name: 'PySpark', level: 1, category: 'bigdata' },
   { name: 'AWS Glue', level: 1, category: 'bigdata' },
   { name: 'Amazon Athena', level: 1, category: 'bigdata' },
